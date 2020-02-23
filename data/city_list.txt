@@ -1,0 +1,441 @@
+Country,City,City_Search_Bar
+Switzerland,Zurich,Zurich
+Switzerland,Basel,Basel
+Switzerland,Lausanne,Lausanne
+Switzerland,Geneva,Geneva
+Switzerland,Bern,Bern
+Norway,Stavanger,Stavanger
+Norway,Oslo,Oslo
+Norway,Trondheim,Trondheim
+Iceland,Reykjavik,Reykjavik
+Norway,Bergen,Bergen
+United States,New York,New-York
+United States,San Francisco,San-Francisco
+United States,Anchorage,Anchorage
+United States,Honolulu,Honolulu
+United States,Brooklyn,Brooklyn
+Denmark,Aalborg,Aalborg
+United States,Washington,Washington
+Japan,Tokyo,Tokyo
+United States,Oakland,Oakland
+Israel,Tel Aviv-Yafo,Tel-Aviv-Yafo
+Denmark,Copenhagen,Copenhagen
+United States,Seattle,Seattle
+South Korea,Seoul,Seoul
+France,Paris,Paris
+Luxembourg,Luxembourg,Luxembourg
+United States,Boston,Boston
+United States,Bellevue,Bellevue
+United Kingdom,London,London
+Singapore,Singapore,Singapore
+Denmark,Arhus,Arhus
+Israel,Haifa,Haifa
+United States,Chicago,Chicago
+Japan,Osaka,Osaka
+Israel,Jerusalem,Jerusalem
+United States,Sarasota,Sarasota
+Ireland,Dublin,Dublin
+Australia,Sydney,Sydney
+Netherlands,Amsterdam,Amsterdam
+United States,Philadelphia,Philadelphia
+United States,San Jose,San-Jose
+United States,Portland,Portland
+Canada,Toronto,Toronto
+United States,New Orleans,New-Orleans
+Hong Kong,Hong Kong,Hong-Kong
+United States,Sacramento,Sacramento
+Ireland,Cork,Cork
+Italy,Milan,Milan
+Netherlands,Utrecht,Utrecht
+United States,Minneapolis,Minneapolis
+United States,Los Angeles,Los-Angeles
+Australia,Darwin,Darwin
+Sweden,Stockholm,Stockholm
+New Zealand,Auckland,Auckland
+Denmark,Odense,Odense
+Austria,Linz,Linz
+Sweden,Uppsala,Uppsala
+United Kingdom,Brighton,Brighton
+United States,Albany,Albany
+Austria,Innsbruck,Innsbruck
+Ireland,Galway,Galway
+Australia,Canberra,Canberra
+Netherlands,Haarlem,Haarlem
+Australia,Newcastle,Newcastle
+United States,Jacksonville,Jacksonville
+Austria,Graz,Graz
+United States,Baltimore,Baltimore
+United States,San Diego,San-Diego
+United States,Miami,Miami
+Australia,Perth,Perth
+United States,Buffalo,Buffalo
+Canada,Vancouver,Vancouver
+United States,Atlanta,Atlanta
+United States,Reno,Reno
+Netherlands,Eindhoven,Eindhoven
+United States,Pittsburgh,Pittsburgh
+France,Lyon,Lyon
+United States,Denver,Denver
+United States,Nashville,Nashville
+New Zealand,Christchurch,Christchurch
+United Kingdom,Bristol,Bristol
+Australia,Gold Coast,Gold-Coast
+Netherlands,Leiden,Leiden
+United Kingdom,Reading,Reading
+Australia,Brisbane,Brisbane
+Belgium,Gent,Gent
+France,Marseille,Marseille
+Australia,Melbourne,Melbourne
+United States,Charlotte,Charlotte
+Netherlands,The Hague (Den Haag),The-Hague-Den-Haag-Netherlands
+Finland,Helsinki,Helsinki
+Canada,Halifax,Halifax
+Belgium,Brussels,Brussels
+Italy,Florence,Florence
+United Kingdom,Cambridge,Cambridge
+Netherlands,Groningen,Groningen
+Germany,Munich,Munich
+France,Montpellier,Montpellier
+United States,Tucson,Tucson
+France,Toulouse,Toulouse
+United States,Olympia,Olympia
+Canada,Victoria,Victoria
+Italy,Genoa,Genoa
+Germany,Hamburg,Hamburg
+Sweden,Gothenburg,Gothenburg
+Belgium,Antwerp,Antwerp
+United States,Colorado Springs,Colorado-Springs
+United Kingdom,Oxford,Oxford
+United States,Tacoma,Tacoma
+United States,Saint Louis,Saint-Louis
+Finland,Tampere,Tampere
+Canada,Calgary,Calgary
+United States,Columbus,Columbus
+New Zealand,Wellington,Wellington
+Italy,Rome,Rome
+United Kingdom,York,York
+Puerto Rico,San Juan,San-Juan
+Italy,Bologna,Bologna
+United Kingdom,Aberdeen,Aberdeen
+United Kingdom,Edinburgh,Edinburgh
+Canada,Saint John's,Saint-John's
+Germany,Heidelberg,Heidelberg
+Sweden,Malmo,Malmo
+United States,Raleigh,Raleigh
+Germany,Frankfurt,Frankfurt
+Ireland,Limerick,Limerick
+Netherlands,Rotterdam,Rotterdam
+Canada,Edmonton,Edmonton
+United Kingdom,Leicester,Leicester
+Canada,Saskatoon,Saskatoon
+United States,Kansas City,Kansas-City
+Malta,Sliema,Sliema
+Australia,Hobart,Hobart
+Finland,Espoo,Espoo
+Canada,Ottawa,Ottawa
+Australia,Adelaide,Adelaide
+United Kingdom,Manchester,Manchester
+Canada,Regina,Regina
+Canada,Quebec City,Quebec-City
+United Kingdom,Dundee,Dundee
+United States,Dallas,Dallas
+Germany,Bonn,Bonn
+United States,Austin,Austin
+Germany,Stuttgart,Stuttgart
+United States,Las Vegas,Las-Vegas
+United Kingdom,Birmingham,Birmingham
+United States,Phoenix,Phoenix
+Canada,Montreal,Montreal
+United States,Richmond,Richmond
+United States,Tampa,Tampa
+Germany,Dusseldorf,Dusseldorf
+France,Lille,Lille
+United Arab Emirates,Dubai,Dubai
+United States,Louisville,Louisville
+Germany,Nuremberg,Nuremberg
+Italy,Turin,Turin
+United Kingdom,Nottingham,Nottingham
+United States,Indianapolis,Indianapolis
+United Kingdom,Derby,Derby
+United Kingdom,Southampton,Southampton
+Germany,Mannheim,Mannheim
+United Kingdom,Newcastle upon Tyne,Newcastle-Upon-Tyne
+Canada,Brampton,Brampton
+United Kingdom,Glasgow,Glasgow
+United States,San Antonio,San-Antonio
+United States,Orlando,Orlando
+Austria,Vienna,Vienna
+Germany,Cologne,Cologne
+United States,Houston,Houston
+United Kingdom,Cardiff,Cardiff
+United Kingdom,Leeds,Leeds
+Germany,Berlin,Berlin
+United States,Salt Lake City,Salt-Lake-City
+United States,Madison,Madison
+Germany,Essen,Essen
+Taiwan,Taipei,Taipei
+United States,Tulsa,Tulsa
+Canada,Hamilton,Hamilton
+United Kingdom,Liverpool,Liverpool
+Qatar,Doha,Doha
+United States,Detroit,Detroit
+Germany,Bremen,Bremen
+Canada,Winnipeg,Winnipeg
+Canada,Kitchener,Kitchener
+Lebanon,Beirut,Beirut
+Germany,Leipzig,Leipzig
+United Arab Emirates,Abu Dhabi,Abu-Dhabi
+Cyprus,Nicosia,Nicosia
+United Kingdom,Sheffield,Sheffield
+Germany,Hanover,Hanover
+Cyprus,Limassol,Limassol
+Germany,Dresden,Dresden
+United Kingdom,Belfast,Belfast
+United States,Cincinnati,Cincinnati
+Italy,Naples,Naples
+Germany,Karlsruhe,Karlsruhe
+Germany,Aachen,Aachen
+United States,Boise,Boise
+Canada,London,London
+United States,Little Rock,Little-Rock
+Spain,Palma de Mallorca,Palma-De-Mallorca
+Bahrain,Manama,Manama
+Spain,Barcelona,Barcelona
+United Kingdom,Kingston upon Hull,Kingston-Upon-Hull
+Costa Rica,San Jose,San-Jose
+Italy,Catania,Catania
+Spain,Madrid,Madrid
+Jamaica,Kingston,Kingston
+Spain,Granada,Granada
+Greece,Athens,Athens
+Panama,Panama City,Panama-City
+Thailand,Bangkok,Bangkok
+Jordan,Amman,Amman
+Greece,Thessaloniki,Thessaloniki
+Italy,Palermo,Palermo
+Slovenia,Ljubljana,Ljubljana
+Greece,Patras,Patras
+Greece,Heraklion,Heraklion
+Cyprus,Paphos,Paphos
+United Arab Emirates,Sharjah,Sharjah
+Estonia,Tallinn,Tallinn
+United States,El Paso,El-Paso
+Spain,Alicante,Alicante
+Spain,Las Palmas de Gran Canaria,Las-Palmas
+Kuwait,Kuwait City,Kuwait-City
+Spain,Valencia,Valencia
+Portugal,Braga,Braga
+Portugal,Lisbon,Lisbon
+Uruguay,Montevideo,Montevideo
+Oman,Muscat,Muscat
+Spain,Seville (Sevilla),Sevilla
+Thailand,Pattaya,Pattaya
+Spain,Malaga,Malaga
+Croatia,Zagreb,Zagreb
+Croatia,Split,Split
+China,Shanghai,Shanghai
+Saudi Arabia,Jeddah (Jiddah),Jeddah-Jiddah
+Estonia,Tartu,Tartu
+Portugal,Porto,Porto
+Slovenia,Maribor,Maribor
+Thailand,Phuket,Phuket
+Latvia,Riga,Riga
+Spain,Santa Cruz de Tenerife,Santa-Cruz-De-Tenerife
+United Arab Emirates,Ajman,Ajman
+Czech Republic,Prague,Prague
+Saudi Arabia,Ad Dammam,Ad-Dammam
+Portugal,Coimbra,Coimbra
+Croatia,Rijeka,Rijeka
+Slovakia,Bratislava,Bratislava
+Saudi Arabia,Riyadh,Riyadh
+El Salvador,San Salvador,San-Salvador
+Russia,Moscow,Moscow
+South Africa,Pretoria,Pretoria
+Cambodia,Phnom Penh,Phnom-Penh
+Thailand,Chiang Mai,Chiang-Mai
+Czech Republic,Brno,Brno
+South Africa,Johannesburg,Johannesburg
+Brazil,Sao Paulo,Sao-Paulo
+Croatia,Osijek,Osijek
+Dominican Republic,Santo Domingo,Santo-Domingo
+Chile,Santiago,Santiago
+China,Beijing,Beijing
+South Africa,Cape Town,Cape-Town
+Lithuania,Kaunas,Kaunas
+Slovakia,Kosice,Kosice
+Indonesia,Jakarta,Jakarta
+Lithuania,Vilnius,Vilnius
+Czech Republic,Olomouc,Olomouc
+China,Shenzhen,Shenzhen
+Guatemala,Guatemala City,Guatemala-City
+Poland,Warsaw,Warsaw
+Namibia,Windhoek,Windhoek
+Ecuador,Quito,Quito
+Ecuador,Guayaquil,Guayaquil
+Hungary,Budapest,Budapest
+Russia,Vladivostok,Vladivostok
+Suriname,Paramaribo,Paramaribo
+Czech Republic,Ostrava,Ostrava
+Brazil,Rio de Janeiro,Rio-De-Janeiro
+Peru,Lima,Lima
+Malaysia,Kuala Lumpur,Kuala-Lumpur
+Poland,Gdynia,Gdynia
+Kenya,Nairobi,Nairobi
+Iraq,Baghdad,Baghdad
+Russia,Saint Petersburg,Saint-Petersburg
+Iran,Tehran,Tehran
+Iraq,Erbil (Irbil),Erbil-Irbil-Iraq
+Poland,Gdansk,Gdansk
+Poland,Krakow (Cracow),Krakow-Cracow
+China,Guangzhou,Guangzhou
+Poland,Wroclaw,Wroclaw
+Malaysia,Penang,Penang
+Brazil,Campinas,Campinas
+China,Nanjing,Nanjing
+Poland,Poznan,Poznan
+South Africa,Durban,Durban
+Brazil,Curitiba,Curitiba
+Bulgaria,Sofia,Sofia
+Vietnam,Hanoi,Hanoi
+Poland,Bydgoszcz,Bydgoszcz
+China,Chengdu,Chengdu
+Montenegro,Podgorica,Podgorica
+Brazil,Porto Alegre,Porto-Alegre
+Poland,Lodz,Lodz
+Romania,Bucharest,Bucharest
+Hungary,Debrecen,Debrecen
+Russia,Nizhny Novgorod,Nizhny-Novgorod-Russia
+Romania,Constanta,Constanta
+Serbia,Belgrade,Belgrade
+Philippines,Manila,Manila
+Mexico,Tijuana,Tijuana
+Hungary,Szeged,Szeged
+Mexico,Monterrey,Monterrey
+Mexico,Cancun,Cancun
+Albania,Tirana,Tirana
+Bosnia And Herzegovina,Sarajevo,Sarajevo
+Russia,Volgograd,Volgograd-Russia
+Mexico,Mexico City,Mexico-City
+Russia,Yekaterinburg,Yekaterinburg
+Philippines,Cebu,Cebu
+Poland,Szczecin,Szczecin
+Vietnam,Ho Chi Minh City,Ho-Chi-Minh-City
+Russia,Krasnoyarsk,Krasnoyarsk
+Brazil,Belo Horizonte,Belo-Horizonte
+Russia,Samara,Samara
+Turkey,Istanbul,Istanbul
+Morocco,Casablanca,Casablanca
+Russia,Rostov-na-donu,Rostov-na-donu
+Mexico,Queretaro,Queretaro
+Russia,Kaliningrad,Kaliningrad
+Russia,Novosibirsk,Novosibirsk
+Poland,Katowice,Katowice
+Morocco,Tangier,Tangier
+Bulgaria,Varna,Varna
+Bosnia And Herzegovina,Banja Luka,Banja-Luka
+Morocco,Rabat,Rabat
+Russia,Irkutsk,Irkutsk-Russia
+Nigeria,Lagos,Lagos
+Poland,Lublin,Lublin
+Bulgaria,Plovdiv,Plovdiv
+Russia,Kazan,Kazan
+Romania,Cluj-Napoca,Cluj-napoca
+Russia,Perm,Perm
+Russia,Ufa,Ufa
+Romania,Brasov,Brasov
+Belarus,Minsk,Minsk
+Russia,Voronezh,Voronezh
+Ukraine,Kiev (Kyiv),Kiev
+Mexico,Guadalajara,Guadalajara
+Romania,Iasi,Iasi
+Russia,Krasnodar,Krasnodar
+Russia,Chelyabinsk,Chelyabinsk
+Indonesia,Bandung,Bandung
+Russia,Saratov,Saratov
+Romania,Sibiu,Sibiu
+Romania,Timisoara,Timisoara
+Serbia,Novi Sad,Novi-Sad
+Russia,Tomsk,Tomsk
+Bulgaria,Burgas,Burgas
+Romania,Oradea,Oradea
+Turkey,Bursa,Bursa
+Ukraine,Odessa (Odesa),Odesa
+Turkey,Ankara,Ankara
+Mongolia,Ulaanbaatar,Ulaanbaatar
+Ecuador,Cuenca,Cuenca
+Romania,Arad,Arad
+Russia,Izhevsk,Izhevsk
+Argentina,Buenos Aires,Buenos-Aires
+North Macedonia,Skopje,Skopje
+Mexico,Puebla,Puebla
+Bangladesh,Dhaka,Dhaka
+Moldova,Chisinau,Chisinau
+Sri Lanka,Colombo,Colombo
+Indonesia,Yogyakarta,Yogyakarta
+Morocco,Agadir,Agadir
+Mexico,Merida,Merida
+Ukraine,Kharkiv,Kharkiv
+Turkey,Izmir,Izmir
+Serbia,Nis,Nis
+Colombia,Bogota,Bogota
+Armenia,Yerevan,Yerevan
+Ukraine,Mykolaiv,Mykolayiv-Ukraine
+Romania,Craiova,Craiova
+Ukraine,Dnipro,Dnipropetrovsk
+Ukraine,Vinnytsia,Vinnytsya-Ukraine
+Ukraine,Lviv,Lviv
+Kazakhstan,Astana,Astana
+Turkey,Antalya,Antalya
+Algeria,Algiers,Algiers
+Kazakhstan,Almaty,Almaty
+Azerbaijan,Baku,Baku
+Paraguay,Asuncion,Asuncion
+Ukraine,Ternopil,Ternopil-Ukraine
+Egypt,Cairo,Cairo-Egypt
+Nepal,Kathmandu,Kathmandu
+Ukraine,Zaporizhzhya,Zaporizhzhya
+India,Gurgaon,Gurgaon
+Colombia,Medellin,Medellin
+Kosovo (Disputed Territory),Pristina,Pristina
+India,Mumbai,Mumbai
+Colombia,Cali,Cali
+Egypt,Alexandria,Alexandria
+India,Chandigarh,Chandigarh
+Tunisia,Tunis,Tunis
+Georgia,Tbilisi,Tbilisi
+India,Delhi,Delhi
+Syria,Damascus,Damascus
+Venezuela,Caracas,Caracas
+India,Noida,Noida
+India,Pune,Pune
+Kyrgyzstan,Bishkek,Bishkek
+India,Thane,Thane
+India,Bangalore,Bangalore
+Uzbekistan,Tashkent,Tashkent
+India,Indore,Indore
+India,Goa,Goa
+India,Ahmedabad,Ahmedabad
+India,Navi Mumbai,Navi-Mumbai
+India,Chennai,Chennai
+India,Hyderabad,Hyderabad
+India,Jaipur,Jaipur
+India,Vadodara,Vadodara
+India,Patna,Patna
+India,Guwahati,Guwahati
+India,Kolkata,Kolkata
+India,Rajkot,Rajkot
+India,Kochi,Kochi
+India,Coimbatore,Coimbatore
+India,Surat,Surat
+India,Mangalore,Mangalore
+India,Nagpur,Nagpur
+Pakistan,Lahore,Lahore
+India,Bhopal,Bhopal
+India,Lucknow (Lakhnau),Lucknow-Lakhnau
+India,Mysore,Mysore
+India,Bhubaneswar,Bhubaneswar
+Pakistan,Karachi,Karachi
+Pakistan,Islamabad,Islamabad
+India,Vijayawada,Vijayawada
+India,Visakhapatnam,Visakhapatnam
+India,Thiruvananthapuram,Thiruvananthapuram
