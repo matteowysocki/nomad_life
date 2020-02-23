@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1582494310927.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1006486465",
+    "id" : "E3D3A39D",
+    "lastKnownWriteTime" : 1582494383,
+    "last_content_update" : 1582494383184,
+    "path" : "D:/analytics/shiny/nomad_life/app.R",
+    "project_path" : "app.R",
+    "properties" : {
+        "cursorPosition" : "17,36",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
