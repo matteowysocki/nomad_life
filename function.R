@@ -26,7 +26,7 @@ getMainValues <- function(city = city_search_bar, currency = "PLN") {
     monthly_value_single <- nodesVector[which(is_single_cost == TRUE)]
     monthly_value_single <- str_remove(monthly_value_single, "A single person monthly costs: ")
     # String cleaning from raw form 
-    monthly_value_single <- substr(monthly_value_single, 1, str_locate(monthly_value_single, "³"))
+    monthly_value_single <- substr(monthly_value_single, 1, str_locate(monthly_value_single, "?"))
     monthly_value_single <- str_replace(monthly_value_single, ",", "") %>% str_replace("z³", "") %>% as.numeric()
     }
   
