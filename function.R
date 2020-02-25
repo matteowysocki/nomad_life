@@ -26,7 +26,7 @@ getMainValues <- function(city = city_search_bar, currency = "PLN") {
     monthly_value_single <- nodesVector[which(is_single_cost == TRUE)]
     monthly_value_single <- str_remove(monthly_value_single, "A single person monthly costs: ")
     # String cleaning from raw form 
-    monthly_value_single <- substr(monthly_value_single, 1, str_locate(monthly_value_single, "?"))
+    monthly_value_single <- substr(monthly_value_single, 1, str_locate(monthly_value_single, "³"))
     monthly_value_single <- str_replace(monthly_value_single, ",", "") %>% str_replace("z³", "") %>% as.numeric()
     }
   
@@ -48,14 +48,14 @@ getMainValues <- function(city = city_search_bar, currency = "PLN") {
   mainTable <- mainTable %>% mutate("currency" = currency)
   
   ### 4. Add previous values to data.frame
-  mainTable[nrow(mainTable) + 1, ] <- c("Miesiêczne Wydatki Dla Singla", monthly_value_single, NA, NA, "PLN")
+  mainTable[nrow(mainTable) + 1, ] <- c("Miesieczne Wydatki Dla Singla", monthly_value_single, NA, NA, "PLN")
   mainTable[nrow(mainTable) + 1, ] <- c("Index Miasta", city_rank_index, NA, NA, "PLN")
   mainTable <- mainTable %>% mutate("city" = city)
   
   rent_value_outside_city <- mainTable %>% filter(variable == "Apartment (1 bedroom) Outside of Centre") %>% select(2)
   rent_value_outside_city <- rent_value_outside_city %>% str_replace_all(c("," = "", "z³" = "")) %>% str_trim() %>% as.numeric()
   #return(mainTable)
-  return(list=c("Miesiêczne wydatki" = monthly_value_single, "Index"= city_rank_index, "Miesieczny czynsz" = rent_value_outside_city))
+  return(list=c("Miesieczne wydatki" = monthly_value_single, "Index"= city_rank_index, "Miesieczny czynsz" = rent_value_outside_city))
 }
 
 
