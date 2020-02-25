@@ -1,5 +1,4 @@
 #city = "Reno"
-#city = "The-Hague-Den-Haag"
 #currency = "PLN"
 #data_serv <- read.csv(file = "D:/analytics/shiny/nomad_life/data/city_list.txt", sep = ",", stringsAsFactors = FALSE)
 
@@ -13,6 +12,7 @@ getMainValues <- function(city = city_search_bar, currency = "PLN") {
   
   # `Find tag based on class .emp_number. Found manually how to systematically search for such values?
   SuplNodes   <- html_nodes(mainSource, ".emp_number" )
+  SuplNodes   <- html_nodes(mainSource, "div" )
   suplVector <- sapply(SuplNodes, html_text, simplify = TRUE)
   
   ### 1. A single person monthly costs without rent.
@@ -26,7 +26,7 @@ getMainValues <- function(city = city_search_bar, currency = "PLN") {
     monthly_value_single <- nodesVector[which(is_single_cost == TRUE)]
     monthly_value_single <- str_remove(monthly_value_single, "A single person monthly costs: ")
     # String cleaning from raw form 
-    monthly_value_single <- substr(monthly_value_single, 1, str_locate(monthly_value_single, "?"))
+    monthly_value_single <- substr(monthly_value_single, 1, str_locate(monthly_value_single, "³"))
     monthly_value_single <- str_replace(monthly_value_single, ",", "") %>% str_replace("z³", "") %>% as.numeric()
   }
   
@@ -44,6 +44,10 @@ getMainValues <- function(city = city_search_bar, currency = "PLN") {
   mainTable <- mainTable %>% dplyr::filter(value != "[ Edit ]")
   mainTable$value <- mainTable$value %>% str_replace_all(c("," = "","z³" = "")) 
   mainTable$range <- mainTable$range %>% str_replace_all(",", "")
+  # Distinct between duplicated for Restaurant and Market item
+  # Assumption is that Restaurant comes first (as on the website)
+  mainTable$variable[which(mainTable$variable == "Imported Beer (0.33 liter bottle)")[1]] <- paste0("Imported Beer (0.33 liter bottle)" , " at restaurant")
+  mainTable$variable[which(mainTable$variable == "Imported Beer (0.33 liter bottle)")[2]] <- paste0("Imported Beer (0.33 liter bottle)" , " at market")
   mainTable <- suppressWarnings(tidyr::separate(mainTable, range, c("min", "max"), sep = "-", remove = TRUE))
   mainTable <- mainTable %>% mutate("currency" = currency)
   
@@ -54,10 +58,11 @@ getMainValues <- function(city = city_search_bar, currency = "PLN") {
   
   rent_value_outside_city <- mainTable %>% filter(variable == "Apartment (1 bedroom) Outside of Centre") %>% select(2)
   rent_value_outside_city <- rent_value_outside_city %>% str_replace_all(c("," = "", "z³" = "")) %>% str_trim() %>% as.numeric()
-  #return(mainTable)
-  return(list=c("Miesiêczne wydatki" = monthly_value_single, "Index"= city_rank_index, "Miesieczny czynsz" = rent_value_outside_city))
+  return(mainTable)
+  #return(list=c("Miesiêczne wydatki" = monthly_value_single, "Index"= city_rank_index, "Miesieczny czynsz" = rent_value_outside_city))
 }
-
+# Test run
+# res <- getMainValues("Warsaw", "PLN")
 
 # Define table
 tableDefinition <- function(variable = NULL, value = NULL, min = NULL, max = NULL, currency = NULL, city = NULL) {
