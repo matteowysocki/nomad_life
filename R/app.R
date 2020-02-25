@@ -1,18 +1,19 @@
 #####################################################################
 ######################### UI ########################################
 #####################################################################
-source('D:/analytics/shiny/nomad_life/library.R')
-source('D:/analytics/shiny/nomad_life/function.R')
+INPUT_DIR <- "D:/analytics/shiny/nomad_life"
+source(glue::glue(INPUT_DIR, "/R/library.R"))
+source(glue::glue(INPUT_DIR, "/R/function.R"))
 
 # Import UI Data
-data <- read.csv(file = "D:/analytics/shiny/nomad_life/data/city_list.txt", sep = ",", stringsAsFactors = FALSE)
+data <- read.csv(file = glue::glue(INPUT_DIR, "/data/city_list.txt", sep = ",", stringsAsFactors = FALSE))
 
 # Make a list of choices where each choice is of type list. Care should be take for one element list therefore second line
 choices <- lapply(data %>% split(data$Country), select, City)
 choices <- lapply(choices, function(x) unlist(x) %>% as.vector() %>% as.list())
 
 ui <- fluidPage(#theme = "bootstrap_dark_violet.css",
-  includeCSS("header_style.css"),
+  includeCSS(glue::glue(INPUT_DIR, "/www/header_style.css")),
   #Style
   setBackgroundColor(
     color = c("skyblue", "skyblue"),
@@ -63,8 +64,8 @@ server <- function(input, output, session) {
   observeEvent(input$do, {
     
     # Import server Data
-    data_dict   <- read.csv(file = "D:/analytics/shiny/nomad_life/data/city_list.txt", sep = ",", stringsAsFactors = FALSE)
-    data_values <- read.csv(file = "D:/analytics/shiny/nomad_life/data/city_data.txt", sep = "\t", stringsAsFactors = FALSE)
+    data_dict   <- read.csv(file = glue::glue(INPUT_DIR, "/data/city_list.txt", sep = ",", stringsAsFactors = FALSE))
+    data_values <- read.csv(file = glue::glue(INPUT_DIR, "/data/city_data.txt", sep = "\t", stringsAsFactors = FALSE))
     data_server <- data_values %>% inner_join(data_dict, by = c("city" = "City_Search_Bar"))
     
     output$data <- renderTable({
