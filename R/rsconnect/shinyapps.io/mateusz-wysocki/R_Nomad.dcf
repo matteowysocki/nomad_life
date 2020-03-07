@@ -1,0 +1,12 @@
+name: R_Nomad
+title: R_Nomad
+username:
+account: mateusz-wysocki
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 1910785
+bundleId: 2855411
+url: https://mateusz-wysocki.shinyapps.io/R_Nomad/
+when: 1583448384.85883
+asMultiple: FALSE
+asStatic: FALSE
