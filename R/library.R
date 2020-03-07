@@ -1,17 +1,41 @@
-library(shinyWidgets)
-library(shiny)
+# general visualisation
+library(ggplot2) # visualisation
+library(scales) # visualisation
+library(RColorBrewer) # visualisation
+library(corrplot) # visualisation
+
+# general data manipulation
+library(dplyr) # data manipulation
+library(readr) # input/output
+library(vroom) # input/output
+library(skimr) # overview
+library(tibble) # data wrangling
+library(tidyr) # data wrangling
+library(purrr) # data wrangling
+library(stringr) # string manipulation
+
+# specific visualisation
+#library('alluvial') # visualisation
+library(ggrepel) # visualisation
+library(ggthemes) # visualisation
+
+
+# Date + forecast
+library(lubridate) # date and time
+#library('forecast') # time series analysis
+#library('prophet') # time series analysis
+
+# Interactivity
 library(plotly)
-library(ggplot2)
-library(ggthemes)
-library(rvest)
-library(stringr)
-library(plyr)
-library(dplyr)
-library(knitr)
-library(selectr)
-library(xml2)
-library(stringr)
+library(shiny)
+library(shinyWidgets)
+library(here)
+
+# Scraping
 library(RCurl)
-library(scales)
-library(glue)
-options(scipen=999)
+library(rvest)
+library(httr)
+# parallel
+#library('foreach')
+#library('doParallel')
+

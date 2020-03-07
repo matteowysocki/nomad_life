@@ -12,8 +12,7 @@ getMainValues <- function(city = city_search_bar, currency = "PLN") {
   
   # `Find tag based on class .emp_number. Found manually how to systematically search for such values?
   SuplNodes   <- html_nodes(mainSource, ".emp_number" )
-  SuplNodes   <- html_nodes(mainSource, "div" )
-  suplVector <- sapply(SuplNodes, html_text, simplify = TRUE)
+  suplVector <-  sapply(SuplNodes, html_text, simplify = TRUE)
   
   ### 1. A single person monthly costs without rent.
   # Raw form A single person monthly costs
@@ -37,7 +36,15 @@ getMainValues <- function(city = city_search_bar, currency = "PLN") {
     city_rank_index <- NA
   } else city_rank_index <- suplVector[which(is_index == TRUE)]
   
-  ### 3. Get and clean big table
+  ### 3. Get information on how many people took a survey
+  surveyInfoNodes <- html_nodes(mainSource, ".align_like_price_table" ) 
+  survey_info_text <- surveyInfoNodes %>% html_text() %>%
+    str_split("\\n") %>% unlist() 
+  survey_info_text <- survey_info_text[sapply(survey_info_text, function(x) str_length(x) > 0)]
+  survey_respondents_info <- survey_info_text[1]
+  survey_update_info      <- survey_info_text[2]
+  
+  ### 4. Get and clean big table
   TableNode <- html_nodes(mainSource, ".data_wide_table" )
   mainTable <- TableNode[[1]] %>% html_table()
   colnames(mainTable) <- c("variable", "value", "range")
@@ -52,17 +59,26 @@ getMainValues <- function(city = city_search_bar, currency = "PLN") {
   mainTable <- mainTable %>% mutate("currency" = currency)
   
   ### 4. Add previous values to data.frame
-  mainTable[nrow(mainTable) + 1, ] <- c("Miesiêczne Wydatki Dla Singla", monthly_value_single, NA, NA, "PLN")
-  mainTable[nrow(mainTable) + 1, ] <- c("Index Miasta", city_rank_index, NA, NA, "PLN")
+  mainTable[nrow(mainTable) + 1, ] <- c("A single person monthly costs", monthly_value_single, NA, NA, "PLN")
+  mainTable[nrow(mainTable) + 1, ] <- c("Cost of living index", city_rank_index, NA, NA, "PLN")
+  mainTable[nrow(mainTable) + 1, ] <- c("Survey respondents info", survey_respondents_info, NA, NA, "PLN")
+  mainTable[nrow(mainTable) + 1, ] <- c("Survey update info", survey_update_info, NA, NA, "PLN")
   mainTable <- mainTable %>% mutate("city" = city)
   
   rent_value_outside_city <- mainTable %>% filter(variable == "Apartment (1 bedroom) Outside of Centre") %>% select(2)
   rent_value_outside_city <- rent_value_outside_city %>% str_replace_all(c("," = "", "z³" = "")) %>% str_trim() %>% as.numeric()
+  
+  ### Whitespace cleaning for entire table
+  mainTable <- mainTable %>%
+    mutate_if(is.character, str_trim)
+  
   return(mainTable)
   #return(list=c("Miesiêczne wydatki" = monthly_value_single, "Index"= city_rank_index, "Miesieczny czynsz" = rent_value_outside_city))
 }
 # Test run
 # res <- getMainValues("Warsaw", "PLN")
+
+data_serv <- read.csv(file = "D:/analytics/shiny/nomad_life/data/city_list.txt", sep = ",", stringsAsFactors = FALSE)
 
 # Define table
 tableDefinition <- function(variable = NULL, value = NULL, min = NULL, max = NULL, currency = NULL, city = NULL) {
@@ -98,7 +114,9 @@ for (city in data_serv$City_Search_Bar) {
  }
 tictoc::toc()
 # Writing file
-xx <- res
+backup <- res 
+res <- res %>% 
+  mutate_at(vars(min, max), as.numeric)
 write.table(x    = res,
             file = "D:/analytics/shiny/nomad_life/data/city_data.txt",
             col.names = TRUE,
@@ -108,5 +126,6 @@ write.table(x    = res,
             #fileEncoding  = "UTF-8"
 )
 
-
+city_values <- read.csv(file = "D:/analytics/shiny/nomad_life/data/city_data.txt", sep = "\t", stringsAsFactors = FALSE)
+backup_city_values <- read.csv(file = "D:/analytics/shiny/nomad_life/data/backup_city_data.txt", sep = "\t", stringsAsFactors = FALSE)
 
