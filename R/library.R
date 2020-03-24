@@ -1,5 +1,6 @@
 # general visualisation
 library(ggplot2) # visualisation
+library(plotly)
 library(scales) # visualisation
 library(RColorBrewer) # visualisation
 library(corrplot) # visualisation
@@ -8,7 +9,7 @@ library(corrplot) # visualisation
 library(dplyr) # data manipulation
 library(readr) # input/output
 library(vroom) # input/output
-library(skimr) # overview
+#library(skimr) # overview
 library(tibble) # data wrangling
 library(tidyr) # data wrangling
 library(purrr) # data wrangling
@@ -26,7 +27,7 @@ library(lubridate) # date and time
 #library('prophet') # time series analysis
 
 # Interactivity
-library(plotly)
+library(rsconnect)
 library(shiny)
 library(shinyWidgets)
 library(here)
