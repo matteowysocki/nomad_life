@@ -41,7 +41,7 @@ write.table(x    = df,
           fileEncoding  = "UTF-8"
           ) 
 
-data <- read.csv(file = "D:/analytics/shiny/nomad_life/data/city_list.txt", sep = ",")
+#data <- read.csv(file = "D:/analytics/shiny/nomad_life/data/city_list.txt", sep = ",")
 
   
 

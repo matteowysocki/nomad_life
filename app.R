@@ -1,7 +1,7 @@
 #####################################################################
 ######################### UI ########################################
 #####################################################################
-Sys.setlocale(category = "LC_ALL", locale = "Polish")
+#Sys.setlocale("LC_CTYPE", 'Polish')
 #INPUT_DIR <- "D:/analytics/shiny/nomad_life/"
 #INPUT_DIR <- here::here()
 INPUT_DIR <- ""
@@ -10,7 +10,7 @@ source(glue::glue(INPUT_DIR, "R/library.R"))
 
 ### DATA PREP
 # Import UI Data
-data <- read.csv(file = glue::glue(INPUT_DIR, "data/city_list.txt"), sep = ",", stringsAsFactors = FALSE)
+data <- read.csv(file = glue::glue(INPUT_DIR, "data/city_list.txt"), sep = ",", stringsAsFactors = FALSE) #, encoding = "UTF-8"
 
 # Make a list of choices where each choice is of type list. Care should be take for one element list therefore second line
 choices <- lapply(data %>% split(data$Country), select, City)
@@ -22,9 +22,9 @@ ui <- fluidPage(#theme = "bootstrap_dark_violet.css",
   
   # Background style
   setBackgroundColor(
-    color = c("#DCDCDC", "#4169E1"), #skyblue
-    gradient = "radial",
-    direction = "right",
+    color = c("#DCDCDC", "skyblue"), #skyblue
+    gradient = "linear",
+    direction = "left",
     shinydashboard = FALSE
     ),
   
