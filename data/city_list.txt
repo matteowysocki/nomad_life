@@ -1,441 +1,441 @@
-Country,City,City_Search_Bar
-Switzerland,Zurich,Zurich
-Switzerland,Basel,Basel
-Switzerland,Lausanne,Lausanne
-Switzerland,Geneva,Geneva
-Switzerland,Bern,Bern
-Norway,Stavanger,Stavanger
-Norway,Oslo,Oslo
-Norway,Trondheim,Trondheim
-Iceland,Reykjavik,Reykjavik
-Norway,Bergen,Bergen
-United States,New York,New-York
-United States,San Francisco,San-Francisco
-United States,Anchorage,Anchorage
-United States,Honolulu,Honolulu
-United States,Brooklyn,Brooklyn
-Denmark,Aalborg,Aalborg
-United States,Washington,Washington
-Japan,Tokyo,Tokyo
-United States,Oakland,Oakland
-Israel,Tel Aviv-Yafo,Tel-Aviv-Yafo
-Denmark,Copenhagen,Copenhagen
-United States,Seattle,Seattle
-South Korea,Seoul,Seoul
-France,Paris,Paris
-Luxembourg,Luxembourg,Luxembourg
-United States,Boston,Boston
-United States,Bellevue,Bellevue
-United Kingdom,London,London
-Singapore,Singapore,Singapore
-Denmark,Arhus,Arhus
-Israel,Haifa,Haifa
-United States,Chicago,Chicago
-Japan,Osaka,Osaka
-Israel,Jerusalem,Jerusalem
-United States,Sarasota,Sarasota
-Ireland,Dublin,Dublin
-Australia,Sydney,Sydney
-Netherlands,Amsterdam,Amsterdam
-United States,Philadelphia,Philadelphia
-United States,San Jose,San-Jose
-United States,Portland,Portland
-Canada,Toronto,Toronto
-United States,New Orleans,New-Orleans
-Hong Kong,Hong Kong,Hong-Kong
-United States,Sacramento,Sacramento
-Ireland,Cork,Cork
-Italy,Milan,Milan
-Netherlands,Utrecht,Utrecht
-United States,Minneapolis,Minneapolis
-United States,Los Angeles,Los-Angeles
-Australia,Darwin,Darwin
-Sweden,Stockholm,Stockholm
-New Zealand,Auckland,Auckland
-Denmark,Odense,Odense
-Austria,Linz,Linz
-Sweden,Uppsala,Uppsala
-United Kingdom,Brighton,Brighton
-United States,Albany,Albany
-Austria,Innsbruck,Innsbruck
-Ireland,Galway,Galway
-Australia,Canberra,Canberra
-Netherlands,Haarlem,Haarlem
-Australia,Newcastle,Newcastle
-United States,Jacksonville,Jacksonville
-Austria,Graz,Graz
-United States,Baltimore,Baltimore
-United States,San Diego,San-Diego
-United States,Miami,Miami
-Australia,Perth,Perth
-United States,Buffalo,Buffalo
-Canada,Vancouver,Vancouver
-United States,Atlanta,Atlanta
-United States,Reno,Reno
-Netherlands,Eindhoven,Eindhoven
-United States,Pittsburgh,Pittsburgh
-France,Lyon,Lyon
-United States,Denver,Denver
-United States,Nashville,Nashville
-New Zealand,Christchurch,Christchurch
-United Kingdom,Bristol,Bristol
-Australia,Gold Coast,Gold-Coast
-Netherlands,Leiden,Leiden
-United Kingdom,Reading,Reading
-Australia,Brisbane,Brisbane
-Belgium,Gent,Gent
-France,Marseille,Marseille
-Australia,Melbourne,Melbourne
-United States,Charlotte,Charlotte
-Netherlands,The Hague (Den Haag),The-Hague-Den-Haag-Netherlands
-Finland,Helsinki,Helsinki
-Canada,Halifax,Halifax
-Belgium,Brussels,Brussels
-Italy,Florence,Florence
-United Kingdom,Cambridge,Cambridge
-Netherlands,Groningen,Groningen
-Germany,Munich,Munich
-France,Montpellier,Montpellier
-United States,Tucson,Tucson
-France,Toulouse,Toulouse
-United States,Olympia,Olympia
-Canada,Victoria,Victoria
-Italy,Genoa,Genoa
-Germany,Hamburg,Hamburg
-Sweden,Gothenburg,Gothenburg
-Belgium,Antwerp,Antwerp
-United States,Colorado Springs,Colorado-Springs
-United Kingdom,Oxford,Oxford
-United States,Tacoma,Tacoma
-United States,Saint Louis,Saint-Louis
-Finland,Tampere,Tampere
-Canada,Calgary,Calgary
-United States,Columbus,Columbus
-New Zealand,Wellington,Wellington
-Italy,Rome,Rome
-United Kingdom,York,York
-Puerto Rico,San Juan,San-Juan
-Italy,Bologna,Bologna
-United Kingdom,Aberdeen,Aberdeen
-United Kingdom,Edinburgh,Edinburgh
-Canada,Saint John's,Saint-John's
-Germany,Heidelberg,Heidelberg
-Sweden,Malmo,Malmo
-United States,Raleigh,Raleigh
-Germany,Frankfurt,Frankfurt
-Ireland,Limerick,Limerick
-Netherlands,Rotterdam,Rotterdam
-Canada,Edmonton,Edmonton
-United Kingdom,Leicester,Leicester
-Canada,Saskatoon,Saskatoon
-United States,Kansas City,Kansas-City
-Malta,Sliema,Sliema
-Australia,Hobart,Hobart
-Finland,Espoo,Espoo
-Canada,Ottawa,Ottawa
-Australia,Adelaide,Adelaide
-United Kingdom,Manchester,Manchester
-Canada,Regina,Regina
-Canada,Quebec City,Quebec-City
-United Kingdom,Dundee,Dundee
-United States,Dallas,Dallas
-Germany,Bonn,Bonn
-United States,Austin,Austin
-Germany,Stuttgart,Stuttgart
-United States,Las Vegas,Las-Vegas
-United Kingdom,Birmingham,Birmingham
-United States,Phoenix,Phoenix
-Canada,Montreal,Montreal
-United States,Richmond,Richmond
-United States,Tampa,Tampa
-Germany,Dusseldorf,Dusseldorf
-France,Lille,Lille
-United Arab Emirates,Dubai,Dubai
-United States,Louisville,Louisville
-Germany,Nuremberg,Nuremberg
-Italy,Turin,Turin
-United Kingdom,Nottingham,Nottingham
-United States,Indianapolis,Indianapolis
-United Kingdom,Derby,Derby
-United Kingdom,Southampton,Southampton
-Germany,Mannheim,Mannheim
-United Kingdom,Newcastle upon Tyne,Newcastle-Upon-Tyne
-Canada,Brampton,Brampton
-United Kingdom,Glasgow,Glasgow
-United States,San Antonio,San-Antonio
-United States,Orlando,Orlando
-Austria,Vienna,Vienna
-Germany,Cologne,Cologne
-United States,Houston,Houston
-United Kingdom,Cardiff,Cardiff
-United Kingdom,Leeds,Leeds
-Germany,Berlin,Berlin
-United States,Salt Lake City,Salt-Lake-City
-United States,Madison,Madison
-Germany,Essen,Essen
-Taiwan,Taipei,Taipei
-United States,Tulsa,Tulsa
-Canada,Hamilton,Hamilton
-United Kingdom,Liverpool,Liverpool
-Qatar,Doha,Doha
-United States,Detroit,Detroit
-Germany,Bremen,Bremen
-Canada,Winnipeg,Winnipeg
-Canada,Kitchener,Kitchener
-Lebanon,Beirut,Beirut
-Germany,Leipzig,Leipzig
-United Arab Emirates,Abu Dhabi,Abu-Dhabi
-Cyprus,Nicosia,Nicosia
-United Kingdom,Sheffield,Sheffield
-Germany,Hanover,Hanover
-Cyprus,Limassol,Limassol
-Germany,Dresden,Dresden
-United Kingdom,Belfast,Belfast
-United States,Cincinnati,Cincinnati
-Italy,Naples,Naples
-Germany,Karlsruhe,Karlsruhe
-Germany,Aachen,Aachen
-United States,Boise,Boise
-Canada,London,London
-United States,Little Rock,Little-Rock
-Spain,Palma de Mallorca,Palma-De-Mallorca
-Bahrain,Manama,Manama
-Spain,Barcelona,Barcelona
-United Kingdom,Kingston upon Hull,Kingston-Upon-Hull
-Costa Rica,San Jose,San-Jose
-Italy,Catania,Catania
-Spain,Madrid,Madrid
-Jamaica,Kingston,Kingston
-Spain,Granada,Granada
-Greece,Athens,Athens
-Panama,Panama City,Panama-City
-Thailand,Bangkok,Bangkok
-Jordan,Amman,Amman
-Greece,Thessaloniki,Thessaloniki
-Italy,Palermo,Palermo
-Slovenia,Ljubljana,Ljubljana
-Greece,Patras,Patras
-Greece,Heraklion,Heraklion
-Cyprus,Paphos,Paphos
-United Arab Emirates,Sharjah,Sharjah
-Estonia,Tallinn,Tallinn
-United States,El Paso,El-Paso
-Spain,Alicante,Alicante
-Spain,Las Palmas de Gran Canaria,Las-Palmas
-Kuwait,Kuwait City,Kuwait-City
-Spain,Valencia,Valencia
-Portugal,Braga,Braga
-Portugal,Lisbon,Lisbon
-Uruguay,Montevideo,Montevideo
-Oman,Muscat,Muscat
-Spain,Seville (Sevilla),Sevilla
-Thailand,Pattaya,Pattaya
-Spain,Malaga,Malaga
-Croatia,Zagreb,Zagreb
-Croatia,Split,Split
-China,Shanghai,Shanghai
-Saudi Arabia,Jeddah (Jiddah),Jeddah-Jiddah
-Estonia,Tartu,Tartu
-Portugal,Porto,Porto
-Slovenia,Maribor,Maribor
-Thailand,Phuket,Phuket
-Latvia,Riga,Riga
-Spain,Santa Cruz de Tenerife,Santa-Cruz-De-Tenerife
-United Arab Emirates,Ajman,Ajman
-Czech Republic,Prague,Prague
-Saudi Arabia,Ad Dammam,Ad-Dammam
-Portugal,Coimbra,Coimbra
-Croatia,Rijeka,Rijeka
-Slovakia,Bratislava,Bratislava
-Saudi Arabia,Riyadh,Riyadh
-El Salvador,San Salvador,San-Salvador
-Russia,Moscow,Moscow
-South Africa,Pretoria,Pretoria
-Cambodia,Phnom Penh,Phnom-Penh
-Thailand,Chiang Mai,Chiang-Mai
-Czech Republic,Brno,Brno
-South Africa,Johannesburg,Johannesburg
-Brazil,Sao Paulo,Sao-Paulo
-Croatia,Osijek,Osijek
-Dominican Republic,Santo Domingo,Santo-Domingo
-Chile,Santiago,Santiago
-China,Beijing,Beijing
-South Africa,Cape Town,Cape-Town
-Lithuania,Kaunas,Kaunas
-Slovakia,Kosice,Kosice
-Indonesia,Jakarta,Jakarta
-Lithuania,Vilnius,Vilnius
-Czech Republic,Olomouc,Olomouc
-China,Shenzhen,Shenzhen
-Guatemala,Guatemala City,Guatemala-City
-Poland,Warsaw,Warsaw
-Namibia,Windhoek,Windhoek
-Ecuador,Quito,Quito
-Ecuador,Guayaquil,Guayaquil
-Hungary,Budapest,Budapest
-Russia,Vladivostok,Vladivostok
-Suriname,Paramaribo,Paramaribo
-Czech Republic,Ostrava,Ostrava
-Brazil,Rio de Janeiro,Rio-De-Janeiro
-Peru,Lima,Lima
-Malaysia,Kuala Lumpur,Kuala-Lumpur
-Poland,Gdynia,Gdynia
-Kenya,Nairobi,Nairobi
-Iraq,Baghdad,Baghdad
-Russia,Saint Petersburg,Saint-Petersburg
-Iran,Tehran,Tehran
-Iraq,Erbil (Irbil),Erbil-Irbil-Iraq
-Poland,Gdansk,Gdansk
-Poland,Krakow (Cracow),Krakow-Cracow
-China,Guangzhou,Guangzhou
-Poland,Wroclaw,Wroclaw
-Malaysia,Penang,Penang
-Brazil,Campinas,Campinas
-China,Nanjing,Nanjing
-Poland,Poznan,Poznan
-South Africa,Durban,Durban
-Brazil,Curitiba,Curitiba
-Bulgaria,Sofia,Sofia
-Vietnam,Hanoi,Hanoi
-Poland,Bydgoszcz,Bydgoszcz
-China,Chengdu,Chengdu
-Montenegro,Podgorica,Podgorica
-Brazil,Porto Alegre,Porto-Alegre
-Poland,Lodz,Lodz
-Romania,Bucharest,Bucharest
-Hungary,Debrecen,Debrecen
-Russia,Nizhny Novgorod,Nizhny-Novgorod-Russia
-Romania,Constanta,Constanta
-Serbia,Belgrade,Belgrade
-Philippines,Manila,Manila
-Mexico,Tijuana,Tijuana
-Hungary,Szeged,Szeged
-Mexico,Monterrey,Monterrey
-Mexico,Cancun,Cancun
-Albania,Tirana,Tirana
-Bosnia And Herzegovina,Sarajevo,Sarajevo
-Russia,Volgograd,Volgograd-Russia
-Mexico,Mexico City,Mexico-City
-Russia,Yekaterinburg,Yekaterinburg
-Philippines,Cebu,Cebu
-Poland,Szczecin,Szczecin
-Vietnam,Ho Chi Minh City,Ho-Chi-Minh-City
-Russia,Krasnoyarsk,Krasnoyarsk
-Brazil,Belo Horizonte,Belo-Horizonte
-Russia,Samara,Samara
-Turkey,Istanbul,Istanbul
-Morocco,Casablanca,Casablanca
-Russia,Rostov-na-donu,Rostov-na-donu
-Mexico,Queretaro,Queretaro
-Russia,Kaliningrad,Kaliningrad
-Russia,Novosibirsk,Novosibirsk
-Poland,Katowice,Katowice
-Morocco,Tangier,Tangier
-Bulgaria,Varna,Varna
-Bosnia And Herzegovina,Banja Luka,Banja-Luka
-Morocco,Rabat,Rabat
-Russia,Irkutsk,Irkutsk-Russia
-Nigeria,Lagos,Lagos
-Poland,Lublin,Lublin
-Bulgaria,Plovdiv,Plovdiv
-Russia,Kazan,Kazan
-Romania,Cluj-Napoca,Cluj-napoca
-Russia,Perm,Perm
-Russia,Ufa,Ufa
-Romania,Brasov,Brasov
-Belarus,Minsk,Minsk
-Russia,Voronezh,Voronezh
-Ukraine,Kiev (Kyiv),Kiev
-Mexico,Guadalajara,Guadalajara
-Romania,Iasi,Iasi
-Russia,Krasnodar,Krasnodar
-Russia,Chelyabinsk,Chelyabinsk
-Indonesia,Bandung,Bandung
-Russia,Saratov,Saratov
-Romania,Sibiu,Sibiu
-Romania,Timisoara,Timisoara
-Serbia,Novi Sad,Novi-Sad
-Russia,Tomsk,Tomsk
-Bulgaria,Burgas,Burgas
-Romania,Oradea,Oradea
-Turkey,Bursa,Bursa
-Ukraine,Odessa (Odesa),Odesa
-Turkey,Ankara,Ankara
-Mongolia,Ulaanbaatar,Ulaanbaatar
-Ecuador,Cuenca,Cuenca
-Romania,Arad,Arad
-Russia,Izhevsk,Izhevsk
-Argentina,Buenos Aires,Buenos-Aires
-North Macedonia,Skopje,Skopje
-Mexico,Puebla,Puebla
-Bangladesh,Dhaka,Dhaka
-Moldova,Chisinau,Chisinau
-Sri Lanka,Colombo,Colombo
-Indonesia,Yogyakarta,Yogyakarta
-Morocco,Agadir,Agadir
-Mexico,Merida,Merida
-Ukraine,Kharkiv,Kharkiv
-Turkey,Izmir,Izmir
-Serbia,Nis,Nis
-Colombia,Bogota,Bogota
-Armenia,Yerevan,Yerevan
-Ukraine,Mykolaiv,Mykolayiv-Ukraine
-Romania,Craiova,Craiova
-Ukraine,Dnipro,Dnipropetrovsk
-Ukraine,Vinnytsia,Vinnytsya-Ukraine
-Ukraine,Lviv,Lviv
-Kazakhstan,Astana,Astana
-Turkey,Antalya,Antalya
-Algeria,Algiers,Algiers
-Kazakhstan,Almaty,Almaty
-Azerbaijan,Baku,Baku
-Paraguay,Asuncion,Asuncion
-Ukraine,Ternopil,Ternopil-Ukraine
-Egypt,Cairo,Cairo-Egypt
-Nepal,Kathmandu,Kathmandu
-Ukraine,Zaporizhzhya,Zaporizhzhya
-India,Gurgaon,Gurgaon
-Colombia,Medellin,Medellin
-Kosovo (Disputed Territory),Pristina,Pristina
-India,Mumbai,Mumbai
-Colombia,Cali,Cali
-Egypt,Alexandria,Alexandria
-India,Chandigarh,Chandigarh
-Tunisia,Tunis,Tunis
-Georgia,Tbilisi,Tbilisi
-India,Delhi,Delhi
-Syria,Damascus,Damascus
-Venezuela,Caracas,Caracas
-India,Noida,Noida
-India,Pune,Pune
-Kyrgyzstan,Bishkek,Bishkek
-India,Thane,Thane
-India,Bangalore,Bangalore
-Uzbekistan,Tashkent,Tashkent
-India,Indore,Indore
-India,Goa,Goa
-India,Ahmedabad,Ahmedabad
-India,Navi Mumbai,Navi-Mumbai
-India,Chennai,Chennai
-India,Hyderabad,Hyderabad
-India,Jaipur,Jaipur
-India,Vadodara,Vadodara
-India,Patna,Patna
-India,Guwahati,Guwahati
-India,Kolkata,Kolkata
-India,Rajkot,Rajkot
-India,Kochi,Kochi
-India,Coimbatore,Coimbatore
-India,Surat,Surat
-India,Mangalore,Mangalore
-India,Nagpur,Nagpur
-Pakistan,Lahore,Lahore
-India,Bhopal,Bhopal
-India,Lucknow (Lakhnau),Lucknow-Lakhnau
-India,Mysore,Mysore
-India,Bhubaneswar,Bhubaneswar
-Pakistan,Karachi,Karachi
-Pakistan,Islamabad,Islamabad
-India,Vijayawada,Vijayawada
-India,Visakhapatnam,Visakhapatnam
-India,Thiruvananthapuram,Thiruvananthapuram
+Country	City	City_Search_Bar	City_Geo_Data	Country_Geo_Data
+Switzerland	Zurich	Zurich	Zurich	Switzerland
+Switzerland	Basel	Basel	Basel	Switzerland
+Switzerland	Lausanne	Lausanne	Lausanne	Switzerland
+Switzerland	Geneva	Geneva	Geneva	Switzerland
+Switzerland	Bern	Bern	Bern	Switzerland
+Norway	Stavanger	Stavanger	Stavanger	Norway
+Norway	Oslo	Oslo	Oslo	Norway
+Norway	Trondheim	Trondheim	Trondheim	Norway
+Iceland	Reykjavik	Reykjavik	Reykjavik	Iceland
+Norway	Bergen	Bergen	Bergen	Norway
+United States	New York	New-York	New York	United States
+United States	San Francisco	San-Francisco	San Francisco	United States
+United States	Anchorage	Anchorage	Anchorage	United States
+United States	Honolulu	Honolulu	Honolulu	United States
+United States	Brooklyn	Brooklyn	Brooklyn	United States
+Denmark	Aalborg	Aalborg	Aalborg	Denmark
+United States	Washington	Washington	Washington	United States
+Japan	Tokyo	Tokyo	Tokyo	Japan
+United States	Oakland	Oakland	Oakland	United States
+Israel	Tel Aviv-Yafo	Tel-Aviv-Yafo	Tel Aviv-Yafo	Israel
+Denmark	Copenhagen	Copenhagen	Copenhagen	Denmark
+United States	Seattle	Seattle	Seattle	United States
+South Korea	Seoul	Seoul	Seoul	South Korea
+France	Paris	Paris	Paris	France
+Luxembourg	Luxembourg	Luxembourg	Luxembourg	Luxembourg
+United States	Boston	Boston	Boston	United States
+United States	Bellevue	Bellevue	Bellevue	United States
+United Kingdom	London	London	London	United Kingdom
+Singapore	Singapore	Singapore	Singapore	Singapore
+Denmark	Arhus	Arhus	Arhus	Denmark
+Israel	Haifa	Haifa	Haifa	Israel
+United States	Chicago	Chicago	Chicago	United States
+Japan	Osaka	Osaka	Osaka	Japan
+Israel	Jerusalem	Jerusalem	Jerusalem	Israel
+United States	Sarasota	Sarasota	Sarasota	United States
+Ireland	Dublin	Dublin	Dublin	Ireland
+Australia	Sydney	Sydney	Sydney	Australia
+Netherlands	Amsterdam	Amsterdam	Amsterdam	Netherlands
+United States	Philadelphia	Philadelphia	Philadelphia	United States
+United States	San Jose	San-Jose	San Jose	United States
+United States	Portland	Portland	Portland	United States
+Canada	Toronto	Toronto	Toronto	Canada
+United States	New Orleans	New-Orleans	New Orleans	United States
+Hong Kong	Hong Kong	Hong-Kong	Hong Kong	Hong Kong
+United States	Sacramento	Sacramento	Sacramento	United States
+Ireland	Cork	Cork	Cork	Ireland
+Italy	Milan	Milan	Milan	Italy
+Netherlands	Utrecht	Utrecht	Utrecht	Netherlands
+United States	Minneapolis	Minneapolis	Minneapolis	United States
+United States	Los Angeles	Los-Angeles	Los Angeles	United States
+Australia	Darwin	Darwin	Darwin	Australia
+Sweden	Stockholm	Stockholm	Stockholm	Sweden
+New Zealand	Auckland	Auckland	Auckland	New Zealand
+Denmark	Odense	Odense	Odense	Denmark
+Austria	Linz	Linz	Linz	Austria
+Sweden	Uppsala	Uppsala	Uppsala	Sweden
+United Kingdom	Brighton	Brighton	Brighton	United Kingdom
+United States	Albany	Albany	Albany	United States
+Austria	Innsbruck	Innsbruck	Innsbruck	Austria
+Ireland	Galway	Galway	Galway	Ireland
+Australia	Canberra	Canberra	Canberra	Australia
+Netherlands	Haarlem	Haarlem	Haarlem	Netherlands
+Australia	Newcastle	Newcastle	Newcastle	Australia
+United States	Jacksonville	Jacksonville	Jacksonville	United States
+Austria	Graz	Graz	Graz	Austria
+United States	Baltimore	Baltimore	Baltimore	United States
+United States	San Diego	San-Diego	San Diego	United States
+United States	Miami	Miami	Miami	United States
+Australia	Perth	Perth	Perth	Australia
+United States	Buffalo	Buffalo	Buffalo	United States
+Canada	Vancouver	Vancouver	Vancouver	Canada
+United States	Atlanta	Atlanta	Atlanta	United States
+United States	Reno	Reno	Reno	United States
+Netherlands	Eindhoven	Eindhoven	Eindhoven	Netherlands
+United States	Pittsburgh	Pittsburgh	Pittsburgh	United States
+France	Lyon	Lyon	Lyon	France
+United States	Denver	Denver	Denver	United States
+United States	Nashville	Nashville	Nashville	United States
+New Zealand	Christchurch	Christchurch	Christchurch	New Zealand
+United Kingdom	Bristol	Bristol	Bristol	United Kingdom
+Australia	Gold Coast	Gold-Coast	Gold Coast	Australia
+Netherlands	Leiden	Leiden	Leiden	Netherlands
+United Kingdom	Reading	Reading	Reading	United Kingdom
+Australia	Brisbane	Brisbane	Brisbane	Australia
+Belgium	Gent	Gent	Gent	Belgium
+France	Marseille	Marseille	Marseille	France
+Australia	Melbourne	Melbourne	Melbourne	Australia
+United States	Charlotte	Charlotte	Charlotte	United States
+Netherlands	The Hague (Den Haag)	The-Hague-Den-Haag-Netherlands	The Hague (Den Haag)	Netherlands
+Finland	Helsinki	Helsinki	Helsinki	Finland
+Canada	Halifax	Halifax	Halifax	Canada
+Belgium	Brussels	Brussels	Brussels	Belgium
+Italy	Florence	Florence	Florence	Italy
+United Kingdom	Cambridge	Cambridge	Cambridge	United Kingdom
+Netherlands	Groningen	Groningen	Groningen	Netherlands
+Germany	Munich	Munich	Munich	Germany
+France	Montpellier	Montpellier	Montpellier	France
+United States	Tucson	Tucson	Tucson	United States
+France	Toulouse	Toulouse	Toulouse	France
+United States	Olympia	Olympia	Olympia	United States
+Canada	Victoria	Victoria	Victoria	Canada
+Italy	Genoa	Genoa	Genoa	Italy
+Germany	Hamburg	Hamburg	Hamburg	Germany
+Sweden	Gothenburg	Gothenburg	Gothenburg	Sweden
+Belgium	Antwerp	Antwerp	Antwerp	Belgium
+United States	Colorado Springs	Colorado-Springs	Colorado Springs	United States
+United Kingdom	Oxford	Oxford	Oxford	United Kingdom
+United States	Tacoma	Tacoma	Tacoma	United States
+United States	Saint Louis	Saint-Louis	Saint Louis	United States
+Finland	Tampere	Tampere	Tampere	Finland
+Canada	Calgary	Calgary	Calgary	Canada
+United States	Columbus	Columbus	Columbus	United States
+New Zealand	Wellington	Wellington	Wellington	New Zealand
+Italy	Rome	Rome	Rome	Italy
+United Kingdom	York	York	York	United Kingdom
+Puerto Rico	San Juan	San-Juan	San Juan	Puerto Rico
+Italy	Bologna	Bologna	Bologna	Italy
+United Kingdom	Aberdeen	Aberdeen	Aberdeen	United Kingdom
+United Kingdom	Edinburgh	Edinburgh	Edinburgh	United Kingdom
+Canada	Saint John's	Saint-John's	Saint John's	Canada
+Germany	Heidelberg	Heidelberg	Heidelberg	Germany
+Sweden	Malmo	Malmo	Malmo	Sweden
+United States	Raleigh	Raleigh	Raleigh	United States
+Germany	Frankfurt	Frankfurt	Frankfurt	Germany
+Ireland	Limerick	Limerick	Limerick	Ireland
+Netherlands	Rotterdam	Rotterdam	Rotterdam	Netherlands
+Canada	Edmonton	Edmonton	Edmonton	Canada
+United Kingdom	Leicester	Leicester	Leicester	United Kingdom
+Canada	Saskatoon	Saskatoon	Saskatoon	Canada
+United States	Kansas City	Kansas-City	Kansas City	United States
+Malta	Sliema	Sliema	Sliema	Malta
+Australia	Hobart	Hobart	Hobart	Australia
+Finland	Espoo	Espoo	Espoo	Finland
+Canada	Ottawa	Ottawa	Ottawa	Canada
+Australia	Adelaide	Adelaide	Adelaide	Australia
+United Kingdom	Manchester	Manchester	Manchester	United Kingdom
+Canada	Regina	Regina	Regina	Canada
+Canada	Quebec City	Quebec-City	Quebec City	Canada
+United Kingdom	Dundee	Dundee	Dundee	United Kingdom
+United States	Dallas	Dallas	Dallas	United States
+Germany	Bonn	Bonn	Bonn	Germany
+United States	Austin	Austin	Austin	United States
+Germany	Stuttgart	Stuttgart	Stuttgart	Germany
+United States	Las Vegas	Las-Vegas	Las Vegas	United States
+United Kingdom	Birmingham	Birmingham	Birmingham	United Kingdom
+United States	Phoenix	Phoenix	Phoenix	United States
+Canada	Montreal	Montreal	Montreal	Canada
+United States	Richmond	Richmond	Richmond	United States
+United States	Tampa	Tampa	Tampa	United States
+Germany	Dusseldorf	Dusseldorf	Dusseldorf	Germany
+France	Lille	Lille	Lille	France
+United Arab Emirates	Dubai	Dubai	Dubai	United Arab Emirates
+United States	Louisville	Louisville	Louisville	United States
+Germany	Nuremberg	Nuremberg	Nuremberg	Germany
+Italy	Turin	Turin	Turin	Italy
+United Kingdom	Nottingham	Nottingham	Nottingham	United Kingdom
+United States	Indianapolis	Indianapolis	Indianapolis	United States
+United Kingdom	Derby	Derby	Derby	United Kingdom
+United Kingdom	Southampton	Southampton	Southampton	United Kingdom
+Germany	Mannheim	Mannheim	Mannheim	Germany
+United Kingdom	Newcastle upon Tyne	Newcastle-Upon-Tyne	Newcastle upon Tyne	United Kingdom
+Canada	Brampton	Brampton	Brampton	Canada
+United Kingdom	Glasgow	Glasgow	Glasgow	United Kingdom
+United States	San Antonio	San-Antonio	San Antonio	United States
+United States	Orlando	Orlando	Orlando	United States
+Austria	Vienna	Vienna	Vienna	Austria
+Germany	Cologne	Cologne	Cologne	Germany
+United States	Houston	Houston	Houston	United States
+United Kingdom	Cardiff	Cardiff	Cardiff	United Kingdom
+United Kingdom	Leeds	Leeds	Leeds	United Kingdom
+Germany	Berlin	Berlin	Berlin	Germany
+United States	Salt Lake City	Salt-Lake-City	Salt Lake City	United States
+United States	Madison	Madison	Madison	United States
+Germany	Essen	Essen	Essen	Germany
+Taiwan	Taipei	Taipei	Taipei	Taiwan
+United States	Tulsa	Tulsa	Tulsa	United States
+Canada	Hamilton	Hamilton	Hamilton	Canada
+United Kingdom	Liverpool	Liverpool	Liverpool	United Kingdom
+Qatar	Doha	Doha	Doha	Qatar
+United States	Detroit	Detroit	Detroit	United States
+Germany	Bremen	Bremen	Bremen	Germany
+Canada	Winnipeg	Winnipeg	Winnipeg	Canada
+Canada	Kitchener	Kitchener	Kitchener	Canada
+Lebanon	Beirut	Beirut	Beirut	Lebanon
+Germany	Leipzig	Leipzig	Leipzig	Germany
+United Arab Emirates	Abu Dhabi	Abu-Dhabi	Abu Dhabi	United Arab Emirates
+Cyprus	Nicosia	Nicosia	Nicosia	Cyprus
+United Kingdom	Sheffield	Sheffield	Sheffield	United Kingdom
+Germany	Hanover	Hanover	Hanover	Germany
+Cyprus	Limassol	Limassol	Limassol	Cyprus
+Germany	Dresden	Dresden	Dresden	Germany
+United Kingdom	Belfast	Belfast	Belfast	United Kingdom
+United States	Cincinnati	Cincinnati	Cincinnati	United States
+Italy	Naples	Naples	Naples	Italy
+Germany	Karlsruhe	Karlsruhe	Karlsruhe	Germany
+Germany	Aachen	Aachen	Aachen	Germany
+United States	Boise	Boise	Boise	United States
+Canada	London	London	London	Canada
+United States	Little Rock	Little-Rock	Little Rock	United States
+Spain	Palma de Mallorca	Palma-De-Mallorca	Palma de Mallorca	Spain
+Bahrain	Manama	Manama	Manama	Bahrain
+Spain	Barcelona	Barcelona	Barcelona	Spain
+United Kingdom	Kingston upon Hull	Kingston-Upon-Hull	Kingston upon Hull	United Kingdom
+Costa Rica	San Jose	San-Jose	San Jose	Costa Rica
+Italy	Catania	Catania	Catania	Italy
+Spain	Madrid	Madrid	Madrid	Spain
+Jamaica	Kingston	Kingston	Kingston	Jamaica
+Spain	Granada	Granada	Granada	Spain
+Greece	Athens	Athens	Athens	Greece
+Panama	Panama City	Panama-City	Panama City	Panama
+Thailand	Bangkok	Bangkok	Bangkok	Thailand
+Jordan	Amman	Amman	Amman	Jordan
+Greece	Thessaloniki	Thessaloniki	Thessaloniki	Greece
+Italy	Palermo	Palermo	Palermo	Italy
+Slovenia	Ljubljana	Ljubljana	Ljubljana	Slovenia
+Greece	Patras	Patras	Patras	Greece
+Greece	Heraklion	Heraklion	Heraklion	Greece
+Cyprus	Paphos	Paphos	Paphos	Cyprus
+United Arab Emirates	Sharjah	Sharjah	Sharjah	United Arab Emirates
+Estonia	Tallinn	Tallinn	Tallinn	Estonia
+United States	El Paso	El-Paso	El Paso	United States
+Spain	Alicante	Alicante	Alicante	Spain
+Spain	Las Palmas de Gran Canaria	Las-Palmas	Las Palmas de Gran Canaria	Spain
+Kuwait	Kuwait City	Kuwait-City	Kuwait City	Kuwait
+Spain	Valencia	Valencia	Valencia	Spain
+Portugal	Braga	Braga	Braga	Portugal
+Portugal	Lisbon	Lisbon	Lisbon	Portugal
+Uruguay	Montevideo	Montevideo	Montevideo	Uruguay
+Oman	Muscat	Muscat	Muscat	Oman
+Spain	Seville (Sevilla)	Sevilla	Seville (Sevilla)	Spain
+Thailand	Pattaya	Pattaya	Pattaya	Thailand
+Spain	Malaga	Malaga	Malaga	Spain
+Croatia	Zagreb	Zagreb	Zagreb	Croatia
+Croatia	Split	Split	Split	Croatia
+China	Shanghai	Shanghai	Shanghai	China
+Saudi Arabia	Jeddah (Jiddah)	Jeddah-Jiddah	Jeddah (Jiddah)	Saudi Arabia
+Estonia	Tartu	Tartu	Tartu	Estonia
+Portugal	Porto	Porto	Porto	Portugal
+Slovenia	Maribor	Maribor	Maribor	Slovenia
+Thailand	Phuket	Phuket	Phuket	Thailand
+Latvia	Riga	Riga	Riga	Latvia
+Spain	Santa Cruz de Tenerife	Santa-Cruz-De-Tenerife	Santa Cruz de Tenerife	Spain
+United Arab Emirates	Ajman	Ajman	Ajman	United Arab Emirates
+Czech Republic	Prague	Prague	Prague	Czech Republic
+Saudi Arabia	Ad Dammam	Ad-Dammam	Ad Dammam	Saudi Arabia
+Portugal	Coimbra	Coimbra	Coimbra	Portugal
+Croatia	Rijeka	Rijeka	Rijeka	Croatia
+Slovakia	Bratislava	Bratislava	Bratislava	Slovakia
+Saudi Arabia	Riyadh	Riyadh	Riyadh	Saudi Arabia
+El Salvador	San Salvador	San-Salvador	San Salvador	El Salvador
+Russia	Moscow	Moscow	Moscow	Russia
+South Africa	Pretoria	Pretoria	Pretoria	South Africa
+Cambodia	Phnom Penh	Phnom-Penh	Phnom Penh	Cambodia
+Thailand	Chiang Mai	Chiang-Mai	Chiang Mai	Thailand
+Czech Republic	Brno	Brno	Brno	Czech Republic
+South Africa	Johannesburg	Johannesburg	Johannesburg	South Africa
+Brazil	Sao Paulo	Sao-Paulo	Sao Paulo	Brazil
+Croatia	Osijek	Osijek	Osijek	Croatia
+Dominican Republic	Santo Domingo	Santo-Domingo	Santo Domingo	Dominican Republic
+Chile	Santiago	Santiago	Santiago	Chile
+China	Beijing	Beijing	Beijing	China
+South Africa	Cape Town	Cape-Town	Cape Town	South Africa
+Lithuania	Kaunas	Kaunas	Kaunas	Lithuania
+Slovakia	Kosice	Kosice	Kosice	Slovakia
+Indonesia	Jakarta	Jakarta	Jakarta	Indonesia
+Lithuania	Vilnius	Vilnius	Vilnius	Lithuania
+Czech Republic	Olomouc	Olomouc	Olomouc	Czech Republic
+China	Shenzhen	Shenzhen	Shenzhen	China
+Guatemala	Guatemala City	Guatemala-City	Guatemala City	Guatemala
+Poland	Warsaw	Warsaw	Warsaw	Poland
+Namibia	Windhoek	Windhoek	Windhoek	Namibia
+Ecuador	Quito	Quito	Quito	Ecuador
+Ecuador	Guayaquil	Guayaquil	Guayaquil	Ecuador
+Hungary	Budapest	Budapest	Budapest	Hungary
+Russia	Vladivostok	Vladivostok	Vladivostok	Russia
+Suriname	Paramaribo	Paramaribo	Paramaribo	Suriname
+Czech Republic	Ostrava	Ostrava	Ostrava	Czech Republic
+Brazil	Rio de Janeiro	Rio-De-Janeiro	Rio de Janeiro	Brazil
+Peru	Lima	Lima	Lima	Peru
+Malaysia	Kuala Lumpur	Kuala-Lumpur	Kuala Lumpur	Malaysia
+Poland	Gdynia	Gdynia	Gdynia	Poland
+Kenya	Nairobi	Nairobi	Nairobi	Kenya
+Iraq	Baghdad	Baghdad	Baghdad	Iraq
+Russia	Saint Petersburg	Saint-Petersburg	Saint Petersburg	Russia
+Iran	Tehran	Tehran	Tehran	Iran
+Iraq	Erbil (Irbil)	Erbil-Irbil-Iraq	Erbil (Irbil)	Iraq
+Poland	Gdansk	Gdansk	Gdansk	Poland
+Poland	Krakow (Cracow)	Krakow-Cracow	Krakow (Cracow)	Poland
+China	Guangzhou	Guangzhou	Guangzhou	China
+Poland	Wroclaw	Wroclaw	Wroclaw	Poland
+Malaysia	Penang	Penang	Penang	Malaysia
+Brazil	Campinas	Campinas	Campinas	Brazil
+China	Nanjing	Nanjing	Nanjing	China
+Poland	Poznan	Poznan	Poznan	Poland
+South Africa	Durban	Durban	Durban	South Africa
+Brazil	Curitiba	Curitiba	Curitiba	Brazil
+Bulgaria	Sofia	Sofia	Sofia	Bulgaria
+Vietnam	Hanoi	Hanoi	Hanoi	Vietnam
+Poland	Bydgoszcz	Bydgoszcz	Bydgoszcz	Poland
+China	Chengdu	Chengdu	Chengdu	China
+Montenegro	Podgorica	Podgorica	Podgorica	Montenegro
+Brazil	Porto Alegre	Porto-Alegre	Porto Alegre	Brazil
+Poland	Lodz	Lodz	Lodz	Poland
+Romania	Bucharest	Bucharest	Bucharest	Romania
+Hungary	Debrecen	Debrecen	Debrecen	Hungary
+Russia	Nizhny Novgorod	Nizhny-Novgorod-Russia	Nizhny Novgorod	Russia
+Romania	Constanta	Constanta	Constanta	Romania
+Serbia	Belgrade	Belgrade	Belgrade	Serbia
+Philippines	Manila	Manila	Manila	Philippines
+Mexico	Tijuana	Tijuana	Tijuana	Mexico
+Hungary	Szeged	Szeged	Szeged	Hungary
+Mexico	Monterrey	Monterrey	Monterrey	Mexico
+Mexico	Cancun	Cancun	Cancun	Mexico
+Albania	Tirana	Tirana	Tirana	Albania
+Bosnia And Herzegovina	Sarajevo	Sarajevo	Sarajevo	Bosnia And Herzegovina
+Russia	Volgograd	Volgograd-Russia	Volgograd	Russia
+Mexico	Mexico City	Mexico-City	Mexico City	Mexico
+Russia	Yekaterinburg	Yekaterinburg	Yekaterinburg	Russia
+Philippines	Cebu	Cebu	Cebu	Philippines
+Poland	Szczecin	Szczecin	Szczecin	Poland
+Vietnam	Ho Chi Minh City	Ho-Chi-Minh-City	Ho Chi Minh City	Vietnam
+Russia	Krasnoyarsk	Krasnoyarsk	Krasnoyarsk	Russia
+Brazil	Belo Horizonte	Belo-Horizonte	Belo Horizonte	Brazil
+Russia	Samara	Samara	Samara	Russia
+Turkey	Istanbul	Istanbul	Istanbul	Turkey
+Morocco	Casablanca	Casablanca	Casablanca	Morocco
+Russia	Rostov-na-donu	Rostov-na-donu	Rostov-na-donu	Russia
+Mexico	Queretaro	Queretaro	Queretaro	Mexico
+Russia	Kaliningrad	Kaliningrad	Kaliningrad	Russia
+Russia	Novosibirsk	Novosibirsk	Novosibirsk	Russia
+Poland	Katowice	Katowice	Katowice	Poland
+Morocco	Tangier	Tangier	Tangier	Morocco
+Bulgaria	Varna	Varna	Varna	Bulgaria
+Bosnia And Herzegovina	Banja Luka	Banja-Luka	Banja Luka	Bosnia And Herzegovina
+Morocco	Rabat	Rabat	Rabat	Morocco
+Russia	Irkutsk	Irkutsk-Russia	Irkutsk	Russia
+Nigeria	Lagos	Lagos	Lagos	Nigeria
+Poland	Lublin	Lublin	Lublin	Poland
+Bulgaria	Plovdiv	Plovdiv	Plovdiv	Bulgaria
+Russia	Kazan	Kazan	Kazan	Russia
+Romania	Cluj-Napoca	Cluj-napoca	Cluj-Napoca	Romania
+Russia	Perm	Perm	Perm	Russia
+Russia	Ufa	Ufa	Ufa	Russia
+Romania	Brasov	Brasov	Brasov	Romania
+Belarus	Minsk	Minsk	Minsk	Belarus
+Russia	Voronezh	Voronezh	Voronezh	Russia
+Ukraine	Kiev (Kyiv)	Kiev	Kiev (Kyiv)	Ukraine
+Mexico	Guadalajara	Guadalajara	Guadalajara	Mexico
+Romania	Iasi	Iasi	Iasi	Romania
+Russia	Krasnodar	Krasnodar	Krasnodar	Russia
+Russia	Chelyabinsk	Chelyabinsk	Chelyabinsk	Russia
+Indonesia	Bandung	Bandung	Bandung	Indonesia
+Russia	Saratov	Saratov	Saratov	Russia
+Romania	Sibiu	Sibiu	Sibiu	Romania
+Romania	Timisoara	Timisoara	Timisoara	Romania
+Serbia	Novi Sad	Novi-Sad	Novi Sad	Serbia
+Russia	Tomsk	Tomsk	Tomsk	Russia
+Bulgaria	Burgas	Burgas	Burgas	Bulgaria
+Romania	Oradea	Oradea	Oradea	Romania
+Turkey	Bursa	Bursa	Bursa	Turkey
+Ukraine	Odessa (Odesa)	Odesa	Odessa (Odesa)	Ukraine
+Turkey	Ankara	Ankara	Ankara	Turkey
+Mongolia	Ulaanbaatar	Ulaanbaatar	Ulaanbaatar	Mongolia
+Ecuador	Cuenca	Cuenca	Cuenca	Ecuador
+Romania	Arad	Arad	Arad	Romania
+Russia	Izhevsk	Izhevsk	Izhevsk	Russia
+Argentina	Buenos Aires	Buenos-Aires	Buenos Aires	Argentina
+North Macedonia	Skopje	Skopje	Skopje	North Macedonia
+Mexico	Puebla	Puebla	Puebla	Mexico
+Bangladesh	Dhaka	Dhaka	Dhaka	Bangladesh
+Moldova	Chisinau	Chisinau	Chisinau	Moldova
+Sri Lanka	Colombo	Colombo	Colombo	Sri Lanka
+Indonesia	Yogyakarta	Yogyakarta	Yogyakarta	Indonesia
+Morocco	Agadir	Agadir	Agadir	Morocco
+Mexico	Merida	Merida	Merida	Mexico
+Ukraine	Kharkiv	Kharkiv	Kharkiv	Ukraine
+Turkey	Izmir	Izmir	Izmir	Turkey
+Serbia	Nis	Nis	Nis	Serbia
+Colombia	Bogota	Bogota	Bogota	Colombia
+Armenia	Yerevan	Yerevan	Yerevan	Armenia
+Ukraine	Mykolaiv	Mykolayiv-Ukraine	Mykolaiv	Ukraine
+Romania	Craiova	Craiova	Craiova	Romania
+Ukraine	Dnipro	Dnipropetrovsk	Dnipro	Ukraine
+Ukraine	Vinnytsia	Vinnytsya-Ukraine	Vinnytsia	Ukraine
+Ukraine	Lviv	Lviv	Lviv	Ukraine
+Kazakhstan	Astana	Astana	Astana	Kazakhstan
+Turkey	Antalya	Antalya	Antalya	Turkey
+Algeria	Algiers	Algiers	Algiers	Algeria
+Kazakhstan	Almaty	Almaty	Almaty	Kazakhstan
+Azerbaijan	Baku	Baku	Baku	Azerbaijan
+Paraguay	Asuncion	Asuncion	Asuncion	Paraguay
+Ukraine	Ternopil	Ternopil-Ukraine	Ternopil	Ukraine
+Egypt	Cairo	Cairo-Egypt	Cairo	Egypt
+Nepal	Kathmandu	Kathmandu	Kathmandu	Nepal
+Ukraine	Zaporizhzhya	Zaporizhzhya	Zaporizhzhya	Ukraine
+India	Gurgaon	Gurgaon	Gurgaon	India
+Colombia	Medellin	Medellin	Medellin	Colombia
+Kosovo (Disputed Territory)	Pristina	Pristina	Pristina	Kosovo (Disputed Territory)
+India	Mumbai	Mumbai	Mumbai	India
+Colombia	Cali	Cali	Cali	Colombia
+Egypt	Alexandria	Alexandria	Alexandria	Egypt
+India	Chandigarh	Chandigarh	Chandigarh	India
+Tunisia	Tunis	Tunis	Tunis	Tunisia
+Georgia	Tbilisi	Tbilisi	Tbilisi	Georgia
+India	Delhi	Delhi	Delhi	India
+Syria	Damascus	Damascus	Damascus	Syria
+Venezuela	Caracas	Caracas	Caracas	Venezuela
+India	Noida	Noida	Noida	India
+India	Pune	Pune	Pune	India
+Kyrgyzstan	Bishkek	Bishkek	Bishkek	Kyrgyzstan
+India	Thane	Thane	Thane	India
+India	Bangalore	Bangalore	Bangalore	India
+Uzbekistan	Tashkent	Tashkent	Tashkent	Uzbekistan
+India	Indore	Indore	Indore	India
+India	Goa	Goa	Goa	India
+India	Ahmedabad	Ahmedabad	Ahmedabad	India
+India	Navi Mumbai	Navi-Mumbai	Navi Mumbai	India
+India	Chennai	Chennai	Chennai	India
+India	Hyderabad	Hyderabad	Hyderabad	India
+India	Jaipur	Jaipur	Jaipur	India
+India	Vadodara	Vadodara	Vadodara	India
+India	Patna	Patna	Patna	India
+India	Guwahati	Guwahati	Guwahati	India
+India	Kolkata	Kolkata	Kolkata	India
+India	Rajkot	Rajkot	Rajkot	India
+India	Kochi	Kochi	Kochi	India
+India	Coimbatore	Coimbatore	Coimbatore	India
+India	Surat	Surat	Surat	India
+India	Mangalore	Mangalore	Mangalore	India
+India	Nagpur	Nagpur	Nagpur	India
+Pakistan	Lahore	Lahore	Lahore	Pakistan
+India	Bhopal	Bhopal	Bhopal	India
+India	Lucknow (Lakhnau)	Lucknow-Lakhnau	Lucknow (Lakhnau)	India
+India	Mysore	Mysore	Mysore	India
+India	Bhubaneswar	Bhubaneswar	Bhubaneswar	India
+Pakistan	Karachi	Karachi	Karachi	Pakistan
+Pakistan	Islamabad	Islamabad	Islamabad	Pakistan
+India	Vijayawada	Vijayawada	Vijayawada	India
+India	Visakhapatnam	Visakhapatnam	Visakhapatnam	India
+India	Thiruvananthapuram	Thiruvananthapuram	Thiruvananthapuram	India

@@ -5,9 +5,9 @@ account: mateusz-wysocki
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 1910999
-bundleId: 2860257
+bundleId: 2860407
 url: https://mateusz-wysocki.shinyapps.io/nomad_life/
-when: 1583613785.02248
+when: 1583619574.75656
 asMultiple: FALSE
 asStatic: FALSE
-ignoredFiles: .RData|app-dev.R|deploy.R|README.md|data/weather.html|dump/city_data.txt|R/function.R|R/rsconnect/shinyapps.io/mateusz-wysocki/R_Nomad.dcf|scrape/scrape-city-list.R|scrape/scrape-city-values.R|scrape/scrape-temp-values.R
+ignoredFiles: .RData|README.md|data/weather.html|dump/city_data.txt|R/function.R|R/rsconnect/shinyapps.io/mateusz-wysocki/R_Nomad.dcf|scrape/scrape-city-list.R|scrape/scrape-city-values.R|scrape/scrape-temp-values.R
