@@ -8,6 +8,7 @@ www/img3/
 img/
 img2/
 img3/
+www/client_secret_256078956335-5otif2vhf4dpbj6u8rl41e6vfsqn41eh.apps.googleusercontent.com.json
 
 ################################################## R
 # History files
@@ -31,7 +32,7 @@ img3/
 .Renviron
 
 # R Shiny publisher
-rsconnect.*
+rsconnect
 
 # OAuth2 token, see https://github.com/hadley/httr/releases/tag/v0.3
 .httr-oauth
