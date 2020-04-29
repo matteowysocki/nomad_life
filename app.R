@@ -10,7 +10,7 @@ source(glue::glue(INPUT_DIR, "R/library.R"))
 
 ### DATA PREP
 # Import UI Data
-data <- read.csv(file = glue::glue(INPUT_DIR, "data/city_list.txt"), sep = ",", stringsAsFactors = FALSE) #, encoding = "UTF-8"
+data <- read.csv(file = glue::glue(INPUT_DIR, "data/city_list.txt"), sep = "\t", stringsAsFactors = FALSE) #, encoding = "UTF-8"
 
 # Make a list of choices where each choice is of type list. Care should be take for one element list therefore second line
 choices <- lapply(data %>% split(data$Country), select, City)
@@ -57,18 +57,47 @@ ui <- fluidPage(#theme = "bootstrap_dark_violet.css",
       # Launch button - works ever since then
       actionButton("do", "Uruchom"),
       
+      # Line break for aeasthetics
+      br(),
+      
       # Table seen by user
       #tableOutput("data"),
       
       # Value table
-      htmlOutput("summary_values_html"),
+      #htmlOutput("summary_values_html"),
       
-      #TESTING SIDEBAR PLOT
-      plotlyOutput("piechart")
+      # Map
+      # TODO Ge all cities lat lon throug ggmap package. Needs Google Maps API Key 
+      leafletOutput("map")
+
     ),
     
     mainPanel(
-      plotlyOutput("plot")
+      
+      # Main fluid row 1
+      fluidRow(
+        column(4,
+            htmlOutput("population_ibox")
+        ),
+        column(4,
+            htmlOutput("population_ibox2")
+        ),
+        column(4,
+            htmlOutput("population_ibox3")
+        )
+      ),
+      
+      # Main fluid row 2
+      fluidRow(
+        column(6,
+          plotlyOutput("piechart")
+        ),
+        #TESTING SIDEBAR PLOT
+        column(6,
+          #h2("Pieniazki"),    
+          plotlyOutput("plot")
+        )
+      )
     )
   )  
 )
@@ -84,15 +113,17 @@ server <- function(input, output, session) {
     
     ### DATA PREP
     # Import server Data
-    data_dict   <- read.csv(file = glue::glue(INPUT_DIR, "data/city_list.txt"), sep = ",", stringsAsFactors = FALSE)
+    data_dict   <- read.csv(file = glue::glue(INPUT_DIR, "data/city_list.txt"), sep = "\t", stringsAsFactors = FALSE)
     data_values <- read.csv(file = glue::glue(INPUT_DIR, "data/city_data.txt"), sep = "\t", stringsAsFactors = FALSE)
+    data_geo    <- read.csv(file = glue::glue(INPUT_DIR, "data/city_geo.txt"), sep = "\t", stringsAsFactors = FALSE)
     data        <- data_values %>% inner_join(data_dict, by = c("city" = "City_Search_Bar"))
     # Get UI input$city value
     city_chosen       <- input$destination_city
     pln_total_value   <- input$user_value_to_spend
     months            <- input$trip_duration_months
     # Filter data.frame with UI input value - take into account search format in column city_search_bar
-    city_data <- data %>% filter(City == city_chosen)
+    city_data <- data     %>% filter(City == city_chosen)
+    city_geo  <- data_geo %>% filter(City == city_chosen)
     
     # Get column values
     monthly_value    <- city_data %>% filter(variable == "A single person monthly costs") %>% select(value) %>% as.numeric()
@@ -108,20 +139,44 @@ server <- function(input, output, session) {
                       "Index"   = rank_index_value)
       })
     
-    output$summary_values_html <- renderUI({
+    output$population_ibox <- renderUI({
       html_query <- paste0(
-        # "<span style='font-weight:bold'>Sredni koszt utrzymania (bez mieszkania): </span> ",
-        # monthly_value, " PLN", "<br/>", 
-        # "<span style='font-weight:bold'>Kawalerka poza centrum miasta: </span> ", 
-        # monthly_rent, " PLN", "<br/>", 
-        "<br/>", 
-        "<span style='font-weight:bold'>Szacunkowy miesieczny laczny koszt utrzymania: </span> ",
-        (monthly_value + monthly_rent), " PLN", "<br/>", 
-        "<span style='font-weight:bold'>Indeks miasta: </span> ",
-        rank_index_value
-       )
+        "<span class='main_panel_text'>Populacja: </span> ",
+        city_geo[1, "population"]
+      )
       HTML(html_query,  sep = '<br/>')
-      })
+    })
+    
+    output$population_ibox2 <- renderUI({
+      html_query <- paste0(
+        "<span class='main_panel_text'> Miesieczny koszt utrzymania: </span> ",
+        paste0(monthly_value + monthly_rent, " PLN")
+      )
+      HTML(html_query,  sep = '<br/>')
+    })
+    
+    output$population_ibox3 <- renderUI({
+      html_query <- paste0(
+        "<span class='main_panel_text'>Indeks miasta: </span> ",
+        rank_index_value
+      )
+      HTML(html_query,  sep = '<br/>')
+    })
+    
+    # output$population_ibox <- renderInfoBox({
+    #   infoBox( 
+    #     title = "Populacja", 
+    #     value = as.character(city_geo[1, "population"]), 
+    #     icon = icon("credit-card"),
+    #     color = "navy"
+    #   )
+    # })
+    
+    output$map <- renderLeaflet({
+      lat <- city_geo[1, "lat"] 
+      lon <- city_geo[1, "lng"] 
+      leaflet() %>% addTiles() %>% setView(lon, lat, zoom = 10)
+    })
     
     
     output$piechart <- renderPlotly({ 

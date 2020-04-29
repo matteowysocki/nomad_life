@@ -2,8 +2,9 @@
 library(ggplot2) # visualisation
 library(plotly)
 library(scales) # visualisation
-library(RColorBrewer) # visualisation
 library(corrplot) # visualisation
+library(leaflet)
+library(ggmap)
 
 # general data manipulation
 library(dplyr) # data manipulation
@@ -39,4 +40,5 @@ library(httr)
 # parallel
 #library('foreach')
 #library('doParallel')
-
+library(googleAuthR)
+library(searchConsoleR)
