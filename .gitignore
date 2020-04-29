@@ -2,13 +2,12 @@
 www/img.*
 Python/downloads
 dump/
-<<<<<<< HEAD
 www/img/
 www/img2/
 www/img3/
-=======
-
->>>>>>> a877de496d97d0ed09a98bdd3f60933b96b3cbba
+img/
+img2/
+img3/
 
 ################################################## R
 # History files
