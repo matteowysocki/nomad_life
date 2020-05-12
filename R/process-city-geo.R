@@ -1,4 +1,3 @@
-
 INPUT_DIR <- "D:/analytics/shiny/nomad_life/"
 #INPUT_DIR <- here::here()
 #INPUT_DIR <- ""
@@ -7,7 +6,7 @@ source(glue::glue(INPUT_DIR, "R/library.R"))
 
 ### DATA PREP
 # Import UI Data
-city_list   <- read.csv(file = glue::glue(INPUT_DIR, "data/city_list.txt"), sep = ",", stringsAsFactors = FALSE) #, encoding = "UTF-8"
+city_list   <- read.csv(file = glue::glue(INPUT_DIR, "data/city_list.txt"), sep = "\t", stringsAsFactors = FALSE) #, encoding = "UTF-8"
 city_data   <- read.csv(file = glue::glue(INPUT_DIR, "data/city_data.txt"), sep = "\t", stringsAsFactors = FALSE) #, encoding = "UTF-8"
 city_geo    <- read.csv(file = glue::glue(INPUT_DIR, "data/worldcities.csv"), sep = ",", stringsAsFactors = FALSE, encoding = "windows-1252") #, encoding = "UTF-8"
 
