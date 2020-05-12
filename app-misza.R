@@ -16,13 +16,6 @@ data <- read.csv(file = glue::glue(INPUT_DIR, "data/city_list.txt"), sep = "\t",
 choices <- lapply(data %>% split(data$Country), select, City)
 choices <- lapply(choices, function(x) unlist(x) %>% as.vector() %>% as.list())
 
-# Other dfs
-data_values <- read.csv(file = glue::glue(INPUT_DIR, "data/city_data.txt"), sep = "\t", stringsAsFactors = FALSE)
-data_values <- data_values %>% mutate(variable_styled_name = variable %>% str_replace_all("[[:punct:]]", "") %>% str_replace_all(" ", "_"))
-#price_positions <- unique(data_values$variable_styled_name)
-price_positions <- unique(data_values$variable)
-data_wide   <- read.csv(file = glue::glue(INPUT_DIR, "data/data_wide_all.csv"), sep = "\t", stringsAsFactors = TRUE)
-data_map_dict <- unique(data_values[c("variable", "variable_styled_name")])
 
 ### UI DEFINITON
 ui <- fluidPage(
@@ -45,15 +38,15 @@ ui <- fluidPage(
   # 
   # "))),
   
-  navbarPage("Znajdz swoje Bieszczady!",
+  navbarPage("Misza informatyk",
              #headerPanel("Znajdz swoje Bieszczady!"),
              tabPanel("Analiza kosztow", icon = icon("bar-chart-o"),
                       # Background style
                       setBackgroundColor(
-                        color = c("orange", "pink"), #skyblue "#DCDCDC", "skyblue"
-                        gradient = "linear", #c("linear", "radial"),
+                        color = c("black", "deeppink"), #skyblue "#DCDCDC", "skyblue"
+                        gradient = "radial", #c("linear", "radial"),
                         shinydashboard = FALSE,
-                        direction = "bottom" #left right top bottom
+                        direction = "left" #left right top bottom
                       ),
                       
                       # CSS file
@@ -110,68 +103,9 @@ ui <- fluidPage(
                       ) # Sidebar layout 1 icon = icon("chart-bar") icon = icon("globe-americas"),
              ), # Tab panel 1
              tabPanel("Mapa swiata", icon = icon("globe"),
-                      sidebarPanel(
-                       #  column(2, 
-                       #        wellPanel(
-                       #          helpText("Wybierz interesujace cie pozycje kosztowe."))),
-                       #  column(4, 
-                       #         wellPanel(selectizeInput(inputId = "price_positions_selected", multiple = T,
-                       #                 label = "Wybierz pozycje informacji:",
-                       #                 choices = price_positions,
-                       #                 options = list(create = TRUE,
-                       #                 placeholder = "wpisz nazwe...")))), #color_positions_selected
-                       #  column(4, 
-                       #         wellPanel(selectizeInput(inputId = "color_positions_selected", multiple = FALSE,
-                       #                 label = "Wybierz pozycje koloru:",
-                       #                 choices = price_positions,
-                       #                 options = list(create = TRUE,
-                       #                 placeholder = "wpisz nazwe...")))), #color_positions_selected
-                       # # Launch button - works ever since then
-                       # column(2,
-                       #        wellPanel(actionButton("do_map", "Uruchom")))
-                                 helpText("Wybierz interesujace cie pozycje kosztowe."),
-                                 selectizeInput(inputId = "price_positions_selected",
-                                        multiple = TRUE,
-                                        label = "Wybierz pozycje informacji:",
-                                        choices = price_positions,
-                                        options = list(create = TRUE,
-                                        placeholder = "wpisz nazwe...")), #color_positions_selected
-                                 selectizeInput(inputId = "color_positions_selected",
-                                        multiple = FALSE,
-                                        label = "Wybierz pozycje koloru:",
-                                        selected = NULL,
-                                        choices = price_positions,
-                                        options = list(create = TRUE,
-                                                  placeholder = "wpisz nazwe...",
-                                                  onInitialize = I('function() { this.setValue(""); }'))), #color_positions_selected
-                                 actionButton("do_map", "Uruchom")
-                      ),
-                      mainPanel(
                       #mainPanel(
-                        tags$head(includeCSS("www/styles.css")),
-                        tags$style(type = "text/css", "#map_world {height: calc(100vh - 80px) !important;}"),
-                        leafletOutput("map_world")
-                        # absolutePanel(id = "controls", class = "panel panel-default",
-                        #               top = 120, left = 20, width = 250, fixed=TRUE,
-                        #               draggable = TRUE, height = "auto",
-                        #               
-                        #               selectizeInput(inputId = "price_positions_selected", multiple = T,
-                        #                              label = "Wybierz pozycje info:",
-                        #                              choices = price_positions, 
-                        #                              options = list(create = TRUE,
-                        #                                             #optgroups = 
-                        #                                             placeholder = "wpisz nazwe...")), #color_positions_selected
-                        #               selectizeInput(inputId = "color_positions_selected", multiple = FALSE,
-                        #                              label = "Wybierz pozycje koloru:",
-                        #                              choices = price_positions, 
-                        #                              options = list(create = TRUE,
-                        #                                             #optgroups = 
-                        #                                             placeholder = "wpisz nazwe...")), #color_positions_selected
-                        #               # Launch button - works ever since then
-                        #               actionButton("do_map", "Uruchom")
-                                      # ) # absolutePanel
-                      ) #fluidROw
-                      
+                      br(),
+                      leafletOutput("map_world") 
                       #) # Main panel 2
              ), # Tab panel 2
              tabPanel("O aplikacji", icon = icon("info-circle"),
@@ -204,82 +138,6 @@ ui <- fluidPage(
 # Now city is input manually, how to fetch all options to  list in shiny?
 
 server <- function(input, output, session) {
-
-  observeEvent(input$do_map, {
-    data_wide   <- read.csv(file = glue::glue(INPUT_DIR, "data/data_wide_all.csv"), sep = "\t", stringsAsFactors = TRUE) 
-    #print(head(data_map_dict))
-    # INPUT_DIR = ""
-    # color_chosen <- "Apples (1kg)"
-    # positions_chosen <- c("Meal, Inexpensive Restaurant", "Domestic Beer (0.5 liter draught)", "Cappuccino (regular)")
-    positions_chosen  <- input$price_positions_selected
-    print(paste("Initial arg", positions_chosen))
-    color_chosen <- input$color_positions_selected
-    print(color_chosen) 
-    print((exists("color_chosen")))
-    if (color_chosen != "") {
-      col1 <- data_map_dict %>% filter(variable == color_chosen) %>% select(variable_styled_name) %>% unlist() %>% as.character() 
-      beatCol <- colorNumeric(palette = 'RdYlGn', data_wide[[col1]], reverse = TRUE)
-    } else {
-      color_chosen <- "blue"
-      #beatCol <- colorNumeric("skyblue", domain = NULL)
-      }
-    print(color_chosen)  
-    positions_chosen_1 <- positions_chosen[1]
-    positions_chosen_2 <- positions_chosen[2]
-    positions_chosen_3 <- positions_chosen[3]
-    if (!is.null(positions_chosen_1)) {
-      positions_chosen_1 <- positions_chosen_1
-      var1 <- data_map_dict %>% filter(variable == positions_chosen_1) %>% select(variable_styled_name) %>% unlist() %>% as.character()} else {
-        positions_chosen_1 <- NA}
-    if (!is.null(positions_chosen_2)) {
-      positions_chosen_2 <- positions_chosen_2
-      var2 <- data_map_dict %>% filter(variable == positions_chosen_2) %>% select(variable_styled_name) %>% unlist() %>% as.character()} else {
-        positions_chosen_2 <- NA}
-    if (!is.null(positions_chosen_3)) {
-      positions_chosen_3 <- positions_chosen_3
-      var3 <- data_map_dict %>% filter(variable == positions_chosen_3) %>% select(variable_styled_name) %>% unlist() %>% as.character()} else {
-        positions_chosen_3 <- NA}
-     
-  output$map_world <- renderLeaflet({
-    if (color_chosen == "blue") { 
-    leaflet(data_wide) %>%
-        addProviderTiles("CartoDB.Positron") %>%
-        addCircleMarkers(lng = ~lng,
-                         lat = ~lat, 
-                         popup  = ~paste0(" ",
-                           if (!is.na(positions_chosen_1)) {paste0(positions_chosen_1, ": ", as.character(data_wide[, var1]))
-                             } else {"Nie wybrano zadnej pozycji"}, " <br> ",
-                           if (!is.na(positions_chosen_2)) {paste0(positions_chosen_2, ": ", as.character(data_wide[, var2]))}, " <br> ",
-                           if (!is.na(positions_chosen_3)) {paste0(positions_chosen_3, ": ", as.character(data_wide[, var3]))}, " "
-                          ),
-                         label  = ~City,
-                         radius = ~11,
-                         color  = ~"skyblue",
-                         stroke = FALSE,
-                         fillOpacity = 0.6
-        )
-    } else {
-      leaflet(data_wide) %>%
-        addProviderTiles("CartoDB.Positron") %>%
-        addCircleMarkers(lng = ~lng,
-                         lat = ~lat, 
-                         popup  = ~paste0(" ",
-                            if (!is.na(positions_chosen_1)) {paste0(positions_chosen_1, ": ", as.character(data_wide[, var1]))
-                             } else {"Nie wybrano zadnej pozycji"}, " <br> ",
-                            if (!is.na(positions_chosen_2)) {paste0(positions_chosen_2, ": ", as.character(data_wide[, var2]))}, " <br> ",
-                            if (!is.na(positions_chosen_3)) {paste0(positions_chosen_3, ": ", as.character(data_wide[, var3]))}, " "
-                         ),
-                         label  = ~City,
-                         radius = ~11,
-                         #color  = ~"skyblue",
-                         color = ~beatCol(data_wide[[col1]]),
-                         stroke = FALSE,
-                         fillOpacity = 0.6
-        ) %>% addLegend("bottomright", pal = beatCol, values = data_wide[[col1]])     
-    }
-    })
-  })
-
   
   observeEvent(input$do, {
     
@@ -295,8 +153,6 @@ server <- function(input, output, session) {
     pln_total_value   <- input$user_value_to_spend
     months            <- input$trip_duration_months
     number_of_months  <- months
-
-    
     # Filter data.frame with UI input value - take into account search format in column city_search_bar
     city_data <- data     %>% filter(City == city_chosen)
     city_geo  <- data_geo %>% filter(City == city_chosen)
@@ -379,6 +235,22 @@ server <- function(input, output, session) {
       lon <- city_geo[1, "lng"] 
       leaflet() %>% addTiles() %>% setView(lon, lat, zoom = 9)
     })
+    output$map_world <- renderLeaflet({
+      beatCol <- colorFactor(palette = 'RdYlGn', as.character(data_wide$Country))
+      leaflet(data_wide) %>%
+        addProviderTiles("CartoDB.Positron") %>%
+        addCircleMarkers(lng = ~lng, lat = ~lat,
+                         popup  = ~paste0("Miesieczny koszt zycia: ", as.character(A_single_person_monthly_costs), "<br>",
+                                          "Piwko na miescie: ", as.character(Imported_Beer_033_liter_bottle_at_restaurant)),
+                         # popup  = ~paste0("Miesieczny koszt zycia: ", as.character(A_single_person_monthly_costs), "<br>"
+                         #                  "Piwko na miescie"),
+                         label  = ~City,
+                         radius = ~6,
+                         color  = ~beatCol(Country),
+                         stroke = FALSE, fillOpacity = 0.6
+        )
+    })
+    
     
     output$piechart <- renderPlotly({ 
       df <- data.frame("variables" = c("Wydatki na zycie", "Mieszkanie"),

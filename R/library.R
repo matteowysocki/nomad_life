@@ -1,3 +1,5 @@
+#(bs4Dash)
+
 # general visualisation
 library(ggplot2) # visualisation
 library(plotly)
@@ -28,10 +30,12 @@ library(lubridate) # date and time
 #library('prophet') # time series analysis
 
 # Interactivity
+library(shinydashboard)
 library(rsconnect)
 library(shiny)
 library(shinyWidgets)
 library(here)
+
 
 # Scraping
 library(RCurl)
@@ -42,3 +46,8 @@ library(httr)
 #library('doParallel')
 library(googleAuthR)
 library(searchConsoleR)
+
+# load packages
+library(rjson)
+library(jsonlite)
+

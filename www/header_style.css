@@ -1,8 +1,9 @@
 @import url("//fonts.googleapis.com/css?family=Lobster|Cabin:400,700");
+@import url("//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css");
 
 h1 {
   font-family: 'Lobster', cursive;
-  font-weight: 500;
+  font-weight: 100;
   line-height: 1.1;
   color: #DC143C;
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
@@ -18,6 +19,62 @@ body {
   color: darkgreen;
 }	
 
+#main_panel_colorbox {
+  background-color: #cfc ;
+  padding: 10px ;
+  border: 15px solid green ;
+}
 
 
-
+/* */
+.webnots-notification-box {
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+/*
+-webkit-text-fill-color: white;
+-webkit-text-stroke-width: 0.1px;
+-webkit-text-stroke-color: black;
+*/
+border-radius: 5px;
+color: #ffffff;
+font-family: verdana, 'open sans', sans-serif;
+font-size: 15px;
+font-weight: bold;
+text-shadow:
+  -1px -1px 0 #1a1a1a,
+  1px -1px 0 #1a1a1a,
+  -1px 1px 0 #1a1a1a,
+  1px 1px 0 #1a1a1a;
+margin-bottom: 25px;
+padding: 10px 14px 10px 44px;
+position: relative;
+box-shadow: 
+  0 1px 1px #1a1a1a;
+}
+.webnots-notification-box:before {
+font-family: FontAwesome;
+font-size: 21px;
+left: 14px;
+position: absolute;
+}
+.webnots-information {
+background-color: #3498db;
+}
+.webnots-information:before {
+content: "\f129";
+margin-left: 4px;
+}
+.webnots-question {
+background-color: #f1c40f;
+}
+.webnots-question:before {
+content: "\f128";
+margin-left: 2px;
+}
+.webnots-tip {
+background-color: 	lightblue;
+}
+.webnots-tip:before {
+content: "\f0eb";
+margin-left: 2px;
+}
