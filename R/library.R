@@ -51,3 +51,6 @@ library(searchConsoleR)
 library(rjson)
 library(jsonlite)
 
+# Utilities
+library(tictoc)
+

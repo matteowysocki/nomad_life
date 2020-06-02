@@ -42,8 +42,8 @@ for (i in 1:6) {
 
 funds_table <- main_table[2:13]
 #funds_table %>% str_replace_all(vars(contains("m"), "%", ""))
-x <- funds_table %>% map(contains("m"), str_replace_all, "%", "")
-x <- funds_table %>% map(vars(contains("m"), select))
+#x <- funds_table %>% map(contains("m"), str_replace_all, "%", "")
+#x <- funds_table %>% map(vars(contains("m"), select))
 funds_table %>% select(contains("m")) %>% map_df(str_replace, "%", "")
 
 f_values <- apply(funds_table[4:10], 2, str_replace, "%", "")
@@ -58,7 +58,7 @@ final <- final %>% arrange(desc(ytd)) %>% as_tibble()
 colnames(final) <- c("Fundusz", "Data", "Jednostka Netto", "D1", "M1", "M3", "M12", "M36", "M60", "YTD", "Grupa", "SSRI")
                
 write.table(x    = final,
-            file = "D:/analytics/analizy_fundusze_inwestycyjne_yields_20200426",
+            file = "D:/analytics/analizy_fundusze_inwestycyjne_yields_20200519",
             col.names = TRUE,
             row.names = FALSE,
             quote = FALSE,
@@ -66,7 +66,7 @@ write.table(x    = final,
 
 
 # Graph 1 
-coll = "M60"
+coll = "M12"
 p <- function(coll) {
   coll <- sym(coll)
   print(coll)
@@ -75,7 +75,7 @@ p <- function(coll) {
     geom_histogram(bins = 100, color = "blue", fill = "lightblue") + 
     theme_minimal()
 }
-pp(coll)
+p(coll)
 
 
 # Graph 2 
@@ -95,7 +95,7 @@ p <- function(coll) {
   ggtitle("Investment Funds returns", subtitle = "12 months")
   }
 p(coll)
-p("M12")
+p("M1")
 ggplotly(p(coll))
 
 
