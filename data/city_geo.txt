@@ -1,0 +1,439 @@
+Country	City	City_Search_Bar	city	lat	lng	iso2	iso3	admin_name	capital	population	id
+Switzerland	Zurich	Zurich	Zürich	47.38	8.55	CH	CHE	Zürich	admin	1108000	1756539143
+Switzerland	Basel	Basel	Basel	47.5804	7.59	CH	CHE	Basel-Stadt	admin	830000	1756731313
+Switzerland	Lausanne	Lausanne	Lausanne	46.5304	6.65	CH	CHE	Vaud	admin	265702	1756055099
+Switzerland	Geneva	Geneva	Geneva	46.21	6.14	CH	CHE	Genève	admin	1240000	1756810813
+Switzerland	Bern	Bern	Bern	46.9167	7.467	CH	CHE	Bern	primary	275329	1756374318
+Norway	Stavanger	Stavanger	Stavanger	58.97	5.68	NO	NOR	Rogaland	admin	173132	1578801684
+Norway	Oslo	Oslo	Oslo	59.9167	10.75	NO	NOR	Oslo	primary	835000	1578324706
+Norway	Trondheim	Trondheim	Trondheim	63.4167	10.4167	NO	NOR		minor	147139	1578633461
+Iceland	Reykjavik	Reykjavik	Reykjavík	64.15	-21.95	IS	ISL	Höfuðborgarsvæði	primary	166212	1352327190
+Norway	Bergen	Bergen	Bergen	60.391	5.3245	NO	NOR	Hordaland	admin	213585	1578465701
+United States	New York	New-York	New York	40.6943	-73.9249	US	USA	New York		19354922	1840034016
+United States	San Francisco	San-Francisco	San Francisco	37.7562	-122.443	US	USA	California		3603761	1840021543
+United States	Anchorage	Anchorage	Anchorage	61.1508	-149.1091	US	USA	Alaska		253421	1840023385
+United States	Honolulu	Honolulu	Honolulu	21.3294	-157.846	US	USA	Hawaii	admin	833671	1840013305
+United States	Brooklyn	Brooklyn	Brooklyn	40.6501	-73.9496	US	USA	New York		2629150	1840034030
+Denmark	Aalborg	Aalborg	Aalborg	57.0337	9.9166	DK	DNK	Nordjylland	admin	122219	1208789278
+United States	Washington	Washington	Washington	38.9047	-77.0163	US	USA	District of Columbia	primary	5289420	1840006060
+Japan	Tokyo	Tokyo	Tokyo	35.685	139.7514	JP	JPN	Tōkyō	primary	35676000	1392685764
+United States	Oakland	Oakland	Oakland	37.7903	-122.2165	US	USA	California		425195	1840020296
+Israel	Tel Aviv-Yafo	Tel-Aviv-Yafo	Tel Aviv-Yafo	32.08	34.77	IL	ISR	Tel Aviv	admin	3112000	1376401542
+Denmark	Copenhagen	Copenhagen	Copenhagen	55.6786	12.5635	DK	DNK	Hovedstaden	primary	1085000	1208763942
+United States	Seattle	Seattle	Seattle	47.6211	-122.3244	US	USA	Washington		3643765	1840021117
+South Korea	Seoul	Seoul	NA	NA	NA	NA	NA	NA	NA	NA	NA
+France	Paris	Paris	Paris	48.8667	2.3333	FR	FRA	Île-de-France	primary	9904000	1250015082
+Luxembourg	Luxembourg	Luxembourg	Luxembourg	49.6117	6.13	LU	LUX	Luxembourg	primary	107260	1442262731
+United States	Boston	Boston	Boston	42.3188	-71.0846	US	USA	Massachusetts	admin	4637537	1840000455
+United States	Bellevue	Bellevue	Bellevue	47.5953	-122.155	US	USA	Washington		144444	1840018417
+United Kingdom	London	London	London	51.5	-0.1167	GB	GBR	London, City of	primary	8567000	1826645935
+Singapore	Singapore	Singapore	Singapore	1.293	103.8558	SG	SGP		primary	5183700	1702341327
+Denmark	Arhus	Arhus	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Israel	Haifa	Haifa	Haifa	32.8204	34.98	IL	ISR	Haifa	admin	1011000	1376133727
+United States	Chicago	Chicago	Chicago	41.8373	-87.6862	US	USA	Illinois		8675982	1840000494
+Japan	Osaka	Osaka	Ōsaka	34.75	135.4601	JP	JPN	Ōsaka	admin	11294000	1392419823
+Israel	Jerusalem	Jerusalem	Jerusalem	31.7784	35.2066	IL	ISR		primary	1029300	1376261644
+United States	Sarasota	Sarasota	Sarasota	27.3386	-82.543	US	USA	Florida		706245	1840015988
+Ireland	Dublin	Dublin	Dublin	53.3331	-6.2489	IE	IRL	Dublin	primary	1059000	1372595407
+Australia	Sydney	Sydney	Sydney	-33.92	151.1852	AU	AUS	New South Wales	admin	4630000	1036074917
+Netherlands	Amsterdam	Amsterdam	Amsterdam	52.35	4.9166	NL	NLD	Noord-Holland	primary	1031000	1528355309
+United States	Philadelphia	Philadelphia	Philadelphia	40.0077	-75.1339	US	USA	Pennsylvania		5637884	1840000673
+United States	San Jose	San-Jose	San Jose	37.3021	-121.8489	US	USA	California		1821899	1840021570
+United States	Portland	Portland	Portland	45.5371	-122.65	US	USA	Oregon		2052796	1840019941
+Canada	Toronto	Toronto	Toronto	43.7	-79.42	CA	CAN	Ontario	admin	5213000	1124279679
+United States	New Orleans	New-Orleans	New Orleans	30.0687	-89.9288	US	USA	Louisiana		1029123	1840001839
+Hong Kong	Hong Kong	Hong-Kong	Hong Kong	22.305	114.185	HK	HKG			7206000	1344982653
+United States	Sacramento	Sacramento	Sacramento	38.5667	-121.4683	US	USA	California	admin	1854698	1840021491
+Ireland	Cork	Cork	Cork	51.8986	-8.4958	IE	IRL	Cork	admin	188907	1372221853
+Italy	Milan	Milan	Milan	45.47	9.205	IT	ITA	Lombardy	admin	2945000	1380724377
+Netherlands	Utrecht	Utrecht	Utrecht	52.1003	5.12	NL	NLD	Utrecht	admin	640000	1528871692
+United States	Minneapolis	Minneapolis	Minneapolis	44.9635	-93.2678	US	USA	Minnesota		2926757	1840007830
+United States	Los Angeles	Los-Angeles	Los Angeles	34.1139	-118.4068	US	USA	California		12815475	1840020491
+Australia	Darwin	Darwin	Darwin	-12.4254	130.85	AU	AUS	Northern Territory	admin	93080	1036497565
+Sweden	Stockholm	Stockholm	Stockholm	59.3508	18.0973	SE	SWE	Stockholm	primary	1264000	1752425602
+New Zealand	Auckland	Auckland	Auckland	-36.8481	174.763	NZ	NZL	Auckland	admin	1377200	1554435911
+Denmark	Odense	Odense	Odense	55.4004	10.3833	DK	DNK	Syddanmark	minor	158222	1208194249
+Austria	Linz	Linz	Linz	48.3192	14.2888	AT	AUT	Oberösterreich	admin	349161	1040261171
+Sweden	Uppsala	Uppsala	Uppsala	59.8601	17.64	SE	SWE	Stockholm		133117	1752330831
+United Kingdom	Brighton	Brighton	Brighton	50.8303	-0.17	GB	GBR	Brighton and Hove		503008	1826609057
+United States	Albany	Albany	Albany	42.6664	-73.7987	US	USA	New York	admin	597270	1840000417
+Austria	Innsbruck	Innsbruck	Innsbruck	47.2804	11.41	AT	AUT	Tirol	admin	155214	1040038924
+Ireland	Galway	Galway	Galway	53.2724	-9.0488	IE	IRL	Galway	admin	75594	1372499968
+Australia	Canberra	Canberra	Canberra	-35.283	149.129	AU	AUS	Australian Capital Territory	primary	327700	1036142029
+Netherlands	Haarlem	Haarlem	Haarlem	52.3804	4.63	NL	NLD	Noord-Holland	admin	349957	1528822178
+Australia	Newcastle	Newcastle	Newcastle	-32.8453	151.815	AU	AUS	New South Wales		1134616	1036468001
+United States	Jacksonville	Jacksonville	Jacksonville	30.3322	-81.6749	US	USA	Florida		1156291	1840015031
+Austria	Graz	Graz	Graz	47.0778	15.41	AT	AUT	Steiermark	admin	263234	1040184559
+United States	Baltimore	Baltimore	Baltimore	39.3051	-76.6144	US	USA	Maryland		2170504	1840001592
+United States	San Diego	San-Diego	San Diego	32.8312	-117.1225	US	USA	California		3210314	1840021990
+United States	Miami	Miami	Miami	25.7839	-80.2102	US	USA	Florida		6381966	1840015149
+Australia	Perth	Perth	Perth	-31.955	115.84	AU	AUS	Western Australia	admin	1532000	1036178956
+United States	Buffalo	Buffalo	Buffalo	42.9017	-78.8487	US	USA	New York		926261	1840000386
+Canada	Vancouver	Vancouver	Vancouver	49.2734	-123.1216	CA	CAN	British Columbia		2313328	1124825478
+United States	Atlanta	Atlanta	Atlanta	33.7627	-84.4225	US	USA	Georgia	admin	5228750	1840013660
+United States	Reno	Reno	Reno	39.5497	-119.8483	US	USA	Nevada		433271	1840020121
+Netherlands	Eindhoven	Eindhoven	Eindhoven	51.43	5.5	NL	NLD	Noord-Brabant	minor	398053	1528636212
+United States	Pittsburgh	Pittsburgh	Pittsburgh	40.4396	-79.9763	US	USA	Pennsylvania		1715297	1840001254
+France	Lyon	Lyon	Lyon	45.77	4.83	FR	FRA	Auvergne-Rhône-Alpes	admin	1423000	1250196189
+United States	Denver	Denver	Denver	39.7621	-104.8759	US	USA	Colorado	admin	2787266	1840018789
+United States	Nashville	Nashville	Nashville	36.1715	-86.7843	US	USA	Tennessee	admin	1076645	1840036155
+New Zealand	Christchurch	Christchurch	Christchurch	-43.535	172.63	NZ	NZL	Canterbury	admin	363200	1554377228
+United Kingdom	Bristol	Bristol	Bristol	51.45	-2.5833	GB	GBR	Bristol, City of	admin	553528	1826921049
+Australia	Gold Coast	Gold-Coast	Gold Coast	-28.0815	153.4482	AU	AUS	Queensland		527660	1036153217
+Netherlands	Leiden	Leiden	NA	NA	NA	NA	NA	NA	NA	NA	NA
+United Kingdom	Reading	Reading	Reading	51.47	-0.98	GB	GBR	Reading	admin	369804	1826869043
+Australia	Brisbane	Brisbane	Brisbane	-27.455	153.0351	AU	AUS	Queensland	admin	1860000	1036192929
+Belgium	Gent	Gent	Gent	51.03	3.7	BE	BEL	Flanders	minor	444336	1056062897
+France	Marseille	Marseille	Marseille	43.29	5.375	FR	FRA	Provence-Alpes-Côte d’Azur	admin	1400000	1250774071
+Australia	Melbourne	Melbourne	Melbourne	-37.82	144.975	AU	AUS	Victoria	admin	4170000	1036533631
+United States	Charlotte	Charlotte	Charlotte	35.2079	-80.8304	US	USA	North Carolina		1467362	1840014557
+Netherlands	The Hague (Den Haag)	The-Hague-Den-Haag-Netherlands	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Finland	Helsinki	Helsinki	Helsinki	60.1756	24.9341	FI	FIN	Uusimaa	primary	1115000	1246177997
+Canada	Halifax	Halifax	Halifax	44.65	-63.6	CA	CAN	Nova Scotia	admin	359111	1124130981
+Belgium	Brussels	Brussels	Brussels	50.8333	4.3333	BE	BEL	Brussels-Capital Region	primary	1743000	1056469830
+Italy	Florence	Florence	Florence	43.78	11.25	IT	ITA	Tuscany	admin	1500000	1380726561
+United Kingdom	Cambridge	Cambridge	Cambridge	52.2004	0.1166	GB	GBR	Cambridgeshire	admin	128488	1826229713
+Netherlands	Groningen	Groningen	Groningen	53.2204	6.58	NL	NLD	Groningen	admin	216688	1528295161
+Germany	Munich	Munich	Munich	48.1299	11.575	DE	DEU	Bavaria	admin	1275000	1276692352
+France	Montpellier	Montpellier	Montpellier	43.6104	3.87	FR	FRA	Occitanie	minor	327254	1250819356
+United States	Tucson	Tucson	Tucson	32.1545	-110.8782	US	USA	Arizona		868391	1840022101
+France	Toulouse	Toulouse	Toulouse	43.62	1.4499	FR	FRA	Occitanie	admin	847000	1250258110
+United States	Olympia	Olympia	Olympia	47.0417	-122.8959	US	USA	Washington	admin	196078	1840019865
+Canada	Victoria	Victoria	Victoria	48.4333	-123.35	CA	CAN	British Columbia	admin	289625	1124147219
+Italy	Genoa	Genoa	Genoa	44.41	8.93	IT	ITA	Liguria	admin	647497	1380716540
+Germany	Hamburg	Hamburg	Hamburg	53.55	10	DE	DEU	Hamburg	admin	1757000	1276041799
+Sweden	Gothenburg	Gothenburg	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Belgium	Antwerp	Antwerp	Antwerp	51.2204	4.415	BE	BEL	Flanders	minor	920000	1056168623
+United States	Colorado Springs	Colorado-Springs	Colorado Springs	38.8674	-104.7606	US	USA	Colorado		623946	1840018825
+United Kingdom	Oxford	Oxford	Oxford	51.7704	-1.25	GB	GBR	Oxfordshire	admin	192796	1826689568
+United States	Tacoma	Tacoma	Tacoma	47.2431	-122.4531	US	USA	Washington		213418	1840021129
+United States	Saint Louis	Saint-Louis	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Finland	Tampere	Tampere	Tampere	61.5	23.75	FI	FIN	Pirkanmaa	admin	259279	1246964318
+Canada	Calgary	Calgary	Calgary	51.083	-114.08	CA	CAN	Alberta		1110000	1124690423
+United States	Columbus	Columbus	Columbus	39.986	-82.9851	US	USA	Ohio	admin	1528314	1840003760
+New Zealand	Wellington	Wellington	Wellington	-41.3	174.7833	NZ	NZL	Wellington	primary	393400	1554772152
+Italy	Rome	Rome	Rome	41.896	12.4833	IT	ITA	Lazio	primary	3339000	1380382862
+United Kingdom	York	York	York	53.9704	-1.08	GB	GBR	York	admin	158947	1826149980
+Puerto Rico	San Juan	San-Juan	San Juan	18.4037	-66.0636	PR	PRI	Puerto Rico		341657	1630035577
+Italy	Bologna	Bologna	Bologna	44.5004	11.34	IT	ITA	Emilia-Romagna	admin	488172	1380202039
+United Kingdom	Aberdeen	Aberdeen	Aberdeen	57.1704	-2.08	GB	GBR	Aberdeen City	admin	189364	1826324306
+United Kingdom	Edinburgh	Edinburgh	Edinburgh	55.9483	-3.2191	GB	GBR	Edinburgh, City of	admin	504966	1826492520
+Canada	Saint John's	Saint-John's	Saint John’s	47.585	-52.681	CA	CAN	Newfoundland and Labrador	admin	131469	1124741456
+Germany	Heidelberg	Heidelberg	Heidelberg	49.42	8.7	DE	DEU	Baden-Württemberg	minor	426590	1276519742
+Sweden	Malmo	Malmo	Malmö	55.5833	13.0333	SE	SWE	Skåne	admin	269349	1752705818
+United States	Raleigh	Raleigh	Raleigh	35.8324	-78.6438	US	USA	North Carolina	admin	1018336	1840014497
+Germany	Frankfurt	Frankfurt	Frankfurt	50.1	8.675	DE	DEU	Hesse	minor	2895000	1276054552
+Ireland	Limerick	Limerick	Limerick	52.6647	-8.6231	IE	IRL	Limerick	admin	90054	1372126011
+Netherlands	Rotterdam	Rotterdam	Rotterdam	51.92	4.48	NL	NLD	Zuid-Holland	minor	1005000	1528892850
+Canada	Edmonton	Edmonton	Edmonton	53.55	-113.5	CA	CAN	Alberta	admin	1058000	1124290735
+United Kingdom	Leicester	Leicester	Leicester	52.63	-1.1332	GB	GBR	Leicester	admin	457983	1826431946
+Canada	Saskatoon	Saskatoon	Saskatoon	52.17	-106.67	CA	CAN	Saskatchewan		198958	1124612546
+United States	Kansas City	Kansas-City	Kansas City	39.1239	-94.5541	US	USA	Missouri		1615621	1840008535
+Malta	Sliema	Sliema	Sliema	35.9125	14.5019	MT	MLT	Sliema	admin	NA	1470229986
+Australia	Hobart	Hobart	Hobart	-42.85	147.295	AU	AUS	Tasmania	admin	80870	1036679838
+Finland	Espoo	Espoo	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Canada	Ottawa	Ottawa	Ottawa	45.4167	-75.7	CA	CAN	Ontario	primary	1145000	1124399363
+Australia	Adelaide	Adelaide	Adelaide	-34.935	138.6	AU	AUS	South Australia	admin	1145000	1036538171
+United Kingdom	Manchester	Manchester	Manchester	53.5004	-2.248	GB	GBR	Manchester	admin	2230000	1826246335
+Canada	Regina	Regina	Regina	50.45	-104.617	CA	CAN	Saskatchewan	admin	176183	1124342541
+Canada	Quebec City	Quebec-City	NA	NA	NA	NA	NA	NA	NA	NA	NA
+United Kingdom	Dundee	Dundee	Dundee	56.4704	-3	GB	GBR	Dundee City	admin	151592	1826581481
+United States	Dallas	Dallas	Dallas	32.7936	-96.7662	US	USA	Texas		5733259	1840019440
+Germany	Bonn	Bonn	Bonn	50.7205	7.08	DE	DEU	North Rhine-Westphalia	minor	680543	1276807850
+United States	Austin	Austin	Austin	30.3006	-97.7517	US	USA	Texas	admin	1638716	1840019590
+Germany	Stuttgart	Stuttgart	Stuttgart	48.78	9.2	DE	DEU	Baden-Württemberg	admin	2944700	1276171358
+United States	Las Vegas	Las-Vegas	Las Vegas	36.2333	-115.2654	US	USA	Nevada		2073045	1840020364
+United Kingdom	Birmingham	Birmingham	Birmingham	52.475	-1.92	GB	GBR	Birmingham	admin	2285000	1826423213
+United States	Phoenix	Phoenix	Phoenix	33.5722	-112.0891	US	USA	Arizona	admin	4081849	1840020568
+Canada	Montreal	Montreal	Montréal	45.5	-73.5833	CA	CAN	Québec		3678000	1124586170
+United States	Richmond	Richmond	Richmond	37.5295	-77.4756	US	USA	Virginia	admin	1059907	1840001698
+United States	Tampa	Tampa	Tampa	27.9942	-82.4451	US	USA	Florida		2804240	1840015982
+Germany	Dusseldorf	Dusseldorf	Düsseldorf	51.2204	6.78	DE	DEU	North Rhine-Westphalia	admin	1220000	1276615258
+France	Lille	Lille	Lille	50.65	3.08	FR	FRA	Hauts-de-France	admin	1044000	1250071961
+United Arab Emirates	Dubai	Dubai	Dubai	25.23	55.28	AE	ARE	Dubayy	admin	1379000	1784736618
+United States	Louisville	Louisville	Louisville	38.1663	-85.6485	US	USA	Kentucky		1011696	1840030815
+Germany	Nuremberg	Nuremberg	Nuremberg	49.45	11.08	DE	DEU	Bavaria	minor	737304	1276166609
+Italy	Turin	Turin	Turin	45.0704	7.67	IT	ITA	Piedmont	admin	1652000	1380244627
+United Kingdom	Nottingham	Nottingham	Nottingham	52.9703	-1.17	GB	GBR	Nottingham	admin	825600	1826122597
+United States	Indianapolis	Indianapolis	Indianapolis	39.7771	-86.1458	US	USA	Indiana	admin	1564699	1840030084
+United Kingdom	Derby	Derby	Derby	52.9333	-1.5	GB	GBR	Derby	admin	NA	1826333435
+United Kingdom	Southampton	Southampton	Southampton	50.9	-1.4	GB	GBR	Southampton	admin	384417	1826602892
+Germany	Mannheim	Mannheim	Mannheim	49.5004	8.47	DE	DEU	Baden-Württemberg	minor	2362000	1276150104
+United Kingdom	Newcastle upon Tyne	Newcastle-Upon-Tyne	Newcastle upon Tyne	55.0004	-1.6	GB	GBR	Newcastle upon Tyne	admin	882000	1826292220
+Canada	Brampton	Brampton	NA	NA	NA	NA	NA	NA	NA	NA	NA
+United Kingdom	Glasgow	Glasgow	Glasgow	55.8744	-4.2507	GB	GBR	Glasgow City	admin	1160000	1826836462
+United States	San Antonio	San-Antonio	San Antonio	29.4658	-98.5254	US	USA	Texas		2002530	1840022220
+United States	Orlando	Orlando	Orlando	28.4772	-81.3369	US	USA	Florida		1776841	1840015099
+Austria	Vienna	Vienna	Vienna	48.2	16.3666	AT	AUT	Wien	primary	2400000	1040261752
+Germany	Cologne	Cologne	Cologne	50.93	6.95	DE	DEU	North Rhine-Westphalia		1004000	1276015998
+United States	Houston	Houston	Houston	29.7869	-95.3905	US	USA	Texas		5446468	1840020925
+United Kingdom	Cardiff	Cardiff	NA	NA	NA	NA	NA	NA	NA	NA	NA
+United Kingdom	Leeds	Leeds	Leeds	53.83	-1.58	GB	GBR	Leeds	admin	1529000	1826343963
+Germany	Berlin	Berlin	Berlin	52.5218	13.4015	DE	DEU	Berlin	primary	3406000	1276451290
+United States	Salt Lake City	Salt-Lake-City	Salt Lake City	40.7774	-111.93	US	USA	Utah	admin	1098400	1840021383
+United States	Madison	Madison	Madison	43.0827	-89.3923	US	USA	Wisconsin	admin	439553	1840002915
+Germany	Essen	Essen	Essen	51.45	7.0166	DE	DEU	North Rhine-Westphalia	minor	1742135	1276769247
+Taiwan	Taipei	Taipei	Taipei	25.0358	121.5683	TW	TWN	Taipei	primary	6900273	1158881289
+United States	Tulsa	Tulsa	Tulsa	36.1284	-95.9043	US	USA	Oklahoma		672054	1840021672
+Canada	Hamilton	Hamilton	Hamilton	43.25	-79.83	CA	CAN	Ontario		721053	1124567288
+United Kingdom	Liverpool	Liverpool	Liverpool	53.416	-2.918	GB	GBR	Liverpool	admin	811000	1826558678
+Qatar	Doha	Doha	Doha	25.2866	51.533	QA	QAT	Ad Dawḩah	primary	1450000	1634459660
+United States	Detroit	Detroit	Detroit	42.3834	-83.1024	US	USA	Michigan		3522206	1840003971
+Germany	Bremen	Bremen	Bremen	53.08	8.8	DE	DEU	Bremen	admin	724909	1276376509
+Canada	Winnipeg	Winnipeg	Winnipeg	49.883	-97.166	CA	CAN	Manitoba	admin	632063	1124224963
+Canada	Kitchener	Kitchener	Kitchener	43.45	-80.5	CA	CAN	Ontario		417001	1124158530
+Lebanon	Beirut	Beirut	Beirut	33.872	35.5097	LB	LBN	Beyrouth	primary	1846000	1422847713
+Germany	Leipzig	Leipzig	Leipzig	51.3354	12.41	DE	DEU	Saxony	minor	542529	1276563678
+United Arab Emirates	Abu Dhabi	Abu-Dhabi	Abu Dhabi	24.4667	54.3666	AE	ARE	Abū Z̧aby	primary	603492	1784176710
+Cyprus	Nicosia	Nicosia	Nicosia	35.1667	33.3666	CY	CYP	Lefkosía	primary	224300	1196944155
+United Kingdom	Sheffield	Sheffield	Sheffield	53.3667	-1.5	GB	GBR	Sheffield	admin	1292900	1826289852
+Germany	Hanover	Hanover	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Cyprus	Limassol	Limassol	Limassol	34.6754	33.0333	CY	CYP	Lemesós	admin	154000	1196136222
+Germany	Dresden	Dresden	Dresden	51.05	13.75	DE	DEU	Saxony	admin	617515	1276561036
+United Kingdom	Belfast	Belfast	Belfast	54.6	-5.96	GB	GBR	Belfast		450406	1826509389
+United States	Cincinnati	Cincinnati	Cincinnati	39.1412	-84.506	US	USA	Ohio		1648254	1840003814
+Italy	Naples	Naples	Naples	40.84	14.245	IT	ITA	Campania	admin	2250000	1380646673
+Germany	Karlsruhe	Karlsruhe	Karlsruhe	49	8.4	DE	DEU	Baden-Württemberg	minor	377487	1276923210
+Germany	Aachen	Aachen	NA	NA	NA	NA	NA	NA	NA	NA	NA
+United States	Boise	Boise	Boise	43.6007	-116.2312	US	USA	Idaho	admin	385218	1840027142
+United States	Little Rock	Little-Rock	Little Rock	34.7255	-92.358	US	USA	Arkansas	admin	442699	1840015509
+Spain	Palma de Mallorca	Palma-De-Mallorca	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Bahrain	Manama	Manama	Manama	26.2361	50.5831	BH	BHR	Al ‘Āşimah	primary	563920	1048989486
+Spain	Barcelona	Barcelona	Barcelona	41.3833	2.1834	ES	ESP	Catalonia	admin	4920000	1724594040
+United Kingdom	Kingston upon Hull	Kingston-Upon-Hull	Kingston upon Hull	53.7504	-0.33	GB	GBR	Kingston upon Hull, City of	admin	302296	1826028894
+Italy	Catania	Catania	Catania	37.5	15.08	IT	ITA	Sicilia	minor	674542	1380562508
+Spain	Madrid	Madrid	Madrid	40.4	-3.6834	ES	ESP	Madrid	primary	5567000	1724616994
+Jamaica	Kingston	Kingston	Kingston	17.9771	-76.7674	JM	JAM	Kingston	primary	937700	1388709177
+Spain	Granada	Granada	Granada	37.165	-3.585	ES	ESP	Andalusia	minor	388290	1724929320
+Greece	Athens	Athens	Athens	37.9833	23.7333	GR	GRC	Attikí	primary	3242000	1300715560
+Panama	Panama City	Panama-City	Panama City	8.968	-79.533	PA	PAN	Panamá	primary	1281000	1591672475
+Thailand	Bangkok	Bangkok	Bangkok	13.75	100.5166	TH	THA	Krung Thep Maha Nakhon	primary	6704000	1764068610
+Jordan	Amman	Amman	Amman	31.95	35.9333	JO	JOR	Al ‘Āşimah	primary	1060000	1400522593
+Greece	Thessaloniki	Thessaloniki	Thessaloníki	40.6961	22.885	GR	GRC	Kentrikí Makedonía	admin	828000	1300397999
+Italy	Palermo	Palermo	Palermo	38.125	13.35	IT	ITA	Sicilia	admin	863000	1380428434
+Slovenia	Ljubljana	Ljubljana	Ljubljana	46.0553	14.515	SI	SVN	Ljubljana	primary	314807	1705917455
+Greece	Patras	Patras	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Greece	Heraklion	Heraklion	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Cyprus	Paphos	Paphos	Paphos	34.7559	32.4225	CY	CYP	Páfos	admin	35961	1196607408
+United Arab Emirates	Sharjah	Sharjah	Sharjah	25.3714	55.4065	AE	ARE	Ash Shāriqah	admin	1103027	1784152993
+Estonia	Tallinn	Tallinn	Tallinn	59.4339	24.728	EE	EST	Harjumaa	primary	394024	1233260021
+United States	El Paso	El-Paso	El Paso	31.8479	-106.4309	US	USA	Texas		845674	1840023252
+Spain	Alicante	Alicante	Alicante	38.3512	-0.4836	ES	ESP	Valencia	minor	315863	1724923163
+Spain	Las Palmas de Gran Canaria	Las-Palmas	Las Palmas de Gran Canaria	28.1	-15.43	ES	ESP	Canary Islands	admin	378495	1724501748
+Kuwait	Kuwait City	Kuwait-City	Kuwait City	29.3697	47.9783	KW	KWT	Al ‘Āşimah	primary	2063000	1414102075
+Spain	Valencia	Valencia	Valencia	39.485	-0.4	ES	ESP	Valencia	admin	808000	1724981666
+Portugal	Braga	Braga	Braga	41.555	-8.4213	PT	PRT	Braga	admin	826833	1620949401
+Portugal	Lisbon	Lisbon	Lisbon	38.7227	-9.1449	PT	PRT	Lisboa	primary	2812000	1620619017
+Uruguay	Montevideo	Montevideo	Montevideo	-34.858	-56.1711	UY	URY	Montevideo	primary	1513000	1858107000
+Oman	Muscat	Muscat	Muscat	23.6133	58.5933	OM	OMN	Masqaţ	primary	734697	1512035506
+Spain	Seville (Sevilla)	Sevilla	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Thailand	Pattaya	Pattaya	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Spain	Malaga	Malaga	Málaga	36.7204	-4.42	ES	ESP	Andalusia	minor	550058	1724397372
+Croatia	Zagreb	Zagreb	Zagreb	45.8	16	HR	HRV	Zagreb, Grad	primary	722526	1191233290
+Croatia	Split	Split	Split	43.5204	16.47	HR	HRV	Splitsko-Dalmatinska Županija	admin	214741	1191440208
+China	Shanghai	Shanghai	Shanghai	31.2165	121.4365	CN	CHN	Shanghai	admin	14987000	1156073548
+Saudi Arabia	Jeddah (Jiddah)	Jeddah-Jiddah	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Estonia	Tartu	Tartu	Tartu	58.3839	26.7099	EE	EST	Tartumaa	admin	101092	1233809410
+Portugal	Porto	Porto	Porto	41.15	-8.62	PT	PRT	Porto	admin	1337000	1620356810
+Slovenia	Maribor	Maribor	Maribor	46.5405	15.65	SI	SVN	Maribor	admin	114228	1705454394
+Thailand	Phuket	Phuket	Phuket	7.8765	98.3815	TH	THA	Phuket	admin	141618	1764327831
+Latvia	Riga	Riga	Riga	56.95	24.1	LV	LVA	Rīga	primary	742572	1428586192
+Spain	Santa Cruz de Tenerife	Santa-Cruz-De-Tenerife	Santa Cruz de Tenerife	28.47	-16.25	ES	ESP	Canary Islands	admin	336061	1724813158
+United Arab Emirates	Ajman	Ajman	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Czech Republic	Prague	Prague	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Saudi Arabia	Ad Dammam	Ad-Dammam	Ad Dammām	26.4282	50.0997	SA	SAU	Ash Sharqīyah	admin	2054710	1682452296
+Portugal	Coimbra	Coimbra	Coimbra	40.2004	-8.4167	PT	PRT	Coimbra	admin	106582	1620166724
+Croatia	Rijeka	Rijeka	Rijeka	45.33	14.45	HR	HRV	Primorsko-Goranska Županija	admin	170992	1191949063
+Slovakia	Bratislava	Bratislava	Bratislava	48.15	17.117	SK	SVK	Bratislavský	primary	423737	1703195001
+Saudi Arabia	Riyadh	Riyadh	Riyadh	24.6408	46.7727	SA	SAU	Ar Riyāḑ	primary	4465000	1682999334
+El Salvador	San Salvador	San-Salvador	San Salvador	13.71	-89.203	SV	SLV	San Salvador	primary	1433000	1222647454
+Russia	Moscow	Moscow	Moscow	55.7522	37.6155	RU	RUS	Moskva	primary	10452000	1643318494
+South Africa	Pretoria	Pretoria	Pretoria	-25.7069	28.2294	ZA	ZAF	Gauteng	primary	1338000	1710176249
+Cambodia	Phnom Penh	Phnom-Penh	Phnom Penh	11.55	104.9166	KH	KHM	Phnom Penh	primary	1466000	1116260534
+Thailand	Chiang Mai	Chiang-Mai	Chiang Mai	18.8	98.98	TH	THA	Chiang Mai	admin	397211	1764662886
+Czech Republic	Brno	Brno	NA	NA	NA	NA	NA	NA	NA	NA	NA
+South Africa	Johannesburg	Johannesburg	Johannesburg	-26.17	28.03	ZA	ZAF	Gauteng	admin	3435000	1710550792
+Brazil	Sao Paulo	Sao-Paulo	São Paulo	-23.5587	-46.625	BR	BRA	São Paulo	admin	18845000	1076532519
+Croatia	Osijek	Osijek	Osijek	45.5504	18.68	HR	HRV	Osječko-Baranjska Županija	admin	95077	1191917921
+Dominican Republic	Santo Domingo	Santo-Domingo	Santo Domingo	18.4701	-69.9001	DO	DOM	Ozama	primary	2154000	1214636202
+Chile	Santiago	Santiago	Santiago	-33.45	-70.667	CL	CHL	Región Metropolitana	primary	5720000	1152554349
+China	Beijing	Beijing	Beijing	39.9289	116.3883	CN	CHN	Beijing	primary	11106000	1156228865
+South Africa	Cape Town	Cape-Town	Cape Town	-33.92	18.435	ZA	ZAF	Western Cape	primary	3215000	1710680650
+Lithuania	Kaunas	Kaunas	Kaunas	54.9504	23.88	LT	LTU	Kauno Miestas	admin	374643	1440302852
+Slovakia	Kosice	Kosice	Košice	48.7304	21.25	SK	SVK	Košický	admin	236563	1703452690
+Indonesia	Jakarta	Jakarta	Jakarta	-6.1744	106.8294	ID	IDN	Jakarta	primary	9125000	1360771077
+Lithuania	Vilnius	Vilnius	Vilnius	54.6834	25.3166	LT	LTU	Vilniaus Miestas	primary	542366	1440887149
+Czech Republic	Olomouc	Olomouc	NA	NA	NA	NA	NA	NA	NA	NA	NA
+China	Shenzhen	Shenzhen	Shenzhen	22.5524	114.1221	CN	CHN	Guangdong	minor	7581000	1156158707
+Guatemala	Guatemala City	Guatemala-City	Guatemala City	14.6211	-90.527	GT	GTM	Guatemala	primary	1024000	1320197916
+Poland	Warsaw	Warsaw	Warsaw	52.25	21	PL	POL	Mazowieckie	primary	1707000	1616024847
+Namibia	Windhoek	Windhoek	Windhoek	-22.57	17.0835	NA	NAM	Khomas	primary	268132	1516802003
+Ecuador	Quito	Quito	Quito	-0.215	-78.5001	EC	ECU	Pichincha	primary	1701000	1218441993
+Ecuador	Guayaquil	Guayaquil	Guayaquil	-2.22	-79.92	EC	ECU	Guayas	admin	2514000	1218802178
+Hungary	Budapest	Budapest	Budapest	47.5	19.0833	HU	HUN	Budapest	primary	1679000	1348611435
+Russia	Vladivostok	Vladivostok	Vladivostok	43.13	131.91	RU	RUS	Primorskiy Kray	admin	587022	1643832017
+Suriname	Paramaribo	Paramaribo	Paramaribo	5.835	-55.167	SR	SUR	Paramaribo	primary	254169	1740518660
+Czech Republic	Ostrava	Ostrava	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Brazil	Rio de Janeiro	Rio-De-Janeiro	Rio de Janeiro	-22.925	-43.225	BR	BRA	Rio de Janeiro	admin	11748000	1076887657
+Peru	Lima	Lima	Lima	-12.048	-77.0501	PE	PER	Lima	primary	8012000	1604728603
+Malaysia	Kuala Lumpur	Kuala-Lumpur	Kuala Lumpur	3.1667	101.7	MY	MYS	Kuala Lumpur 	primary	1448000	1458988644
+Poland	Gdynia	Gdynia	Gdynia	54.5204	18.53	PL	POL	Pomorskie	minor	314664	1616385189
+Kenya	Nairobi	Nairobi	Nairobi	-1.2833	36.8167	KE	KEN	Nairobi City	primary	3010000	1404000661
+Iraq	Baghdad	Baghdad	Baghdad	33.3386	44.3939	IQ	IRQ	Baghdād	primary	5054000	1368596238
+Russia	Saint Petersburg	Saint-Petersburg	Saint Petersburg	59.939	30.316	RU	RUS	Sankt-Peterburg	admin	4553000	1643616350
+Iran	Tehran	Tehran	Tehran	35.6719	51.4243	IR	IRN	Tehrān	primary	7873000	1364305026
+Iraq	Erbil (Irbil)	Erbil-Irbil-Iraq	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Poland	Gdansk	Gdansk	Gdańsk	54.36	18.64	PL	POL	Pomorskie	admin	740000	1616406372
+Poland	Krakow (Cracow)	Krakow-Cracow	NA	NA	NA	NA	NA	NA	NA	NA	NA
+China	Guangzhou	Guangzhou	Guangzhou	23.145	113.325	CN	CHN	Guangdong	admin	8829000	1156237133
+Poland	Wroclaw	Wroclaw	Wrocław	51.1104	17.03	PL	POL	Dolnośląskie	admin	634893	1616108520
+Malaysia	Penang	Penang	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Brazil	Campinas	Campinas	Campinas	-22.9	-47.1	BR	BRA	São Paulo		2791000	1076145766
+China	Nanjing	Nanjing	Nanjing	32.05	118.78	CN	CHN	Jiangsu	admin	3679000	1156644065
+Poland	Poznan	Poznan	Poznań	52.4058	16.8999	PL	POL	Wielkopolskie	admin	623997	1616725607
+South Africa	Durban	Durban	Durban	-29.865	30.98	ZA	ZAF	KwaZulu-Natal		2729000	1710149138
+Brazil	Curitiba	Curitiba	Curitiba	-25.42	-49.32	BR	BRA	Paraná	admin	3084000	1076701712
+Bulgaria	Sofia	Sofia	Sofia	42.6833	23.3167	BG	BGR	Sofia-Grad	primary	1185000	1100762037
+Vietnam	Hanoi	Hanoi	Hanoi	21.0333	105.85	VN	VNM	Hà Nội	primary	4378000	1704413791
+Poland	Bydgoszcz	Bydgoszcz	Bydgoszcz	53.1204	18.01	PL	POL	Kujawsko-Pomorskie	admin	366452	1616454014
+China	Chengdu	Chengdu	Chengdu	30.67	104.07	CN	CHN	Sichuan	admin	4123000	1156421555
+Montenegro	Podgorica	Podgorica	Podgorica	42.466	19.2663	ME	MNE	Podgorica	primary	145850	1499454516
+Brazil	Porto Alegre	Porto-Alegre	Porto Alegre	-30.05	-51.2	BR	BRA	Rio Grande do Sul	admin	3917000	1076658221
+Poland	Lodz	Lodz	Łódź	51.775	19.4514	PL	POL	Łódzkie	admin	758000	1616832750
+Romania	Bucharest	Bucharest	Bucharest	44.4334	26.0999	RO	ROU	Bucureşti	primary	1942000	1642414442
+Hungary	Debrecen	Debrecen	Debrecen	47.5305	21.63	HU	HUN	Hajdú-Bihar	admin	231286	1348460698
+Russia	Nizhny Novgorod	Nizhny-Novgorod-Russia	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Romania	Constanta	Constanta	Constanţa	44.2027	28.61	RO	ROU	Constanţa	admin	303399	1642851858
+Serbia	Belgrade	Belgrade	Belgrade	44.8186	20.468	RS	SRB	Beograd	primary	1099000	1688374696
+Philippines	Manila	Manila	Manila	14.6042	120.9822	PH	PHL	Manila	primary	11100000	1608618140
+Mexico	Tijuana	Tijuana	Tijuana	32.5	-117.08	MX	MEX	Baja California	minor	1553000	1484708778
+Hungary	Szeged	Szeged	Szeged	46.2504	20.15	HU	HUN	Csongrád	admin	187765	1348655615
+Mexico	Monterrey	Monterrey	Monterrey	25.67	-100.33	MX	MEX	Nuevo León	admin	3712000	1484559591
+Mexico	Cancun	Cancun	Cancún	21.17	-86.83	MX	MEX	Quintana Roo	minor	542043	1484010310
+Albania	Tirana	Tirana	Tirana	41.3275	19.8189	AL	ALB	Tiranë	primary	895350	1008162156
+Bosnia And Herzegovina	Sarajevo	Sarajevo	Sarajevo	43.85	18.383	BA	BIH	Bosnia and Herzegovina, Federation of	primary	696731	1070966777
+Russia	Volgograd	Volgograd-Russia	Volgograd	48.71	44.5	RU	RUS	Volgogradskaya Oblast’	admin	984000	1643577201
+Mexico	Mexico City	Mexico-City	Mexico City	19.4424	-99.131	MX	MEX	Ciudad de México	primary	19028000	1484247881
+Russia	Yekaterinburg	Yekaterinburg	Yekaterinburg	56.85	60.6	RU	RUS	Sverdlovskaya Oblast’	admin	1313000	1643582706
+Philippines	Cebu	Cebu	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Poland	Szczecin	Szczecin	Szczecin	53.4204	14.53	PL	POL	Zachodniopomorskie	admin	407811	1616256546
+Vietnam	Ho Chi Minh City	Ho-Chi-Minh-City	Ho Chi Minh City	10.78	106.695	VN	VNM	Hồ Chí Minh	admin	5314000	1704774326
+Russia	Krasnoyarsk	Krasnoyarsk	Krasnoyarsk	56.014	92.866	RU	RUS	Krasnoyarskiy Kray	admin	925000	1643544975
+Brazil	Belo Horizonte	Belo-Horizonte	Belo Horizonte	-19.915	-43.915	BR	BRA	Minas Gerais	admin	5575000	1076967355
+Russia	Samara	Samara	Samara	53.195	50.1513	RU	RUS	Samarskaya Oblast’	admin	1137000	1643205757
+Turkey	Istanbul	Istanbul	Istanbul	41.105	29.01	TR	TUR	İstanbul	admin	10061000	1792756324
+Morocco	Casablanca	Casablanca	Casablanca	33.6	-7.6164	MA	MAR	Casablanca-Settat	admin	3181000	1504175315
+Russia	Rostov-na-donu	Rostov-na-donu	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Mexico	Queretaro	Queretaro	Querétaro	20.63	-100.38	MX	MEX	Querétaro	admin	961000	1484604775
+Russia	Kaliningrad	Kaliningrad	Kaliningrad	54.7	20.4973	RU	RUS	Kaliningradskaya Oblast’	admin	434954	1643178106
+Russia	Novosibirsk	Novosibirsk	Novosibirsk	55.03	82.96	RU	RUS	Novosibirskaya Oblast’	admin	1389000	1643399240
+Poland	Katowice	Katowice	Katowice	50.2604	19.02	PL	POL	Śląskie	admin	2746000	1616798495
+Morocco	Tangier	Tangier	Tangier	35.7473	-5.8327	MA	MAR	Tanger-Tétouan-Al Hoceïma	admin	750060	1504861504
+Bulgaria	Varna	Varna	Varna	43.2156	27.8953	BG	BGR	Varna	admin	312770	1100789115
+Bosnia And Herzegovina	Banja Luka	Banja-Luka	Banja Luka	44.7804	17.18	BA	BIH	Srpska, Republika	admin	221738	1070859064
+Morocco	Rabat	Rabat	Rabat	34.0253	-6.8361	MA	MAR	Rabat-Salé-Kénitra	primary	1705000	1504023252
+Russia	Irkutsk	Irkutsk-Russia	Irkutsk	52.32	104.245	RU	RUS	Irkutskaya Oblast’	admin	586695	1643439037
+Nigeria	Lagos	Lagos	Lagos	6.4433	3.3915	NG	NGA	Lagos	minor	9466000	1566593751
+Poland	Lublin	Lublin	Lublin	51.2504	22.5727	PL	POL	Lubelskie	admin	360044	1616953501
+Bulgaria	Plovdiv	Plovdiv	Plovdiv	42.154	24.754	BG	BGR	Plovdiv	admin	340494	1100436706
+Russia	Kazan	Kazan	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Romania	Cluj-Napoca	Cluj-napoca	Cluj-Napoca	46.7884	23.5984	RO	ROU	Cluj	admin	316748	1642503974
+Russia	Perm	Perm	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Russia	Ufa	Ufa	Ufa	54.79	56.04	RU	RUS	Bashkortostan	admin	1018000	1643722928
+Romania	Brasov	Brasov	Braşov	45.6475	25.6072	RO	ROU	Braşov	admin	311044	1642328429
+Belarus	Minsk	Minsk	Minsk	53.9	27.5666	BY	BLR	Minsk	primary	1805000	1112348503
+Russia	Voronezh	Voronezh	Voronezh	51.73	39.27	RU	RUS	Voronezhskaya Oblast’	admin	844000	1643811064
+Ukraine	Kiev (Kyiv)	Kiev	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Mexico	Guadalajara	Guadalajara	Guadalajara	20.67	-103.33	MX	MEX	Jalisco	admin	4198000	1484950208
+Romania	Iasi	Iasi	Iaşi	47.1683	27.5749	RO	ROU	Iaşi	admin	325914	1642367695
+Russia	Krasnodar	Krasnodar	Krasnodar	45.02	39	RU	RUS	Krasnodarskiy Kray	admin	649851	1643438227
+Russia	Chelyabinsk	Chelyabinsk	Chelyabinsk	55.155	61.4387	RU	RUS	Chelyabinskaya Oblast’	admin	1091000	1643224011
+Indonesia	Bandung	Bandung	Bandung	-6.95	107.57	ID	IDN	Jawa Barat	admin	2394000	1360313023
+Russia	Saratov	Saratov	Saratov	51.58	46.03	RU	RUS	Saratovskaya Oblast’	admin	843000	1643556540
+Romania	Sibiu	Sibiu	Sibiu	45.7971	24.1371	RO	ROU	Sibiu	admin	155565	1642393086
+Romania	Timisoara	Timisoara	Timişoara	45.7588	21.2234	RO	ROU	Timiş	admin	315053	1642603121
+Serbia	Novi Sad	Novi-Sad	Novi Sad	45.2504	19.8499	RS	SRB	Novi Sad	admin	225457	1688169087
+Russia	Tomsk	Tomsk	Tomsk	56.495	84.975	RU	RUS	Tomskaya Oblast’	admin	535479	1643258928
+Bulgaria	Burgas	Burgas	Burgas	42.5146	27.4746	BG	BGR	Burgas	admin	195966	1100365645
+Romania	Oradea	Oradea	Oradea	47.05	21.92	RO	ROU	Bihor	admin	213830	1642066626
+Turkey	Bursa	Bursa	Bursa	40.2	29.07	TR	TUR	Bursa	admin	1492000	1792903330
+Ukraine	Odessa (Odesa)	Odesa	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Turkey	Ankara	Ankara	Ankara	39.9272	32.8644	TR	TUR	Ankara	primary	3716000	1792572891
+Mongolia	Ulaanbaatar	Ulaanbaatar	Ulaanbaatar	47.9167	106.9166	MN	MNG	Ulaanbaatar	primary	885000	1496024767
+Ecuador	Cuenca	Cuenca	Cuenca	-2.9	-79	EC	ECU	Azuay	admin	286878	1218041020
+Romania	Arad	Arad	Arad	46.17	21.32	RO	ROU	Arad	admin	169065	1642996909
+Russia	Izhevsk	Izhevsk	Izhevsk	56.85	53.23	RU	RUS	Udmurtiya	admin	631038	1643983138
+Argentina	Buenos Aires	Buenos-Aires	Buenos Aires	-34.6025	-58.3975	AR	ARG	Buenos Aires, Ciudad Autónoma de	primary	12795000	1032717330
+North Macedonia	Skopje	Skopje	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Mexico	Puebla	Puebla	Puebla	19.05	-98.2	MX	MEX	Puebla	admin	2195000	1484416394
+Bangladesh	Dhaka	Dhaka	Dhaka	23.7231	90.4086	BD	BGD	Dhaka	primary	12797394	1050529279
+Moldova	Chisinau	Chisinau	Chisinau	47.005	28.8577	MD	MDA	Chişinău	primary	688134	1498011437
+Sri Lanka	Colombo	Colombo	Colombo	6.932	79.8578	LK	LKA	Western	primary	217000	1144251314
+Indonesia	Yogyakarta	Yogyakarta	Yogyakarta	-7.78	110.375	ID	IDN	Yogyakarta	admin	636660	1360384833
+Morocco	Agadir	Agadir	Agadir	30.44	-9.62	MA	MAR	Souss-Massa	admin	825467	1504116858
+Mexico	Merida	Merida	Mérida	20.9666	-89.6166	MX	MEX	Yucatán	admin	965000	1484396779
+Ukraine	Kharkiv	Kharkiv	Kharkiv	50	36.25	UA	UKR	Kharkivs’ka Oblast’	admin	1461000	1804588111
+Turkey	Izmir	Izmir	İzmir	38.4361	27.1518	TR	TUR	İzmir	admin	2587000	1792725579
+Serbia	Nis	Nis	Niš	43.3304	21.9	RS	SRB	Niš	admin	250000	1688661068
+Colombia	Bogota	Bogota	Bogotá	4.5964	-74.0833	CO	COL	Bogotá	primary	7772000	1170483426
+Armenia	Yerevan	Yerevan	Yerevan	40.1812	44.5136	AM	ARM	Yerevan	primary	1102000	1051074169
+Ukraine	Mykolaiv	Mykolayiv-Ukraine	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Romania	Craiova	Craiova	Craiova	44.3263	23.8259	RO	ROU	Dolj	admin	304142	1642859458
+Ukraine	Dnipro	Dnipropetrovsk	Dnipro	48.48	35	UA	UKR	Dnipropetrovs’ka Oblast’	admin	1050000	1804152933
+Ukraine	Vinnytsia	Vinnytsya-Ukraine	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Ukraine	Lviv	Lviv	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Kazakhstan	Astana	Astana	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Turkey	Antalya	Antalya	Antalya	36.89	30.7	TR	TUR	Antalya	admin	783000	1792988434
+Algeria	Algiers	Algiers	Algiers	36.7631	3.0506	DZ	DZA	Alger	primary	3354000	1012973369
+Kazakhstan	Almaty	Almaty	Almaty	43.325	76.915	KZ	KAZ	Almaty	admin	1209000	1398351701
+Azerbaijan	Baku	Baku	Baku	40.3953	49.8622	AZ	AZE	Bakı	primary	2122300	1031946365
+Paraguay	Asuncion	Asuncion	Asunción	-25.2964	-57.6415	PY	PRY	Asunción	primary	1870000	1600057911
+Ukraine	Ternopil	Ternopil-Ukraine	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Egypt	Cairo	Cairo-Egypt	Cairo	30.05	31.25	EG	EGY	Al Qāhirah	primary	11893000	1818253931
+Nepal	Kathmandu	Kathmandu	Kathmandu	27.7167	85.3166	NP	NPL	Bāgmatī	primary	895000	1524589448
+Ukraine	Zaporizhzhya	Zaporizhzhya	Zaporizhzhya	47.8573	35.1768	UA	UKR	Zaporiz’ka Oblast’	admin	788000	1804644752
+India	Gurgaon	Gurgaon	Gurgaon	28.45	77.02	IN	IND	Haryāna		197340	1356836043
+Colombia	Medellin	Medellin	Medellín	6.275	-75.575	CO	COL	Antioquia	admin	3297000	1170680389
+Kosovo (Disputed Territory)	Pristina	Pristina	NA	NA	NA	NA	NA	NA	NA	NA	NA
+India	Mumbai	Mumbai	Mumbai	19.017	72.857	IN	IND	Mahārāshtra	admin	18978000	1356226629
+Colombia	Cali	Cali	Cali	3.4	-76.5	CO	COL	Valle del Cauca	admin	2254000	1170417589
+Egypt	Alexandria	Alexandria	Alexandria	31.2	29.95	EG	EGY	Al Iskandarīyah	admin	4165000	1818695837
+India	Chandigarh	Chandigarh	Chandigarh	30.72	76.78	IN	IND	Chandīgarh	admin	979000	1356739179
+Tunisia	Tunis	Tunis	Tunis	36.8028	10.1797	TN	TUN	Tunis	primary	2412500	1788742103
+Georgia	Tbilisi	Tbilisi	Tbilisi	41.725	44.7908	GE	GEO	Tbilisi	primary	1100000	1268203191
+India	Delhi	Delhi	Delhi	28.67	77.23	IN	IND	Delhi	admin	15926000	1356872604
+Syria	Damascus	Damascus	Damascus	33.5	36.3	SY	SYR	Dimashq	primary	2466000	1760685964
+Venezuela	Caracas	Caracas	Caracas	10.501	-66.917	VE	VEN	Distrito Capital	primary	2985000	1862748204
+India	Noida	Noida	NA	NA	NA	NA	NA	NA	NA	NA	NA
+India	Pune	Pune	Pune	18.53	73.85	IN	IND	Mahārāshtra		4672000	1356081074
+Kyrgyzstan	Bishkek	Bishkek	Bishkek	42.8731	74.5852	KG	KGZ	Bishkek	primary	837000	1417191971
+India	Thane	Thane	NA	NA	NA	NA	NA	NA	NA	NA	NA
+India	Bangalore	Bangalore	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Uzbekistan	Tashkent	Tashkent	Tashkent	41.3117	69.2949	UZ	UZB	Toshkent	primary	2184000	1860331871
+India	Indore	Indore	Indore	22.7151	75.865	IN	IND	Madhya Pradesh		2026000	1356402812
+India	Goa	Goa	NA	NA	NA	NA	NA	NA	NA	NA	NA
+India	Ahmedabad	Ahmedabad	NA	NA	NA	NA	NA	NA	NA	NA	NA
+India	Navi Mumbai	Navi-Mumbai	NA	NA	NA	NA	NA	NA	NA	NA	NA
+India	Chennai	Chennai	Chennai	13.09	80.28	IN	IND	Tamil Nādu 	admin	7163000	1356374944
+India	Hyderabad	Hyderabad	Hyderabad	17.4	78.48	IN	IND	Telangana	admin	6376000	1356871768
+India	Jaipur	Jaipur	Jaipur	26.9211	75.81	IN	IND	Rājasthān	admin	2917000	1356293537
+India	Vadodara	Vadodara	Vadodara	22.31	73.18	IN	IND	Gujarāt		1756000	1356705249
+India	Patna	Patna	Patna	25.625	85.13	IN	IND	Bihār	admin	2158000	1356821429
+India	Guwahati	Guwahati	Guwāhāti	26.16	91.77	IN	IND	Assam		983000	1356593800
+India	Kolkata	Kolkata	Kolkata	22.495	88.3247	IN	IND	West Bengal	admin	14787000	1356060520
+India	Rajkot	Rajkot	Rājkot	22.31	70.8	IN	IND	Gujarāt		1260000	1356317190
+India	Kochi	Kochi	Kochi	10.015	76.2239	IN	IND	Kerala		1519000	1356707865
+India	Coimbatore	Coimbatore	Coimbatore	11	76.95	IN	IND	Tamil Nādu 		1696000	1356999503
+India	Surat	Surat	Sūrat	21.2	72.84	IN	IND	Gujarāt		3842000	1356758738
+India	Mangalore	Mangalore	Mangalore	12.9	74.85	IN	IND	Karnātaka		776632	1356972351
+India	Nagpur	Nagpur	Nāgpur	21.17	79.09	IN	IND	Mahārāshtra		2454000	1356365743
+Pakistan	Lahore	Lahore	Lahore	31.56	74.35	PK	PAK	Punjab	admin	6577000	1586801463
+India	Bhopal	Bhopal	Bhopal	23.25	77.41	IN	IND	Madhya Pradesh	admin	1727000	1356734039
+India	Lucknow (Lakhnau)	Lucknow-Lakhnau	NA	NA	NA	NA	NA	NA	NA	NA	NA
+India	Mysore	Mysore	Mysore	12.31	76.66	IN	IND	Karnātaka		887000	1356779323
+India	Bhubaneswar	Bhubaneswar	NA	NA	NA	NA	NA	NA	NA	NA	NA
+Pakistan	Karachi	Karachi	Karachi	24.87	66.99	PK	PAK	Sindh	admin	12130000	1586129469
+Pakistan	Islamabad	Islamabad	Islamabad	33.7	73.1666	PK	PAK	Islāmābād	primary	780000	1586306717
+India	Vijayawada	Vijayawada	NA	NA	NA	NA	NA	NA	NA	NA	NA
+India	Visakhapatnam	Visakhapatnam	NA	NA	NA	NA	NA	NA	NA	NA	NA
+India	Thiruvananthapuram	Thiruvananthapuram	Thiruvananthapuram	8.5	76.95	IN	IND	Kerala	admin	954000	1356024354
