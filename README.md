@@ -5,4 +5,3 @@ Shiny app scraping data from the www.numbeo.com and presenting data about the co
 <br>This app is still being under heavy development in my free time so stay tuned for the updates and new functionalities.
 ## Hosted at shinyapps.io by RStudio
 https://mateusz-wysocki.shinyapps.io/nomad_life_dev/
-<br>https://mateusz-wysocki.shinyapps.io/nomad_life/
