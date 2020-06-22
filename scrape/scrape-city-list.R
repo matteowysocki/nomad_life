@@ -1,31 +1,31 @@
+#####################################################################
+################## COUNTRY LIST FROM NUMBEO #########################
+#####################################################################
+# Load libraries
 INPUT_DIR <- ""
 source(glue::glue(INPUT_DIR, "R/library.R"))
 source(glue::glue(INPUT_DIR, "R/function.R"))
-
-### COUNTRIES LIST FROM NUMBEO
 # Get mainSource for countries
 mainSource <- getURL("https://www.numbeo.com/cost-of-living/") %>% read_html(mainSource, verbose = TRUE)
-# Get xpath for div with country names and attrs
+# Get xpath for div tag with country names and attrs
 nodes <- html_nodes(mainSource, xpath = "//*[@id='content_and_logo']/div")
-countries_node <- nodes[[9]] %>% html_nodes("a") # my data appears to be in ninth box
+countries_node <- nodes[[8]] %>% html_nodes("a") # my data appears to be in ninth box // EDIT: it lately changed to eight box! 20200622
 # Get names and hrefs
-#vec_countries_urls              <- countries_node %>% html_attrs() %>% unlist()
-#vec_countries_urls_full         <- paste0("https://www.numbeo.com/cost-of-living/", vec_countries_urls)
 vec_countries_names             <- countries_node %>% html_text()
 vec_countries_names_url_encoded <- sapply(vec_countries_names, URLencode, reserved = TRUE)
-vec_countries_urls              <- paste0("country_result.jsp?country=", vec_countries_names_url_encoded)
-vec_countries_urls_full         <- paste0("https://www.numbeo.com/cost-of-living/", vec_countries_urls)
-
+vec_countries_urls_part         <- paste0("country_result.jsp?country=", vec_countries_names_url_encoded)
+vec_countries_urls_full         <- paste0("https://www.numbeo.com/cost-of-living/", vec_countries_urls_part)
+# Combine column into tibble
 countries_df   <- tibble("country_id"               = seq.int(length(vec_countries_names)),
                          "country_name"             = vec_countries_names,
                          "country_name_url_encoded" = vec_countries_names_url_encoded,
                          "country_url_full"         = vec_countries_urls_full,
-                         "country_url"              = vec_countries_urls)
+                         "country_url_part"         = vec_countries_urls_part)
 
-### CITIES LIST FROM NUMBEO
-tic("Getting list of cities from all countries")
-
-# Empty data frame
+#####################################################################
+################## CITY LIST FROM NUMBEO ############################
+#####################################################################
+# Empty data frame to be appended in a for loop
 cities_df = tibble(
   "country_id"            = character(),
   "city_name"             = character(),
@@ -34,11 +34,10 @@ cities_df = tibble(
   "city_url"              = character()
 )
 
-#url_main <- "https://www.numbeo.com/cost-of-living/city_result.jsp?country="
-#url_main <- "https://www.numbeo.com/cost-of-living/"
 # countries_df %>% filter(country_name == "United States") %>% select(country_url_full)
 # iter_country_url_full = "https://www.numbeo.com/cost-of-living/country_result.jsp?country=United%20States"
 # iter_country_url_full = "https://www.numbeo.com/cost-of-living/country_result.jsp?country=Poland"
+tic("Getting list of cities from all countries")
 for (iter_country_url_full in countries_df$country_url_full) {
   # Get webdata
   mainURL <- iter_country_url_full
@@ -84,7 +83,9 @@ toc()
 
 cities_df_bck <- cities_df
 
-# Writing tables
+#####################################################################
+####################### WRITE TABLES ################################
+#####################################################################
 # write.table(x    = countries_df,
 #             file = "D:/analytics/shiny/nomad_life/data/country_list.txt",
 #             col.names = TRUE,
@@ -101,50 +102,8 @@ cities_df_bck <- cities_df
 #             sep = "\t",
 #             fileEncoding  = "UTF-8")
 
+# Check if files are ok
 cities <- read.csv(file = "D:/analytics/shiny/nomad_life/data/city_list.txt", sep = "\t", stringsAsFactors = FALSE)
 countries <- read.csv(file = "D:/analytics/shiny/nomad_life/data/country_list.txt", sep = "\t", stringsAsFactors = FALSE)
-
-
-
-
-
-
-
-########### testing
-# Scrape city data in numbeo.com
-# city = "Zary-¯ary"
-# city_search_bar
-# currency = "PLN"
-# mainURL <- paste0("https://www.numbeo.com/cost-of-living/in/", city, "?displayCurrency=", currency)
-# cat("\n"); cat(mainURL);cat("\n")
-# mainSource <- getURL(mainURL)
-# mainSource <- read_html(mainSource, verbose = TRUE)
-# is_city_not_found <- mainSource %>% html_text() %>% str_detect("Our system cannot find city with named with")
-# print(is_city_not_found)
-# if (is_city_not_found) {
-#   mainURL <- paste0("https://www.numbeo.com/cost-of-living/in/", city, "-Poland", "?displayCurrency=", currency)
-#   cat("\n"); cat(mainURL);cat("\n")
-#   mainSource <- getURL(mainURL)
-#   mainSource <- read_html(mainSource, verbose = TRUE)
-#   is_city_not_found <- mainSource %>% html_text() %>% str_detect("Our system cannot find city with named with")
-# }
-# is_city_not_found
-# 
-# # `Find tag based on class .emp_number. Found manually how to systematically search for such values?
-# SuplNodes   <- html_nodes(mainSource, ".emp_number" )
-# suplVector <-  sapply(SuplNodes, html_text, simplify = TRUE)
-# LiNodes <- html_nodes(mainSource, "li" )
-# nodesVector        <- sapply(LiNodes, html_text, simplify = TRUE)
-# is_single_cost     <- sapply(nodesVector, str_detect, "A single person monthly costs")
-# if (sum(is_single_cost) == 0) {
-#   monthly_value_single <- NA
-# } else {
-#   monthly_value_single <- nodesVector[which(is_single_cost == TRUE)]
-#   monthly_value_single <- str_remove(monthly_value_single, "A single person monthly costs: ")
-#   # String cleaning from raw form 
-#   monthly_value_single <- substr(monthly_value_single, 1, str_locate(monthly_value_single, "³"))
-#   monthly_value_single <- str_replace(monthly_value_single, ",", "") %>% str_replace("z³", "") %>% as.numeric()
-# }
-
 
 
