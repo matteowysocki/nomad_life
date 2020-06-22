@@ -164,6 +164,10 @@ print(Sys.time())
 backup <- res 
 res <- res %>% 
   mutate_at(vars(min, max), as.numeric)
+res_values_missing_perc <- res %>% group_by(city_id) %>%
+  summarise(perc_missing = sum(is.na(value)) / n()) %>%
+  filter(perc_missing < 0.5)
+res <- res %>% inner_join(res_values_missing_perc, by = "city_id")
 write.table(x    = res,
             file = "D:/analytics/shiny/nomad_life/data/city_data.txt",
             col.names = TRUE,
@@ -173,10 +177,10 @@ write.table(x    = res,
             #fileEncoding  = "UTF-8"
 )
 
-df <- plyr::rbind.fill(city_values1, city_values2)
-df <- plyr::rbind.fill(df, city_values4)
-df <- df %>% arrange(country_id, city_id)
-
-city_values <- read.csv(file = "D:/analytics/shiny/nomad_life/data/city_data_updated.txt", sep = "\t", stringsAsFactors = FALSE)
+# city_values <- read.csv(file = "D:/analytics/shiny/nomad_life/data/city_data.txt", sep = "\t", stringsAsFactors = FALSE)
+# city_values_missing_perc <- city_values %>% group_by(city_id) %>%
+#   summarise(perc_missing = sum(is.na(value)) / n()) %>%
+#   filter(perc_missing < 0.5)
+# city_values <- city_values %>% inner_join(city_values_missing_perc, by = "city_id")
 #backup_city_values <- read.csv(file = "D:/analytics/shiny/nomad_life/data/backup_city_data.txt", sep = "\t", stringsAsFactors = FALSE)
 

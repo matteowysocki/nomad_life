@@ -4,24 +4,26 @@ INPUT_DIR <- "D:/analytics/shiny/nomad_life/"
 source(glue::glue(INPUT_DIR, "R/library.R"))
 #source(glue::glue(INPUT_DIR, "/R/function.R"))
 
-### DATA PREP
-# Import UI Data
+# Dictionaty of cities from NUMBEO.COM (my base dict that is superior to ALL other files)
 city_list <- read.csv(file = glue::glue(INPUT_DIR, "data/city_list.txt"),
                         sep = "\t", stringsAsFactors = FALSE) #, encoding = "UTF-8"
 city_list <- city_list %>% arrange(country_name, city_name)
 city_list <- city_list %>% mutate(city_name_to_lower    = tolower(city_name),
-                                 country_name_to_lower = tolower(country_name))
+                                  country_name_to_lower = tolower(country_name))
+
+# Longitude and latitude from https://simplemaps.com/resources/free-country-cities
 city_geo  <- read.csv(file = glue::glue(INPUT_DIR, "data/worldcities.csv"), sep = ",",
                         stringsAsFactors = FALSE, encoding = "UTF-8") #, encoding = "UTF-8" "windows-1252"
 # [1] "city"       "city_ascii" "lat"        "lng"        "country"    "iso2"       "iso3"       "admin_name" "capital"  "population" "id" 
 city_geo <- city_geo %>% arrange(country, city)
 city_geo <- city_geo %>% mutate(city_name_to_lower   = tolower(city_ascii),
                                country_name_to_lower = tolower(country))
-city_geo <- city_geo %>% select(country_name_to_lower, city_name_to_lower, country, iso2)
+city_geo <- city_geo %>% select(country_name_to_lower, city_name_to_lower, country, iso2, population)
 country_geo_dict <- city_geo %>% group_by(country) %>% summarise(country_code = max(iso2))
 colnames(country_geo_dict) <- c("country_name", "country_code")
 
-# Make columns to be manually updated due to city and countries name conflicts
+
+# Longitude and latitude from http://download.geonames.org/export/dump/
 city_geo2    <- read.csv(file = glue::glue(INPUT_DIR, "data/cities1000.txt"), 
                          sep = "\t",
                          stringsAsFactors = FALSE,
@@ -30,7 +32,7 @@ city_geo2    <- read.csv(file = glue::glue(INPUT_DIR, "data/cities1000.txt"),
 colnames(city_geo2) <- c("geonameid", "name", "asciiname", "alternatenames", "lat", "lng", "feature_class",
                          "feature_code", "country_code", "cc2", "admin1_code", "admin2_code", "admin3_code", "admin4_code",
                          "population", "elevation", "dem", "timezone", "modification_date")
-city_geo2 <- city_geo2 %>% select(name, asciiname, lat, lng, country_code, admin1_code, admin2_code) 
+city_geo2 <- city_geo2 %>% select(name, asciiname, country_code, admin1_code, admin2_code, population, lat, lng) 
 city_geo2 <- city_geo2 %>% arrange(country_code, asciiname)
 city_geo2 <- city_geo2 %>% mutate(city_name_to_lower   = tolower(asciiname))
 city_geo2 <- city_geo2 %>% mutate(city_name_to_lower   = case_when(
@@ -77,34 +79,25 @@ city_list_processed <- city_list_processed %>% mutate(country_code = case_when(
 #city_list_processed %>% filter(is.na(country_code)) %>% distinct(country_name)
 
 city_list_processed <- city_list_processed %>% left_join(city_geo2, by = c("city_name_to_lower", "country_code"))
-city_list_processed %>% filter(country_name == "United States") %>% head()
+# city_list_processed %>% filter(country_name == "United States") %>% head()
+# city_geo2 %>% filter(country_code == "US") %>% tail()
+# dups <- city_list_processed %>% group_by(city_id) %>%
+#   summarize(n = n(), city1 = min(city_name), city2 = max(city_name), country = min(country_name)) %>%
+#   filter(n > 1) %>% arrange(desc(n))
+# dups
 
-
-city_list_processed %>% filter(country_name == "United States") %>% head()
-city_geo2 %>% filter(country_code == "US") %>% tail()
-dups <- city_list_processed %>% group_by(city_id) %>%
-  summarize(n = n(), city1 = min(city_name), city2 = max(city_name), country = min(country_name)) %>%
-  filter(n > 1) %>% arrange(desc(n))
-
-
-
-
-
-
-
-#city_geo <- city_geo[!duplicated(city_geo$City),]
-#city_geo_cols <- city_geo_list %>% select(country_name, city_name, country, city_ascii, lat, lng, population)
+# NOTE:
+# We cannot directly match cities from BASE NUMBEO LIST with external geo files and we end up with duplicated cities (if they repeat in a given country)
+# No good solution was found; in the end I take the city which has THE LARGEST population
+city_list_processed <- city_list_processed %>% arrange(country_name, city_name, desc(population))
+city_list_processed <- city_list_processed[!duplicated(city_list_processed$city_id),]
 
 #city_list %>% anti_join(city_geo, by = "City")
 #city_geo %>% anti_join(city_list, by = "City")
-
-
-# write.table(x    = city_geo,
+# write.table(x    = city_list_processed,
 #             file = "D:/analytics/shiny/nomad_life/data/city_geo.txt",
 #             col.names = TRUE,
 #             row.names = FALSE,
 #             quote = FALSE,
 #             sep = "\t")
-#   
-
 

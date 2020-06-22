@@ -1,5 +1,5 @@
 #####################################################################
-######################### UI ########################################
+######################### INIT ######################################
 #####################################################################
 #Sys.setlocale("LC_CTYPE", 'Polish')
 #INPUT_DIR <- "D:/analytics/shiny/nomad_life/"
@@ -8,23 +8,45 @@ INPUT_DIR <- ""
 source(glue::glue(INPUT_DIR, "R/library.R"))
 source(glue::glue(INPUT_DIR, "R/function.R"))
 
-### DATA PREP
-# Import UI Data
-data <- read.csv(file = glue::glue(INPUT_DIR, "data/city_list.txt"), sep = "\t", stringsAsFactors = FALSE) #, encoding = "UTF-8"
+### UI datasets
+data_values  <- read_tsv(file = glue::glue(INPUT_DIR, "data/city_data.txt"), col_types = cols()) #, encoding = "UTF-8"
+data_values  <- data_values %>% mutate(variable_styled_name = variable %>%
+                                        str_replace_all("[[:punct:]]", "") %>%
+                                        str_replace_all(" ", "_"))
+data_values$variable_styled_name <- ifelse(substr(data_values$variable_styled_name, 1, 1) == "1",
+                                           sub("^.", "One", data_values$variable_styled_name), data_values$variable_styled_name)
+
+# Filter data values for cities that have included a A single person monthly costs statistic available
+data_values_filtered <- data_values %>%
+  filter(variable == "A single person monthly costs" & !is.na(value)) %>%
+  select(country_id, city_id) %>% 
+  left_join(data_values, by = c("country_id", "city_id"))
+
+# TODO data is legacy redundant object this needs to be adjusted on the server side code
+data         <- data_values_filtered
+data_dict_ui <- data_values_filtered %>% distinct(country_name, city_name)
 
 # Make a list of choices where each choice is of type list. Care should be take for one element list therefore second line
-choices <- lapply(data %>% split(data$Country), select, City)
+choices <- lapply(data_dict_ui %>% split(data_dict_ui$country_name), select, city_name)
 choices <- lapply(choices, function(x) unlist(x) %>% as.vector() %>% as.list())
 
-# Other dfs
-data_values <- read.csv(file = glue::glue(INPUT_DIR, "data/city_data.txt"), sep = "\t", stringsAsFactors = FALSE)
-data_values <- data_values %>% mutate(variable_styled_name = variable %>% str_replace_all("[[:punct:]]", "") %>% str_replace_all(" ", "_"))
-#price_positions <- unique(data_values$variable_styled_name)
+# Make a vector of variables from numbeo.com to choose from
 price_positions <- unique(data_values$variable)
-data_wide   <- read.csv(file = glue::glue(INPUT_DIR, "data/data_wide_all.csv"), sep = "\t", stringsAsFactors = TRUE)
-data_map_dict <- unique(data_values[c("variable", "variable_styled_name")])
+data_map_dict   <- unique(data_values[c("variable", "variable_styled_name")])
 
-### UI DEFINITON
+### Server side datasets
+# Maps data
+data_dict   <- read_tsv(file = glue::glue(INPUT_DIR, "data/city_list.txt"), col_types = cols())
+data_geo    <- read_tsv(file = glue::glue(INPUT_DIR, "data/city_geo.txt"), col_types = cols())
+#data        <- data_values %>% inner_join(data_dict, by = c("city_id" = "city_id"))
+
+# Cost analysis datasets
+data_wide   <- read_tsv(file = glue::glue(INPUT_DIR, "data/data_wide_all.csv"), col_types = cols())
+data_wide   <- data_wide %>% left_join(data_geo %>% select(country_name, city_name, lat, lng), by = c("country_name", "city_name"))
+
+#####################################################################
+######################### UI ########################################
+#####################################################################
 ui <- fluidPage(
   
   # list(tags$style(HTML("
@@ -201,13 +223,8 @@ ui <- fluidPage(
 #####################################################################
 ####################### SERVER ######################################
 #####################################################################
-# Now city is input manually, how to fetch all options to  list in shiny?
-
 server <- function(input, output, session) {
-
   observeEvent(input$do_map, {
-    data_wide   <- read.csv(file = glue::glue(INPUT_DIR, "data/data_wide_all.csv"), sep = "\t", stringsAsFactors = TRUE) 
-    #print(head(data_map_dict))
     # INPUT_DIR = ""
     # color_chosen <- "Apples (1kg)"
     # positions_chosen <- c("Meal, Inexpensive Restaurant", "Domestic Beer (0.5 liter draught)", "Cappuccino (regular)")
@@ -229,15 +246,18 @@ server <- function(input, output, session) {
     positions_chosen_3 <- positions_chosen[3]
     if (!is.null(positions_chosen_1)) {
       positions_chosen_1 <- positions_chosen_1
-      var1 <- data_map_dict %>% filter(variable == positions_chosen_1) %>% select(variable_styled_name) %>% unlist() %>% as.character()} else {
+      var1 <- data_map_dict %>% filter(variable == positions_chosen_1) %>% select(variable_styled_name) %>%
+        unlist() %>% as.character()} else {
         positions_chosen_1 <- NA}
     if (!is.null(positions_chosen_2)) {
       positions_chosen_2 <- positions_chosen_2
-      var2 <- data_map_dict %>% filter(variable == positions_chosen_2) %>% select(variable_styled_name) %>% unlist() %>% as.character()} else {
+      var2 <- data_map_dict %>% filter(variable == positions_chosen_2) %>% select(variable_styled_name) %>%
+        unlist() %>% as.character()} else {
         positions_chosen_2 <- NA}
     if (!is.null(positions_chosen_3)) {
       positions_chosen_3 <- positions_chosen_3
-      var3 <- data_map_dict %>% filter(variable == positions_chosen_3) %>% select(variable_styled_name) %>% unlist() %>% as.character()} else {
+      var3 <- data_map_dict %>% filter(variable == positions_chosen_3) %>% select(variable_styled_name) %>%
+        unlist() %>% as.character()} else {
         positions_chosen_3 <- NA}
      
   output$map_world <- renderLeaflet({
@@ -247,12 +267,12 @@ server <- function(input, output, session) {
         addCircleMarkers(lng = ~lng,
                          lat = ~lat, 
                          popup  = ~paste0(" ",
-                           if (!is.na(positions_chosen_1)) {paste0(positions_chosen_1, ": ", as.character(data_wide[, var1]))
+                           if (!is.na(positions_chosen_1)) {paste0(positions_chosen_1, ": ", get(var1))
                              } else {"Nie wybrano zadnej pozycji"}, " <br> ",
-                           if (!is.na(positions_chosen_2)) {paste0(positions_chosen_2, ": ", as.character(data_wide[, var2]))}, " <br> ",
-                           if (!is.na(positions_chosen_3)) {paste0(positions_chosen_3, ": ", as.character(data_wide[, var3]))}, " "
+                           if (!is.na(positions_chosen_2)) {paste0(positions_chosen_2, ": ", get(var2))}, " <br> ",
+                           if (!is.na(positions_chosen_3)) {paste0(positions_chosen_3, ": ", get(var3))}, " "
                           ),
-                         label  = ~City,
+                         label  = ~city_name,
                          radius = ~11,
                          color  = ~"skyblue",
                          stroke = FALSE,
@@ -264,12 +284,12 @@ server <- function(input, output, session) {
         addCircleMarkers(lng = ~lng,
                          lat = ~lat, 
                          popup  = ~paste0(" ",
-                            if (!is.na(positions_chosen_1)) {paste0(positions_chosen_1, ": ", as.character(data_wide[, var1]))
-                             } else {"Nie wybrano zadnej pozycji"}, " <br> ",
-                            if (!is.na(positions_chosen_2)) {paste0(positions_chosen_2, ": ", as.character(data_wide[, var2]))}, " <br> ",
-                            if (!is.na(positions_chosen_3)) {paste0(positions_chosen_3, ": ", as.character(data_wide[, var3]))}, " "
+                           if (!is.na(positions_chosen_1)) {paste0(positions_chosen_1, ": ", get(var1))
+                            } else {"Nie wybrano zadnej pozycji"}, " <br> ",
+                           if (!is.na(positions_chosen_2)) {paste0(positions_chosen_2, ": ", get(var2))}, " <br> ",
+                           if (!is.na(positions_chosen_3)) {paste0(positions_chosen_3, ": ", get(var3))}, " "
                          ),
-                         label  = ~City,
+                         label  = ~city_name,
                          radius = ~11,
                          #color  = ~"skyblue",
                          color = ~beatCol(data_wide[[col1]]),
@@ -282,29 +302,26 @@ server <- function(input, output, session) {
 
   
   observeEvent(input$do, {
-    
-    ### DATA PREP
-    # Import server Data
-    data_dict   <- read.csv(file = glue::glue(INPUT_DIR, "data/city_list.txt"), sep = "\t", stringsAsFactors = FALSE)
-    data_values <- read.csv(file = glue::glue(INPUT_DIR, "data/city_data.txt"), sep = "\t", stringsAsFactors = FALSE)
-    data_geo    <- read.csv(file = glue::glue(INPUT_DIR, "data/city_geo.txt"), sep = "\t", stringsAsFactors = FALSE)
-    data        <- data_values %>% inner_join(data_dict, by = c("city" = "City_Search_Bar"))
-    data_wide   <- read.csv(file = glue::glue(INPUT_DIR, "data/data_wide_all.csv"), sep = "\t", stringsAsFactors = TRUE)
     # Get UI input$city value
     city_chosen       <- input$destination_city
     pln_total_value   <- input$user_value_to_spend
     months            <- input$trip_duration_months
     number_of_months  <- months
+    # city_chosen       <- "Kabul"
+    # pln_total_value   <- 40000
+    # months            <- 12
+    # number_of_months  <- 12
 
     
     # Filter data.frame with UI input value - take into account search format in column city_search_bar
-    city_data <- data     %>% filter(City == city_chosen)
-    city_geo  <- data_geo %>% filter(City == city_chosen)
+    city_data <- data     %>% filter(city_name == city_chosen)
+    city_geo  <- data_geo %>% filter(city_name == city_chosen)
     
     # Get column values
     monthly_value    <- city_data %>% filter(variable == "A single person monthly costs")           %>% select(value) %>% as.numeric()
     monthly_rent     <- city_data %>% filter(variable == "Apartment (1 bedroom) Outside of Centre") %>% select(value) %>% as.numeric()
-    rank_index_value <- city_data %>% filter(variable == "Cost of living index") %>% select(value) %>% str_replace(" out of ", "/") %>% str_remove_all("[stndrdth]") %>% as.character()
+    rank_index_value <- city_data %>% filter(variable == "Cost of living index") %>%
+      select(value) %>% str_replace(" out of ", "/") %>% str_remove_all("[stndrdth]") %>% as.character()
     surveys          <- city_data %>% filter(variable == "Survey respondents info") %>% select(value) %>% as.character()
     surveys          <- strsplit(surveys, " ")[[1]][6]
     
@@ -320,6 +337,12 @@ server <- function(input, output, session) {
     }
     available_value            <- available_value[-1] %>% round(2)
     available_value_at_the_end <- tail(available_value, 1)
+    
+    # TODO
+    # BELOW TEMP DEBUG
+    available_value_at_the_end <- ifelse(is.na(available_value_at_the_end), 0, available_value_at_the_end)
+    
+    
     if (available_value_at_the_end > 0) {
       summary_messages   <- c("Brzmi obiecujaco!", "Super!", "Powodzenia w podrozy!", "Jedziesz?", "Sztos!", "Czas na zostanie Nomadem!")
     } else {
@@ -345,7 +368,7 @@ server <- function(input, output, session) {
     })
     
     output$population_ibox <- renderUI({
-      info_box_tip_icon(title = "Populacja miasta", value = city_geo[1, "population"], with_currency_shown = FALSE)
+      info_box_tip_icon(title = "Populacja miasta", value = city_geo[1, "population"] %>% unlist(), with_currency_shown = FALSE)
     })
     
     output$population_ibox2 <- renderUI({
