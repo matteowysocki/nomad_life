@@ -41,7 +41,15 @@ data_geo    <- read_tsv(file = glue::glue(INPUT_DIR, "data/city_geo.txt"), col_t
 #data        <- data_values %>% inner_join(data_dict, by = c("city_id" = "city_id"))
 
 # Cost analysis datasets
-data_wide   <- read_tsv(file = glue::glue(INPUT_DIR, "data/data_wide_all.csv"), col_types = cols())
+data_wide   <- read_tsv(file = glue::glue(INPUT_DIR, "data/data_wide_all.csv"), col_types = cols(
+  .default = col_double(),
+  country_name = col_character(),
+  city_name = col_character(),
+  Cost_of_living_index = col_character(),
+  Survey_respondents_info = col_character(),
+  Survey_update_info = col_character(),
+  Buffalo_Round_1kg_or_Equivalent_Back_Leg_Red_Meat = col_double()
+))
 data_wide   <- data_wide %>% left_join(data_geo %>% select(country_name, city_name, lat, lng), by = c("country_name", "city_name"))
 
 #####################################################################
@@ -49,23 +57,23 @@ data_wide   <- data_wide %>% left_join(data_geo %>% select(country_name, city_na
 #####################################################################
 ui <- fluidPage(
   
-  # list(tags$style(HTML("
-  # 
-  #     .navbar.navbar-default.navbar-static-top{
-  #                 color: #ff3368;
-  #                                     }
-  #     .navbar .navbar-header {float: left;
-  #                 font-family: 'Lobster', cursive;
-  #                 line-height: 1.1;
-  #                 color: #DC143C;
-  #                 text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
-  #                                     } 
-  #     .navbar-default .navbar-brand { 
-  #                 color: #ff3368; 
-  #                 font-size: 20px;
-  #                                     } 
-  # 
-  # "))),
+  list(tags$style(HTML("
+
+      .navbar.navbar-default.navbar-static-top{
+                  color: #ff3368;
+                                      }
+      .navbar .navbar-header {float: left;
+                  font-family: 'Lobster', cursive;
+                  line-height: 1.1;
+                  color: #DC143C;
+                  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+                                      }
+      .navbar-default .navbar-brand {
+                  color: grey;
+                  font-size: 20px;
+                                      }
+
+  "))),
   
   navbarPage("Znajdz swoje Bieszczady!",
              #headerPanel("Znajdz swoje Bieszczady!"),
@@ -213,7 +221,7 @@ ui <- fluidPage(
                                h5(p("Autorem aplikacji jest Mateusz Wysocki, ktory pracuje zawodowo jako konsultant Data Science oraz posiada kilkuletnie doswiadczenie w tym zakresie.
                          Wszelkie pytania lub chec kontaktu/wspolpracy moga byc kierowane pod adres: matteo.wysocki@gmail")
                                )
-                               #HTML('<img src="GregPicCrop.png", height="200px"'),
+                               #HTML('<img src="pic.png", height="200px"'),
                                
                         ) 
                       )
@@ -320,10 +328,13 @@ server <- function(input, output, session) {
     # Get column values
     monthly_value    <- city_data %>% filter(variable == "A single person monthly costs")           %>% select(value) %>% as.numeric()
     monthly_rent     <- city_data %>% filter(variable == "Apartment (1 bedroom) Outside of Centre") %>% select(value) %>% as.numeric()
-    rank_index_value <- city_data %>% filter(variable == "Cost of living index") %>%
-      select(value) %>% str_replace(" out of ", "/") %>% str_remove_all("[stndrdth]") %>% as.character()
+    rank_index_value <- city_data %>%
+      filter(variable == "Cost of living index") %>%
+      select(value) %>% str_replace(" out of ", "/") %>%
+      str_remove_all("[stndrdth]") %>%
+      as.character()
     surveys          <- city_data %>% filter(variable == "Survey respondents info") %>% select(value) %>% as.character()
-    surveys          <- strsplit(surveys, " ")[[1]][6]
+    # surveys          <- strsplit(surveys, " ")[[1]][6]
     
     # Calculate other values
     pln_monthly_value  <- pln_total_value / months
@@ -342,7 +353,6 @@ server <- function(input, output, session) {
     # BELOW TEMP DEBUG
     available_value_at_the_end <- ifelse(is.na(available_value_at_the_end), 0, available_value_at_the_end)
     
-    
     if (available_value_at_the_end > 0) {
       summary_messages   <- c("Brzmi obiecujaco!", "Super!", "Powodzenia w podrozy!", "Jedziesz?", "Sztos!", "Czas na zostanie Nomadem!")
     } else {
@@ -350,7 +360,7 @@ server <- function(input, output, session) {
     }
     summary_emotion_message <- as.character(sample(summary_messages, 1)[1])
     ## Define and move dates by month
-    date_next   <- as.Date("2020-06-01")
+    date_next   <- as.Date(Sys.Date())
     date_seq    <- seq(date_next, by = "month", length.out = months)
     
     df <- data.frame("Kwota"      = rep(city_monthly_value, months),

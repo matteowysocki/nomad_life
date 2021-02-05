@@ -1,28 +1,40 @@
-# city = "Reno"
-#data_serv <- read.csv(file = "D:/analytics/shiny/nomad_life/data/city_list.txt", sep = ",", stringsAsFactors = FALSE)
-#city_url_full = "https://www.numbeo.com/cost-of-living/city_result.jsp?country=Afghanistan&city=Herat"
-
-
+#####################################################################
+################## WEB SCRAPE CITY VALUES ###########################
+#####################################################################
+# data_serv <- read.csv(file = "D:/analytics/shiny/nomad_life/data/city_list.txt", sep = ",", stringsAsFactors = FALSE)
+# city_url_full = "https://www.numbeo.com/cost-of-living/city_result.jsp?country=Afghanistan&city=Herat"
 
 getMainValues <- function(city_url_full = city_url_full, currency = "PLN") {
   
-  # Get country
-  city_id   = cities_df[which(cities_df$city_url_full == city_url_full), "city_id"]  %>% unlist()
-  city_name = cities_df[which(cities_df$city_url_full == city_url_full), "city_name"] %>% unlist()
-  country_id   = cities_df[which(cities_df$city_url_full == city_url_full), "country_id"]  %>% unlist()
-  country_name = cities_df[which(cities_df$city_url_full == city_url_full), "country_name"] %>% unlist()
+  getCityDetails <- function(variable_name) {
+    cities_df[which(cities_df$city_url_full == city_url_full), variable_name]  %>% unlist()
+  }
+  # Get city details along with its country details
+  city_id   = getCityDetails("city_id")
+  city_name = getCityDetails("city_name")
+  country_id   = getCityDetails("country_id")
+  country_name = getCityDetails("country_name")
+  
+  # city_id   = cities_df[which(cities_df$city_url_full == city_url_full), "city_id"]  %>% unlist()
+  # city_name = cities_df[which(cities_df$city_url_full == city_url_full), "city_name"] %>% unlist()
+  # country_id   = cities_df[which(cities_df$city_url_full == city_url_full), "country_id"]  %>% unlist()
+  # country_name = cities_df[which(cities_df$city_url_full == city_url_full), "country_name"] %>% unlist()
+  
   # Scrape city data in numbeo.com
   mainURL <- paste0(city_url_full, "&displayCurrency=", currency)
-  #mainURL <- paste0(city_search_bar, "&displayCurrency=", currency)
-  #cat("\n"); cat(mainURL);cat("\n")
-  mainSource <- getURL(mainURL, .opts=curlOptions(followlocation = TRUE)) # https://stackoverflow.com/questions/25452896/r-geturl-returning-empty-string
+
+  # Below: # https://stackoverflow.com/questions/25452896/r-geturl-returning-empty-string
+  mainSource <- getURL(mainURL, .opts=curlOptions(followlocation = TRUE)) 
   mainSource <- read_html(mainSource, verbose = TRUE)
+  
+  # Exception handling: explicit messege if the name of the city does not match anything on numbeo
+  # I do not do anything this city/record is just becoming missing from now on
   is_city_not_found <- mainSource %>% html_text() %>% str_detect("Our system cannot find city with named with")
   if (is_city_not_found) {
     print("The given URL wasn't found on Numbeo")
   }
   
-  # `Find tag based on class .emp_number with summary data
+  # Find tag based on class .emp_number with summary data
   SuplNodes   <- html_nodes(mainSource, ".emp_number" )
   suplVector <-  sapply(SuplNodes, html_text, simplify = TRUE) %>% unlist()
   
@@ -31,9 +43,9 @@ getMainValues <- function(city_url_full = city_url_full, currency = "PLN") {
   LiNodes <- html_nodes(mainSource, "li" )
   nodesVector        <- sapply(LiNodes, html_text, simplify = TRUE)
   is_single_cost     <- sapply(nodesVector, str_detect, "A single person monthly costs")
-  if (class(is_single_cost) == "list") {
+  if (class(is_single_cost) == "list") { # if this is list then something went wrong -> write NA
     monthly_value_single <- NA
-  } else if (sum(is_single_cost) == 0) {
+  } else if (sum(is_single_cost) == 0) { # if this is FALSE then the str_detect didn't find this value -> write NA
     monthly_value_single <- NA
   } else {
     monthly_value_single <- nodesVector[which(is_single_cost == TRUE)]
@@ -47,9 +59,9 @@ getMainValues <- function(city_url_full = city_url_full, currency = "PLN") {
   # Raw form
   is_index    <- sapply(suplVector, str_detect, "out of", simplify = TRUE)
 
-  if (class(is_index) == "list") {
+  if (class(is_index) == "list") { # if this is list then something went wrong -> write NA
     city_rank_index <- NA
-  } else if (sum(is_index) == 0) {
+  } else if (sum(is_index) == 0) { # if this is FALSE then the str_detect didn't find this value -> write NA
     city_rank_index <- NA
   } else city_rank_index <- suplVector[which(is_index == TRUE)]
   
@@ -95,6 +107,16 @@ getMainValues <- function(city_url_full = city_url_full, currency = "PLN") {
   ### Whitespace cleaning for entire table
   mainTable <- mainTable %>%
     mutate_if(is.character, str_trim)
+  
+  mainTable <- mainTable %>% dplyr::filter(!variable %in% c("Markets", 
+                                                           "Transportation",
+                                                           "Utilities (Monthly)",
+                                                           "Sports And Leisure",
+                                                           "Childcare",
+                                                           "Clothing And Shoes",
+                                                           "Rent Per Month",
+                                                           "Buy Apartment Price",
+                                                           "Salaries And Financing"))
   
   return(mainTable)
   #return(list=c("Miesiêczne wydatki" = monthly_value_single, "Index"= city_rank_index, "Miesieczny czynsz" = rent_value_outside_city))
