@@ -1,12 +1,16 @@
+#!/usr/bin/env Rscript
 #####################################################################
 ################## COUNTRY LIST FROM NUMBEO #########################
 #####################################################################
+
 # Load libraries
 INPUT_DIR <- ""
 source(glue::glue(INPUT_DIR, "R/library.R"))
 source(glue::glue(INPUT_DIR, "R/function.R"))
+
 # Get mainSource for countries
 mainSource <- getURL("https://www.numbeo.com/cost-of-living/") %>% read_html(mainSource, verbose = TRUE)
+
 # Get xpath for div tag with country names and attrs
 nodes <- html_nodes(mainSource, xpath = "//*[@class='small_font links_for_countries']//a")
 
@@ -15,6 +19,7 @@ vec_countries_names             <- countries_node
 vec_countries_names_url_encoded <- sapply(vec_countries_names, URLencode, reserved = TRUE)
 vec_countries_urls_part         <- paste0("country_result.jsp?country=", vec_countries_names_url_encoded)
 vec_countries_urls_full         <- paste0("https://www.numbeo.com/cost-of-living/", vec_countries_urls_part)
+
 # Combine column into tibble
 countries_df   <- tibble("country_id"               = seq.int(length(vec_countries_names)),
                          "country_name"             = vec_countries_names,
@@ -105,7 +110,7 @@ write.table(x    = cities_df,
             fileEncoding  = "UTF-8")
 
 # Check if files are ok
-cities <- read.csv(file = "D:/analytics/shiny/nomad_life/data/city_list.txt", sep = "\t", stringsAsFactors = FALSE)
-countries <- read.csv(file = "D:/analytics/shiny/nomad_life/data/country_list.txt", sep = "\t", stringsAsFactors = FALSE)
+cities <- read.csv(file = "D:/analytics/shiny/nomad_life/data/city_list.txt", sep = "\t", stringsAsFactors = FALSE, fileEncoding = "UTF-8")
+countries <- read.csv(file = "D:/analytics/shiny/nomad_life/data/country_list.txt", sep = "\t", stringsAsFactors = FALSE, fileEncoding = "UTF-8")
 
 

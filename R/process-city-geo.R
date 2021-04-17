@@ -94,10 +94,10 @@ city_list_processed <- city_list_processed[!duplicated(city_list_processed$city_
 
 #city_list %>% anti_join(city_geo, by = "City")
 #city_geo %>% anti_join(city_list, by = "City")
-# write.table(x    = city_list_processed,
-#             file = "D:/analytics/shiny/nomad_life/data/city_geo.txt",
-#             col.names = TRUE,
-#             row.names = FALSE,
-#             quote = FALSE,
-#             sep = "\t")
+write.table(x    = city_list_processed,
+            file = "D:/analytics/shiny/nomad_life/data/city_geo.txt",
+            col.names = TRUE,
+            row.names = FALSE,
+            quote = FALSE,
+            sep = "\t")
 

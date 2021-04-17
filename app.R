@@ -19,12 +19,12 @@ data_values$variable_styled_name <- ifelse(substr(data_values$variable_styled_na
 # Filter data values for cities that have included a A single person monthly costs statistic available
 data_values_filtered <- data_values %>%
   filter(variable == "A single person monthly costs" & !is.na(value)) %>%
-  select(country_id, city_id) %>% 
+  select(country_id, city_id) %>%
   left_join(data_values, by = c("country_id", "city_id"))
 
 # TODO data is legacy redundant object this needs to be adjusted on the server side code
-data         <- data_values_filtered
-data_dict_ui <- data_values_filtered %>% distinct(country_name, city_name)
+data         <- data_values_filtered # data_values
+data_dict_ui <- data_values %>% distinct(country_name, city_name) #data_values_filtered
 
 # Make a list of choices where each choice is of type list. Care should be take for one element list therefore second line
 choices <- lapply(data_dict_ui %>% split(data_dict_ui$country_name), select, city_name)
@@ -241,9 +241,11 @@ server <- function(input, output, session) {
     color_chosen <- input$color_positions_selected
     print(color_chosen) 
     print((exists("color_chosen")))
+    data_wide_map <- data_wide %>% filter(!is.na(lat) & !is.na(lng))
     if (color_chosen != "") {
-      col1 <- data_map_dict %>% filter(variable == color_chosen) %>% select(variable_styled_name) %>% unlist() %>% as.character() 
-      beatCol <- colorNumeric(palette = 'RdYlGn', data_wide[[col1]], reverse = TRUE)
+      col1 <- data_map_dict %>%
+        filter(variable == color_chosen) %>% select(variable_styled_name) %>% unlist() %>% as.character() 
+      beatCol <- colorNumeric(palette = 'RdYlGn', data_wide_map[[col1]], reverse = TRUE)
     } else {
       color_chosen <- "blue"
       #beatCol <- colorNumeric("skyblue", domain = NULL)
@@ -270,7 +272,7 @@ server <- function(input, output, session) {
      
   output$map_world <- renderLeaflet({
     if (color_chosen == "blue") { 
-    leaflet(data_wide) %>%
+    leaflet(data_wide_map) %>%
         addProviderTiles("CartoDB.Positron") %>%
         addCircleMarkers(lng = ~lng,
                          lat = ~lat, 
@@ -287,7 +289,7 @@ server <- function(input, output, session) {
                          fillOpacity = 0.6
         )
     } else {
-      leaflet(data_wide) %>%
+      leaflet(data_wide_map) %>%
         addProviderTiles("CartoDB.Positron") %>%
         addCircleMarkers(lng = ~lng,
                          lat = ~lat, 
@@ -300,10 +302,10 @@ server <- function(input, output, session) {
                          label  = ~city_name,
                          radius = ~11,
                          #color  = ~"skyblue",
-                         color = ~beatCol(data_wide[[col1]]),
+                         color = ~beatCol(data_wide_map[[col1]]),
                          stroke = FALSE,
                          fillOpacity = 0.6
-        ) %>% addLegend("bottomright", pal = beatCol, values = data_wide[[col1]])     
+        ) %>% addLegend("bottomright", pal = beatCol, values = data_wide_map[[col1]])     
     }
     })
   })
