@@ -1,4 +1,4 @@
-country_id	country_name	country_name_url_encoded	country_url_full	country_url
+country_id	country_name	country_name_url_encoded	country_url_full	country_url_part
 1	Afghanistan	Afghanistan	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Afghanistan	country_result.jsp?country=Afghanistan
 2	Aland Islands	Aland%20Islands	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Aland%20Islands	country_result.jsp?country=Aland%20Islands
 3	Albania	Albania	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Albania	country_result.jsp?country=Albania
@@ -151,82 +151,84 @@ country_id	country_name	country_name_url_encoded	country_url_full	country_url
 150	Nicaragua	Nicaragua	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Nicaragua	country_result.jsp?country=Nicaragua
 151	Niger	Niger	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Niger	country_result.jsp?country=Niger
 152	Nigeria	Nigeria	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Nigeria	country_result.jsp?country=Nigeria
-153	North Korea	North%20Korea	https://www.numbeo.com/cost-of-living/country_result.jsp?country=North%20Korea	country_result.jsp?country=North%20Korea
-154	North Macedonia	North%20Macedonia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=North%20Macedonia	country_result.jsp?country=North%20Macedonia
-155	Northern Mariana Islands	Northern%20Mariana%20Islands	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Northern%20Mariana%20Islands	country_result.jsp?country=Northern%20Mariana%20Islands
-156	Norway	Norway	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Norway	country_result.jsp?country=Norway
-157	Oman	Oman	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Oman	country_result.jsp?country=Oman
-158	Pakistan	Pakistan	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Pakistan	country_result.jsp?country=Pakistan
-159	Palau	Palau	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Palau	country_result.jsp?country=Palau
-160	Palestine	Palestine	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Palestine	country_result.jsp?country=Palestine
-161	Panama	Panama	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Panama	country_result.jsp?country=Panama
-162	Papua New Guinea	Papua%20New%20Guinea	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Papua%20New%20Guinea	country_result.jsp?country=Papua%20New%20Guinea
-163	Paraguay	Paraguay	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Paraguay	country_result.jsp?country=Paraguay
-164	Peru	Peru	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Peru	country_result.jsp?country=Peru
-165	Philippines	Philippines	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Philippines	country_result.jsp?country=Philippines
-166	Poland	Poland	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Poland	country_result.jsp?country=Poland
-167	Portugal	Portugal	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Portugal	country_result.jsp?country=Portugal
-168	Puerto Rico	Puerto%20Rico	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Puerto%20Rico	country_result.jsp?country=Puerto%20Rico
-169	Qatar	Qatar	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Qatar	country_result.jsp?country=Qatar
-170	Republic Of Congo	Republic%20Of%20Congo	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Republic%20Of%20Congo	country_result.jsp?country=Republic%20Of%20Congo
-171	Reunion	Reunion	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Reunion	country_result.jsp?country=Reunion
-172	Romania	Romania	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Romania	country_result.jsp?country=Romania
-173	Russia	Russia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Russia	country_result.jsp?country=Russia
-174	Rwanda	Rwanda	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Rwanda	country_result.jsp?country=Rwanda
-175	Saint Helena	Saint%20Helena	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Saint%20Helena	country_result.jsp?country=Saint%20Helena
-176	Saint Kitts And Nevis	Saint%20Kitts%20And%20Nevis	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Saint%20Kitts%20And%20Nevis	country_result.jsp?country=Saint%20Kitts%20And%20Nevis
-177	Saint Lucia	Saint%20Lucia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Saint%20Lucia	country_result.jsp?country=Saint%20Lucia
-178	Saint Vincent And The Grenadines	Saint%20Vincent%20And%20The%20Grenadines	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Saint%20Vincent%20And%20The%20Grenadines	country_result.jsp?country=Saint%20Vincent%20And%20The%20Grenadines
-179	Samoa	Samoa	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Samoa	country_result.jsp?country=Samoa
-180	San Marino	San%20Marino	https://www.numbeo.com/cost-of-living/country_result.jsp?country=San%20Marino	country_result.jsp?country=San%20Marino
-181	Sao Tome And Principe	Sao%20Tome%20And%20Principe	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Sao%20Tome%20And%20Principe	country_result.jsp?country=Sao%20Tome%20And%20Principe
-182	Saudi Arabia	Saudi%20Arabia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Saudi%20Arabia	country_result.jsp?country=Saudi%20Arabia
-183	Senegal	Senegal	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Senegal	country_result.jsp?country=Senegal
-184	Serbia	Serbia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Serbia	country_result.jsp?country=Serbia
-185	Seychelles	Seychelles	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Seychelles	country_result.jsp?country=Seychelles
-186	Sierra Leone	Sierra%20Leone	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Sierra%20Leone	country_result.jsp?country=Sierra%20Leone
-187	Singapore	Singapore	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Singapore	country_result.jsp?country=Singapore
-188	Sint Maarten	Sint%20Maarten	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Sint%20Maarten	country_result.jsp?country=Sint%20Maarten
-189	Slovakia	Slovakia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Slovakia	country_result.jsp?country=Slovakia
-190	Slovenia	Slovenia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Slovenia	country_result.jsp?country=Slovenia
-191	Solomon Islands	Solomon%20Islands	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Solomon%20Islands	country_result.jsp?country=Solomon%20Islands
-192	Somalia	Somalia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Somalia	country_result.jsp?country=Somalia
-193	South Africa	South%20Africa	https://www.numbeo.com/cost-of-living/country_result.jsp?country=South%20Africa	country_result.jsp?country=South%20Africa
-194	South Korea	South%20Korea	https://www.numbeo.com/cost-of-living/country_result.jsp?country=South%20Korea	country_result.jsp?country=South%20Korea
-195	South Sudan	South%20Sudan	https://www.numbeo.com/cost-of-living/country_result.jsp?country=South%20Sudan	country_result.jsp?country=South%20Sudan
-196	Spain	Spain	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Spain	country_result.jsp?country=Spain
-197	Sri Lanka	Sri%20Lanka	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Sri%20Lanka	country_result.jsp?country=Sri%20Lanka
-198	Sudan	Sudan	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Sudan	country_result.jsp?country=Sudan
-199	Suriname	Suriname	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Suriname	country_result.jsp?country=Suriname
-200	Swaziland	Swaziland	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Swaziland	country_result.jsp?country=Swaziland
-201	Sweden	Sweden	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Sweden	country_result.jsp?country=Sweden
-202	Switzerland	Switzerland	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Switzerland	country_result.jsp?country=Switzerland
-203	Syria	Syria	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Syria	country_result.jsp?country=Syria
-204	Taiwan	Taiwan	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Taiwan	country_result.jsp?country=Taiwan
-205	Tajikistan	Tajikistan	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Tajikistan	country_result.jsp?country=Tajikistan
-206	Tanzania	Tanzania	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Tanzania	country_result.jsp?country=Tanzania
-207	Thailand	Thailand	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Thailand	country_result.jsp?country=Thailand
-208	Timor-Leste	Timor-Leste	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Timor-Leste	country_result.jsp?country=Timor-Leste
-209	Togo	Togo	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Togo	country_result.jsp?country=Togo
-210	Tonga	Tonga	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Tonga	country_result.jsp?country=Tonga
-211	Trinidad And Tobago	Trinidad%20And%20Tobago	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Trinidad%20And%20Tobago	country_result.jsp?country=Trinidad%20And%20Tobago
-212	Tunisia	Tunisia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Tunisia	country_result.jsp?country=Tunisia
-213	Turkey	Turkey	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Turkey	country_result.jsp?country=Turkey
-214	Turkmenistan	Turkmenistan	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Turkmenistan	country_result.jsp?country=Turkmenistan
-215	Turks And Caicos Islands	Turks%20And%20Caicos%20Islands	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Turks%20And%20Caicos%20Islands	country_result.jsp?country=Turks%20And%20Caicos%20Islands
-216	Uganda	Uganda	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Uganda	country_result.jsp?country=Uganda
-217	Ukraine	Ukraine	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Ukraine	country_result.jsp?country=Ukraine
-218	United Arab Emirates	United%20Arab%20Emirates	https://www.numbeo.com/cost-of-living/country_result.jsp?country=United%20Arab%20Emirates	country_result.jsp?country=United%20Arab%20Emirates
-219	United Kingdom	United%20Kingdom	https://www.numbeo.com/cost-of-living/country_result.jsp?country=United%20Kingdom	country_result.jsp?country=United%20Kingdom
-220	United States	United%20States	https://www.numbeo.com/cost-of-living/country_result.jsp?country=United%20States	country_result.jsp?country=United%20States
-221	Uruguay	Uruguay	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Uruguay	country_result.jsp?country=Uruguay
-222	Us Virgin Islands	Us%20Virgin%20Islands	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Us%20Virgin%20Islands	country_result.jsp?country=Us%20Virgin%20Islands
-223	Uzbekistan	Uzbekistan	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Uzbekistan	country_result.jsp?country=Uzbekistan
-224	Vanuatu	Vanuatu	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Vanuatu	country_result.jsp?country=Vanuatu
-225	Vatican City	Vatican%20City	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Vatican%20City	country_result.jsp?country=Vatican%20City
-226	Venezuela	Venezuela	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Venezuela	country_result.jsp?country=Venezuela
-227	Vietnam	Vietnam	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Vietnam	country_result.jsp?country=Vietnam
-228	Western Sahara	Western%20Sahara	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Western%20Sahara	country_result.jsp?country=Western%20Sahara
-229	Yemen	Yemen	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Yemen	country_result.jsp?country=Yemen
-230	Zambia	Zambia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Zambia	country_result.jsp?country=Zambia
-231	Zimbabwe	Zimbabwe	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Zimbabwe	country_result.jsp?country=Zimbabwe
+153	Norfolk Island	Norfolk%20Island	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Norfolk%20Island	country_result.jsp?country=Norfolk%20Island
+154	North Korea	North%20Korea	https://www.numbeo.com/cost-of-living/country_result.jsp?country=North%20Korea	country_result.jsp?country=North%20Korea
+155	North Macedonia	North%20Macedonia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=North%20Macedonia	country_result.jsp?country=North%20Macedonia
+156	Northern Mariana Islands	Northern%20Mariana%20Islands	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Northern%20Mariana%20Islands	country_result.jsp?country=Northern%20Mariana%20Islands
+157	Norway	Norway	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Norway	country_result.jsp?country=Norway
+158	Oman	Oman	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Oman	country_result.jsp?country=Oman
+159	Pakistan	Pakistan	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Pakistan	country_result.jsp?country=Pakistan
+160	Palau	Palau	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Palau	country_result.jsp?country=Palau
+161	Palestine	Palestine	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Palestine	country_result.jsp?country=Palestine
+162	Panama	Panama	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Panama	country_result.jsp?country=Panama
+163	Papua New Guinea	Papua%20New%20Guinea	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Papua%20New%20Guinea	country_result.jsp?country=Papua%20New%20Guinea
+164	Paraguay	Paraguay	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Paraguay	country_result.jsp?country=Paraguay
+165	Peru	Peru	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Peru	country_result.jsp?country=Peru
+166	Philippines	Philippines	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Philippines	country_result.jsp?country=Philippines
+167	Poland	Poland	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Poland	country_result.jsp?country=Poland
+168	Portugal	Portugal	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Portugal	country_result.jsp?country=Portugal
+169	Puerto Rico	Puerto%20Rico	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Puerto%20Rico	country_result.jsp?country=Puerto%20Rico
+170	Qatar	Qatar	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Qatar	country_result.jsp?country=Qatar
+171	Republic Of Congo	Republic%20Of%20Congo	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Republic%20Of%20Congo	country_result.jsp?country=Republic%20Of%20Congo
+172	Reunion	Reunion	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Reunion	country_result.jsp?country=Reunion
+173	Romania	Romania	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Romania	country_result.jsp?country=Romania
+174	Russia	Russia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Russia	country_result.jsp?country=Russia
+175	Rwanda	Rwanda	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Rwanda	country_result.jsp?country=Rwanda
+176	Saint Helena	Saint%20Helena	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Saint%20Helena	country_result.jsp?country=Saint%20Helena
+177	Saint Kitts And Nevis	Saint%20Kitts%20And%20Nevis	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Saint%20Kitts%20And%20Nevis	country_result.jsp?country=Saint%20Kitts%20And%20Nevis
+178	Saint Lucia	Saint%20Lucia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Saint%20Lucia	country_result.jsp?country=Saint%20Lucia
+179	Saint Vincent And The Grenadines	Saint%20Vincent%20And%20The%20Grenadines	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Saint%20Vincent%20And%20The%20Grenadines	country_result.jsp?country=Saint%20Vincent%20And%20The%20Grenadines
+180	Samoa	Samoa	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Samoa	country_result.jsp?country=Samoa
+181	San Marino	San%20Marino	https://www.numbeo.com/cost-of-living/country_result.jsp?country=San%20Marino	country_result.jsp?country=San%20Marino
+182	Sao Tome And Principe	Sao%20Tome%20And%20Principe	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Sao%20Tome%20And%20Principe	country_result.jsp?country=Sao%20Tome%20And%20Principe
+183	Saudi Arabia	Saudi%20Arabia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Saudi%20Arabia	country_result.jsp?country=Saudi%20Arabia
+184	Senegal	Senegal	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Senegal	country_result.jsp?country=Senegal
+185	Serbia	Serbia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Serbia	country_result.jsp?country=Serbia
+186	Seychelles	Seychelles	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Seychelles	country_result.jsp?country=Seychelles
+187	Sierra Leone	Sierra%20Leone	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Sierra%20Leone	country_result.jsp?country=Sierra%20Leone
+188	Singapore	Singapore	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Singapore	country_result.jsp?country=Singapore
+189	Sint Maarten	Sint%20Maarten	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Sint%20Maarten	country_result.jsp?country=Sint%20Maarten
+190	Slovakia	Slovakia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Slovakia	country_result.jsp?country=Slovakia
+191	Slovenia	Slovenia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Slovenia	country_result.jsp?country=Slovenia
+192	Solomon Islands	Solomon%20Islands	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Solomon%20Islands	country_result.jsp?country=Solomon%20Islands
+193	Somalia	Somalia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Somalia	country_result.jsp?country=Somalia
+194	South Africa	South%20Africa	https://www.numbeo.com/cost-of-living/country_result.jsp?country=South%20Africa	country_result.jsp?country=South%20Africa
+195	South Korea	South%20Korea	https://www.numbeo.com/cost-of-living/country_result.jsp?country=South%20Korea	country_result.jsp?country=South%20Korea
+196	South Sudan	South%20Sudan	https://www.numbeo.com/cost-of-living/country_result.jsp?country=South%20Sudan	country_result.jsp?country=South%20Sudan
+197	Spain	Spain	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Spain	country_result.jsp?country=Spain
+198	Sri Lanka	Sri%20Lanka	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Sri%20Lanka	country_result.jsp?country=Sri%20Lanka
+199	Sudan	Sudan	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Sudan	country_result.jsp?country=Sudan
+200	Suriname	Suriname	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Suriname	country_result.jsp?country=Suriname
+201	Swaziland	Swaziland	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Swaziland	country_result.jsp?country=Swaziland
+202	Sweden	Sweden	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Sweden	country_result.jsp?country=Sweden
+203	Switzerland	Switzerland	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Switzerland	country_result.jsp?country=Switzerland
+204	Syria	Syria	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Syria	country_result.jsp?country=Syria
+205	Taiwan	Taiwan	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Taiwan	country_result.jsp?country=Taiwan
+206	Tajikistan	Tajikistan	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Tajikistan	country_result.jsp?country=Tajikistan
+207	Tanzania	Tanzania	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Tanzania	country_result.jsp?country=Tanzania
+208	Thailand	Thailand	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Thailand	country_result.jsp?country=Thailand
+209	Timor-Leste	Timor-Leste	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Timor-Leste	country_result.jsp?country=Timor-Leste
+210	Togo	Togo	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Togo	country_result.jsp?country=Togo
+211	Tonga	Tonga	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Tonga	country_result.jsp?country=Tonga
+212	Trinidad And Tobago	Trinidad%20And%20Tobago	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Trinidad%20And%20Tobago	country_result.jsp?country=Trinidad%20And%20Tobago
+213	Tunisia	Tunisia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Tunisia	country_result.jsp?country=Tunisia
+214	Turkey	Turkey	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Turkey	country_result.jsp?country=Turkey
+215	Turkmenistan	Turkmenistan	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Turkmenistan	country_result.jsp?country=Turkmenistan
+216	Turks And Caicos Islands	Turks%20And%20Caicos%20Islands	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Turks%20And%20Caicos%20Islands	country_result.jsp?country=Turks%20And%20Caicos%20Islands
+217	Tuvalu	Tuvalu	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Tuvalu	country_result.jsp?country=Tuvalu
+218	Uganda	Uganda	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Uganda	country_result.jsp?country=Uganda
+219	Ukraine	Ukraine	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Ukraine	country_result.jsp?country=Ukraine
+220	United Arab Emirates	United%20Arab%20Emirates	https://www.numbeo.com/cost-of-living/country_result.jsp?country=United%20Arab%20Emirates	country_result.jsp?country=United%20Arab%20Emirates
+221	United Kingdom	United%20Kingdom	https://www.numbeo.com/cost-of-living/country_result.jsp?country=United%20Kingdom	country_result.jsp?country=United%20Kingdom
+222	United States	United%20States	https://www.numbeo.com/cost-of-living/country_result.jsp?country=United%20States	country_result.jsp?country=United%20States
+223	Uruguay	Uruguay	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Uruguay	country_result.jsp?country=Uruguay
+224	Us Virgin Islands	Us%20Virgin%20Islands	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Us%20Virgin%20Islands	country_result.jsp?country=Us%20Virgin%20Islands
+225	Uzbekistan	Uzbekistan	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Uzbekistan	country_result.jsp?country=Uzbekistan
+226	Vanuatu	Vanuatu	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Vanuatu	country_result.jsp?country=Vanuatu
+227	Vatican City	Vatican%20City	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Vatican%20City	country_result.jsp?country=Vatican%20City
+228	Venezuela	Venezuela	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Venezuela	country_result.jsp?country=Venezuela
+229	Vietnam	Vietnam	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Vietnam	country_result.jsp?country=Vietnam
+230	Western Sahara	Western%20Sahara	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Western%20Sahara	country_result.jsp?country=Western%20Sahara
+231	Yemen	Yemen	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Yemen	country_result.jsp?country=Yemen
+232	Zambia	Zambia	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Zambia	country_result.jsp?country=Zambia
+233	Zimbabwe	Zimbabwe	https://www.numbeo.com/cost-of-living/country_result.jsp?country=Zimbabwe	country_result.jsp?country=Zimbabwe

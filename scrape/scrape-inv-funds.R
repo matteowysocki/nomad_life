@@ -58,7 +58,7 @@ final <- final %>% arrange(desc(ytd)) %>% as_tibble()
 colnames(final) <- c("Fundusz", "Data", "Jednostka Netto", "D1", "M1", "M3", "M12", "M36", "M60", "YTD", "Grupa", "SSRI")
                
 write.table(x    = final,
-            file = "D:/analytics/analizy_fundusze_inwestycyjne_yields_20200519",
+            file = "D:/analytics/analizy_fundusze_inwestycyjne_yields_20200713",
             col.names = TRUE,
             row.names = FALSE,
             quote = FALSE,
@@ -121,17 +121,17 @@ plot_ly(data = final_,
 #   layout(yaxis2 = list(overlaying = "y", side = "right"))
 
 # Graph 4
-final_ <- final %>% filter(str_detect(Fundusz, "Millennium") == TRUE)
+#final_ <- final %>% filter(str_detect(Fundusz, "Millennium") == TRUE)
 final_ <- final
-final_ <- final_ %>% arrange(desc(M1))
+final_ <- final_ %>% arrange(desc(M12))
 plot_ly(data = final_,
-        x    = ~M1,
+        x    = ~M12,
         name = "Returns",
         type = "bar",
-        color= ~M1,
+        color= ~M12,
         text = ~n_,
         hoverinfo = "text",
-        hovertext = paste(final_$Fundusz, "<br>", final_$Grupa, "<br>", final_$M1)) %>% layout(title = "Investment Funds returns")  
+        hovertext = paste(final_$Fundusz, "<br>", final_$Grupa, "<br>", final_$M12)) %>% layout(title = "Investment Funds returns")  
 
 
 #######
