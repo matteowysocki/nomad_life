@@ -46,7 +46,9 @@ cities <- read.csv(file = "D:/analytics/shiny/nomad_life/data/city_list.txt", se
 
 # Add columns from main cities table. Watch that this match is done only on strings so it be sometimes incorrect (?) not sure..
 cities_ranking_df <- cities_ranking_df_tmp %>%
-  left_join(cities, by = c("country_name", "city_name"))
+  left_join(cities %>% select(-c("city_name_url_encoded", "country_name_url_encoded")),
+            by = c("country_name", "city_name")) %>% 
+  relocate(country_id, city_id,)
 
 #####################################################################
 ######################## WRITE TABLE ################################
