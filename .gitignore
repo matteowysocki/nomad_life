@@ -9,7 +9,7 @@ www/img3/
 img/
 img2/
 img3/
-www/client_secret_256078956335-5otif2vhf4dpbj6u8rl41e6vfsqn41eh.apps.googleusercontent.com.json
+app-previous-multitabs.R
 
 ################################################## R
 # History files
@@ -24,6 +24,7 @@ www/client_secret_256078956335-5otif2vhf4dpbj6u8rl41e6vfsqn41eh.apps.googleuserc
 
 # RStudio files
 .Rproj.user/
+nomad_life.Rproj
 
 # Temporary files created by R markdown
 *.utf8.md
