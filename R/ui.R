@@ -1,11 +1,6 @@
 #####################################################################
 ######################### UI ########################################
 #####################################################################
-INPUT_DIR <- ""
-source(glue::glue(INPUT_DIR, "R/library.R"))
-source(glue::glue(INPUT_DIR, "R/helper_functions.R"))
-source(glue::glue(INPUT_DIR, "R/app_load_and_prep_data.R"))
-
 ui <- fluidPage(
   
   list(tags$style(HTML("
